@@ -1,5 +1,7 @@
 */1 * * * * /Users/anthony/Desktop/python_api_puller/python-fitbit/token_alive.py
 */1 * * * * cd /Users/anthony/Desktop/python_api_puller/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> server_log.txt
 
+30 12 * * * cd /Users/anthony/Desktop/python_api_puller/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> server_log.txt
+
 when cron is denied of permission:
     chmod 777 [filename]
