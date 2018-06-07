@@ -3,5 +3,14 @@
 
 30 12 * * * cd /Users/anthony/Desktop/python_api_puller/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> server_log.txt
 
+=Everyday at 12:30pm
+30 12 * * * cd /home/inbt/Desktop/server-fitbit/fitbit_vm_server/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> server_log.txt
+
+=Every 30 mins
+30 * * * * cd /home/inbt/Desktop/server-fitbit/fitbit_vm_server/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> server_log.txt
+
+=Every 30 mins log
+30 * * * * cd /home/inbt/Desktop/server-fitbit/fitbit_vm_server/python-fitbit/ && source ../venv/bin/activate && python dbtester.py >> /home/inbt/Desktop/server-fitbit/fitbit_vm_server/python-fitbit/server_log.txt
+
 when cron is denied of permission:
-    chmod 777 [filename]
+    chmod 755 [filename]

@@ -1,0 +1,60 @@
+===============================================================
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> ea437ae1a71f6960569fb17b8cbb5423fa828fbd9ea8bd55cca7a600f0d64701
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-06
+	...Done getting weight log
+	-------data as of: 2018-06-06-------
+Pulling user : 5RZJTJ
+Using refresh_token -> 6362340ef8515553b945bd73a0be603d4eadabe108b2427a81a42f8b9debdfc6
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-06
+	...Done getting weight log
+	-------data as of: 2018-06-06-------
+Pulling user : 5TQ66D
+Using refresh_token -> 96e51a749a7137babeff5f9ce2c6b4380329138b44fc2937bb6de89184f893d8
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	538 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-06
+	...Done getting weight log
+	-------data as of: 2018-06-06-------
+	...Done refreshing
+===============================================================
