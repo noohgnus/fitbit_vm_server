@@ -1,0 +1,29 @@
+Authorization Jumpstart Steps
+
+1. Run command:
+    python gather_keys_oauth2.py
+
+2. In the following browser, copy the "code" part of the url. ***Code is valid for only 10 minutes.
+    Example)
+        * In https://jhprohealth.app/callback?code=fc749e3de9551ea853dbce84e7c706a6c6c2db7e&state=O01QZcS9XADINyf3ioRrSNbAQ9bi5n#_=_
+        * The code part is the string that comes after "code=", which is "fc749e3de9551ea853dbce84e7c706a6c6c2db7e".
+        * Notice the '&' character at the end of the code string, that is, right before "state" tag, shouldn't be included in the "code" part.
+
+3. Exit the browser engine script with shortcut:
+    CTRL + C
+
+4. Run command:
+    python authorizer.py [CODE]
+    python apipuller.py [CODE]
+        * Here, replace the "[CODE]" part in the command to the actual authorization code you got in step 2.
+        * So, the actual command here would be: 
+            python authorizer.py fc749e3de9551ea853dbce84e7c706a6c6c2db7e
+
+5. (OPTIONAL) If no cron job is running and you wish to do one-time data-pulling, run command:
+    python token_alive.py
+        * This is the python code that the cron job will be running.
+        * You can check the status of cron jobs running by running command:
+            crontab -l
+        * To edit cronjob, run command:
+            crontab -e
+
