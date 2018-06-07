@@ -717,6 +717,7 @@ print("===============================================================")
 # main()
 # devtestground()
 # hr_step_check()
+print("Logging event at: " + str(datetime.datetime.now()))
 token = multi_login_routine()
 # print(get_intraday_activity(token, "5T82TY", str(datetime.datetime.now().date)))
 
