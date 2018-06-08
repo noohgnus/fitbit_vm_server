@@ -458,8 +458,11 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
         hr_array = heart_rates["activities-heart-intraday"]
         hr_dataset = hr_array["dataset"]
         if(len(hr_dataset) < 1):
-            # print("HR Dataset for selected date is empty. Sending ping to Non-compliance table")
-            if(len(step_counts["activities-steps-intraday"]["dataset"]) < 1):
+            print("HR Dataset for selected date is empty. Sending ping to Non-compliance table")
+            # print(len(step_counts["activities-steps-intraday"]["dataset"]))
+            print(step_counts["activities-steps"][0]["value"] < "1")
+            if(int(step_counts["activities-steps"][0]["value"]) < 1):
+                print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
                 insert_noncompliance_ping(uid, date)
                 raise ValueError("Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table")
                 return;
