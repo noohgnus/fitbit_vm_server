@@ -571,6 +571,7 @@ def insert_weight_dict(time_pair):
         print "EXCEPTION IN insert_weight_dict: " + str(e)
 
     finally:
+        connection.commit()
         connection.close()
 
 
@@ -596,6 +597,7 @@ def insert_intraday_dict(time_pair):
         print "EXCEPTION IN insert_intraday_dict: " + str(e)
 
     finally:
+        connection.commit()
         connection.close()
 
 def temp_insert_intraday_dict(time_pair):
@@ -617,6 +619,7 @@ def temp_insert_intraday_dict(time_pair):
         print "EXCEPTION IN temp_insert_intraday_dict: " + str(e)
 
     finally:
+        connection.commit()
         connection.close()
 
 def insert_noncompliance_ping(user_id, ping_date):
@@ -633,6 +636,7 @@ def insert_noncompliance_ping(user_id, ping_date):
         print "EXCEPTION IN insert_noncompliance_ping: " + str(e)
 
     finally:
+        connection.commit()
         connection.close()
 
 
@@ -653,6 +657,7 @@ def connect_db():
         print e
 
     finally:
+        connection.commit()
         connection.close()
 
 
