@@ -564,7 +564,7 @@ def insert_weight_dict(time_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO Fitbit_Weight (timestamp, fitbit_uid, weight, bmi, fat, source, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        stmt = "INSERT INTO PC_Weight (timestamp, fitbit_uid, weight, bmi, fat, source, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
@@ -590,7 +590,7 @@ def insert_intraday_dict(time_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO Fitbit_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s)"
+        stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
@@ -628,7 +628,7 @@ def insert_noncompliance_ping(user_id, ping_date):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = """INSERT INTO Fitbit_Noncompliance_Ping (date, fitbit_uid, not_equipped_flag, added_on) VALUES (%s, %s, %s, %s)"""
+        stmt = """INSERT INTO PC_Noncompliance_Ping (date, fitbit_uid, not_equipped_flag, added_on) VALUES (%s, %s, %s, %s)"""
 
         dbhandler.execute(stmt, (ping_date, user_id, 1, str(datetime.datetime.now())))
 
