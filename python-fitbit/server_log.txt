@@ -427,3 +427,193 @@ Both HR and Step Dataset for selected date are empty. Sending ping to Non-compli
 	-------data as of: 2018-06-10-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-06-12 09:30:03.735849
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> cb454fa1871585bae879db047e1b2cd2dddba7783a61db8a02bc9a558f544b6b
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	252 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-11
+	...Done getting weight log
+{u'weight': 93.8, u'bmi': 28.07, u'fat': 26.437000274658203, u'logId': 1528715882000, u'source': u'Aria', u'time': u'11:18:02', u'date': u'2018-06-11'}
+	-------data as of: 2018-06-11-------
+Pulling user : 5RZJTJ
+Using refresh_token -> ff71e61ce9e0d476bc76799d9d66b640165e1086b6be2446b211c78e9d4b5974
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	382 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-11
+	...Done getting weight log
+	-------data as of: 2018-06-11-------
+Pulling user : 5TQ66D
+Using refresh_token -> 9ae6e722b5e5f5cbddcc79a778e3279bd4b3febd538f60800459c8e6d377a217
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	350 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-11
+	...Done getting weight log
+{u'weight': 65.1, u'bmi': 24.68, u'fat': 29.38800048828125, u'logId': 1528709374000, u'source': u'Aria', u'time': u'09:29:34', u'date': u'2018-06-11'}
+	-------data as of: 2018-06-11-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-06-13 09:30:02.489967
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 36bc05c88bc7d62ccab9232f749dd9b40fc808dcf53959f32fdac0df63d36d9a
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	69 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-12
+	...Done getting weight log
+{u'weight': 95.3, u'bmi': 28.53, u'fat': 26.132999420166016, u'logId': 1528761611000, u'source': u'Aria', u'time': u'00:00:11', u'date': u'2018-06-12'}
+{u'weight': 94.2, u'bmi': 28.19, u'fat': 26.104999542236328, u'logId': 1528799584000, u'source': u'Aria', u'time': u'10:33:04', u'date': u'2018-06-12'}
+	-------data as of: 2018-06-12-------
+Pulling user : 5RZJTJ
+Using refresh_token -> 6970a41efb1c6b78455c99d1de588cf88107e8fc34604a34112290d424dab17b
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	1040 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-12
+	...Done getting weight log
+	-------data as of: 2018-06-12-------
+Pulling user : 5TQ66D
+Using refresh_token -> 591c1b4ad84610834a82ce573a62d7da2c1ad4038188c91918438db527906e19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	698 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-12
+	...Done getting weight log
+	-------data as of: 2018-06-12-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-06-14 09:30:02.631647
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> dc3b306a7967fb5b00429a1a0587fbbe6da460ca5dee7f0dca0f9d6f236da3c3
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	27 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-13
+	...Done getting weight log
+{u'weight': 94.2, u'bmi': 28.2, u'fat': 25.79400062561035, u'logId': 1528885379000, u'source': u'Aria', u'time': u'10:22:59', u'date': u'2018-06-13'}
+{u'weight': 96.2, u'bmi': 28.81, u'fat': 25.760000228881836, u'logId': 1528928526000, u'source': u'Aria', u'time': u'22:22:06', u'date': u'2018-06-13'}
+	-------data as of: 2018-06-13-------
+Pulling user : 5RZJTJ
+Using refresh_token -> 06bb68cb04a1804073543c44b7fffbab39379148c01503319b857a83c9172584
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	986 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-13
+	...Done getting weight log
+	-------data as of: 2018-06-13-------
+Pulling user : 5TQ66D
+Using refresh_token -> c96c87690cc1789d327ac2fc7e7a3641089cfa48d28a1b60adade2246eca01e0
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	437 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-13
+	...Done getting weight log
+{u'weight': 65.6, u'bmi': 24.85, u'fat': 28.895999908447266, u'logId': 1528896603000, u'source': u'Aria', u'time': u'13:30:03', u'date': u'2018-06-13'}
+	-------data as of: 2018-06-13-------
+	...Done refreshing
+===============================================================
