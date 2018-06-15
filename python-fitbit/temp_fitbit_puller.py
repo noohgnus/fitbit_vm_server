@@ -61,7 +61,7 @@ def multi_login_routine():
 
 def refresh_user_token(token_dict, uid, start_time):
     json_user_datas = token_dict
-    print(json_user_datas)
+    # print(json_user_datas)
     if uid not in json_user_datas["users"]:
         print("User id " + uid + " does not exist. Check the DB for your matching user_id.")
         exit()
