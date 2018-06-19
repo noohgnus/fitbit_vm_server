@@ -678,3 +678,250 @@ Getting weight log for 2018-06-14
 	-------data as of: 2018-06-14-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-06-16 09:30:03.228850
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 3cd61fd90e3a993c418970ceb147f781d3116dd426a499bdf5acc304db88f264
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	307 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-15
+	...Done getting weight log
+{u'weight': 95.1, u'bmi': 28.46, u'fat': 25.51099967956543, u'logId': 1529060866000, u'source': u'Aria', u'time': u'11:07:46', u'date': u'2018-06-15'}
+{u'weight': 94.8, u'bmi': 28.38, u'fat': 25.148000717163086, u'logId': 1529094982000, u'source': u'Aria', u'time': u'20:36:22', u'date': u'2018-06-15'}
+	-------data as of: 2018-06-15-------
+Pulling user : 5RZJTJ
+Using refresh_token -> 297209df79bc7fecbd012810c5e45deafcd71b6129a991fdd6c55f2fd2e9e355
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	798 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-15
+	...Done getting weight log
+	-------data as of: 2018-06-15-------
+Pulling user : 5TQ66D
+Using refresh_token -> aca4c799b41836bfc7b7b44c789fcbbf9ad97d6a3d208977cf3987a7b2378d29
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	515 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-15
+	...Done getting weight log
+	-------data as of: 2018-06-15-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-06-17 09:30:02.485228
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 1d276325220a16dd10c4510fce9bfebe2ed6df56e9613b876333e0813e68798e
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-16-------
+Pulling user : 5RZJTJ
+Using refresh_token -> eb36f5b36ee4f970d37c88f5577e11c40de0ce797c5c6cb05999914bbd01a135
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-16-------
+Pulling user : 5TQ66D
+Using refresh_token -> abebc0b028977881e87d578386d7a5f39844dd7c6ef5b8fe0381c6de013a7cca
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-16-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-06-18 09:30:02.587157
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 0b52e449c2ec2b7acec3132a9d360ec9f04aebf963aaab0d1f75737c8483b184
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	1 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-17
+	...Done getting weight log
+	-------data as of: 2018-06-17-------
+Pulling user : 5RZJTJ
+Using refresh_token -> 5480501a63ac318e25ae26caad2eb05c966a4b46a00ca34544d26d927ab3b7cc
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-17-------
+Pulling user : 5TQ66D
+Using refresh_token -> 4d38668ba1ff07339e226126e81e4b6ceccbd08462ec9f4f51348eb7a48e9d11
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-17-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-06-19 09:30:03.409042
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 0c30ac269aeb2d820967961b13cb1603465ceb806a50337e3d7174bfa7d7243e
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	221 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-18
+	...Done getting weight log
+{u'weight': 94.9, u'bmi': 28.41, u'fat': 24.733999252319336, u'logId': 1529364299000, u'source': u'Aria', u'time': u'23:24:59', u'date': u'2018-06-18'}
+	-------data as of: 2018-06-18-------
+Pulling user : 5RZJTJ
+Using refresh_token -> f06e0719cfc241b34b40da6f0cfd50d858e29d42e18db53e3867c0de7a9cb13a
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+True
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-06-18-------
+Pulling user : 5TQ66D
+Using refresh_token -> 99c0c378bca64dba5226ab7659c52a594474faa03d0d15e9298fe2e7b712829a
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	403 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-06-18
+	...Done getting weight log
+	-------data as of: 2018-06-18-------
+	...Done refreshing
+===============================================================
