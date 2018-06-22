@@ -22,6 +22,7 @@ import requests
 import base64
 import sys
 
+
 class FitbitTimeSet:
     def __init__(self, heart_rate=0, step_count=0, activity_level=0, uid="***NO UID SUPPLIED***"):
         self.heart_rate = heart_rate
@@ -44,15 +45,30 @@ class FitbitWeightSet:
     def __repr__(self):
         return "FitbitWeightSet(" + str(self.weight) + ',' + str(self.bmi) + ',' + str(self.fat) + ',' + str(self.source) + ',' + self.uid + ")"
 
-#These are the secrets etc from Fitbit developer
+
+class DeviceInfo:
+    def __init__(self, uid, device_id, last_sync_time, device_version, device_type, battery, battery_level):
+        self.uid = uid
+        self.device_id = device_id
+        self.last_sync_time = last_sync_time
+        self.device_version = device_version
+        self.device_type = device_type
+        self.battery = battery
+        self.battery_level = battery_level
+
+    def __repr__(self):
+        return "DeviceInfo(" + str(self.uid) + ',' + str(self.last_sync_time) + ',' + str(self.device_version) + ',' + str(self.battery_level) + ")"
+
+
+# These are the secrets etc from Fitbit developer
 OAuthTwoClientID = "22CMWS"
 ClientOrConsumerSecret = "83418e86bc034c4f162277e411144aaa"
 base64_key_secret = base64.b64encode(OAuthTwoClientID + ":" + ClientOrConsumerSecret)
 
-#This is the Fitbit URL
+# This is the Fitbit URL
 TokenURL = "https://api.fitbit.com/oauth2/token"
 
-#Remote database info
+# Remote database info
 HOST = "10.162.80.9"
 PORT = 3306
 USER = "fitbitter"
@@ -64,6 +80,7 @@ file_name = "/Users/anthony/Desktop/python_api_puller/python-fitbit/token.json"
 file_name = "token.json"
 
 token_pair = {"access_token" : "at1", "refresh_token" : "rf1", "time" : now}
+
 
 def read():
     print("Reading from existing token file...")
@@ -95,6 +112,7 @@ def write():
 # Fitbit API Authorization Functions                       #
 #                                                          #
 ############################################################
+
 
 def token_authorize():
     print("Authorizing...")
@@ -185,31 +203,6 @@ def get_multi_token_dict():
     print("\t...Done reading tokens.json.")
     return st
 
-def refresh_single_user_token(token_dict, uid):
-    print("Refreshing...")
-    
-    headers = {'Authorization':'Basic ' + base64_key_secret,
-               'Content-Type':'application/x-www-form-urlencoded'}
-
-    BodyText = {
-            'refresh_token' : token_dict["users"][uid]["refresh_token"],
-            'grant_type' : 'refresh_token'}
-
-    r = requests.post(TokenURL, headers=headers, data=BodyText)
-    if(r.status_code != 200):
-        print(r.text)
-        raise Exception("While refreshing, HTTP returned code ", str(r.status_code))
-
-    json_user_datas = token_dict
-
-    write_file = open("tokens.json", 'w+')
-    response["modified_at"] = str(datetime.datetime.now())
-    json_user_datas["users"][response["user_id"]] = response
-    json.dump(json_user_datas, write_file, indent=4)
-    write_file.close()
-
-    print("\t...Done refreshing")
-    return json_user_datas
 
 def refresh_multi_user_token(token_dict):
     json_user_datas = token_dict
@@ -217,7 +210,7 @@ def refresh_multi_user_token(token_dict):
         print("Pulling user : " + str(json_user_datas["users"][user]["user_id"]))
         headers = {'Authorization':'Basic ' + base64_key_secret,
                    'Content-Type':'application/x-www-form-urlencoded'}
-        print("Using refresh_token -> " + str(json_user_datas["users"][user]["refresh_token"]))
+        print("Using refresh_token -> " + str(json_user_datas["global_refresh_token"]))
         BodyText = {
                 'refresh_token' : json_user_datas["users"][user]["refresh_token"],
                 'grant_type' : 'refresh_token'}
@@ -233,6 +226,7 @@ def refresh_multi_user_token(token_dict):
         else:
             # print(r.text)
             response = json.loads(r.text)
+            # json_user_datas["global_refresh_token"] = response["refresh_token"]
             json_user_datas["users"][user]["access_token"] = response["access_token"]
             json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
             json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
@@ -247,18 +241,22 @@ def refresh_multi_user_token(token_dict):
     print("\t...Done refreshing")
     return json_user_datas
 
+
 def data_retrieval_routine(token_dict, uid):
     yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
     date_string = str(yesterday.date())
     # date_string = "2018-06-01"
     try:
-        execute_heart_and_step(token_dict, uid, date_string)
+        print("Data retrieval routine for user: " + uid)
+        device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
+        update_devices(device_dict)
+        execute_heart_and_step(token_dict, uid, date_string, device_dict)
         execute_weight(token_dict, uid, date_string)
-
     except ValueError as ve:
         print ve
 
     print "\t-------data as of: " + str(yesterday.date()) + "-------"
+
 
 def loop_data_retrieval_routine(token_dict, uid, days_ago):
     yesterday = datetime.datetime.now() - datetime.timedelta(days = days_ago)
@@ -273,7 +271,8 @@ def loop_data_retrieval_routine(token_dict, uid, days_ago):
 
     print "\t-------data as of: " + str(yesterday.date()) + "-------"
 
-def execute_heart_and_step(token_dict, uid, date_string):
+
+def execute_heart_and_step(token_dict, uid, date_string, device_dict):
     heart_json = get_intraday_heart(token_dict, uid, date_string)
     step_json = get_intraday_activity(token_dict, uid, date_string)
         
@@ -283,8 +282,9 @@ def execute_heart_and_step(token_dict, uid, date_string):
     very_active_payload = get_activity_details(token_dict, uid, date_string, "minutesVeryActive")
     activity_dict = combine_activity_levels(sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
-    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, uid)
+    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, device_dict, uid)
     insert_intraday_dict(time_dict)
+
 
 def execute_weight(token_dict, uid, date_string):
     weight_data = get_weight_log(token_dict, uid, date_string)
@@ -311,6 +311,7 @@ def multi_login_routine():
         sys.exit()
     # token_dict = token_refresh(token_dict)
     return token_dict
+
 
 def login_routine():
     if(len(sys.argv) == 2):
@@ -345,6 +346,19 @@ def get_user(token_dict, uid):
     print("\t...Done getting user info")
 
     return uid
+
+def get_devices(token_dict, uid):
+    print("Getting Devices")
+    headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
+    r = requests.get("https://api.fitbit.com/1/user/-/devices.json", headers=headers)
+    # print(r.text)
+    if(r.status_code != 200):
+        print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
+        print(r.text)
+        raise AssertionError("API call response is other than 200 OK.")
+    print("\t...Done getting device info")
+
+    return r.text
 
 def get_body_fat_log(token_dict, uid):
     print("Getting body fat log")
@@ -404,6 +418,7 @@ def get_intraday_heart(token_dict, uid, query_date):
 
     return r.text
 
+
 def get_intraday_activity(token_dict, uid, query_date):
     print("Getting Intraday Activity in Steps")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
@@ -440,7 +455,23 @@ def combine_activity_levels(sedentary_payload, light_active_payload, fairly_acti
 
     return activity_level_dict
 
-def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, uid):
+
+def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, device_dict, uid):
+
+    def has_synced_yesterday(device_info_dict):
+        print("HAS SYNCED RECENTLY?: " + str(device_info_dict.values()))
+        for device_info in device_info_dict.values():
+            print(device_info)
+            if device_info.device_type == "TRACKER":
+                dt = datetime.datetime.strptime(device_info.last_sync_time, "%Y-%m-%dT%H:%M:%S.%f")
+                if dt < (datetime.datetime.now() - datetime.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0):
+                    print("Hasn't synced recently. Last sync time: " + str(device_info.last_sync_time))
+                    return False
+                else:
+                    print("Has synced recently. Last sync time: " + str(device_info.last_sync_time))
+                    return True
+        print("\tNo tracker to calculate last synced time. Check if this person has a tracker assigned.")
+        return False
     print("Converting HR and Step JSON data to dictionary...")
 
     heart_rates = json.loads(heart_rate_json)
@@ -449,33 +480,28 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
     lightly_json = activity_level_dict["lightly"]
     fairly_json = activity_level_dict["fairly"]
     very_json = activity_level_dict["very"]
-    #TODO: ping compliance when both data sets are empty
-    inserting_set = []
     time_pair = dict()
 
     for one_day_hr in heart_rates["activities-heart"]:
         date = heart_rates["activities-heart"][0]["dateTime"]
         hr_array = heart_rates["activities-heart-intraday"]
         hr_dataset = hr_array["dataset"]
-        if(len(hr_dataset) < 1):
+        if len(hr_dataset) < 1 and has_synced_yesterday(device_dict):
             print("HR Dataset for selected date is empty. Sending ping to Non-compliance table")
             # print(len(step_counts["activities-steps-intraday"]["dataset"]))
-            print(step_counts["activities-steps"][0]["value"] < "1")
+            # print(step_counts["activities-steps"][0]["value"] < "1")
             if(int(step_counts["activities-steps"][0]["value"]) < 1):
                 print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
                 insert_noncompliance_ping(uid, date)
                 raise ValueError("Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table")
                 return;
-
         for data in hr_dataset:
-            user_id = uid
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
                 time_pair[dtstring] = FitbitTimeSet(data["value"], 0, 0, uid)
             else:
                 time_pair[dtstring].heart_rate = data["value"]
         print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
-
 
     for one_day_steps in step_counts["activities-steps"]:
         date = step_counts["activities-steps"][0]["dateTime"]
@@ -551,6 +577,56 @@ def make_weight_dict_from_json(weight_payload, uid, date_string):
 
     return time_pair
 
+
+def make_device_dict_from_json(devices_payload, uid):
+    device_json = json.loads(devices_payload)
+
+    device_id_pair = dict()
+
+    for device_data in device_json:
+        # print(device_data)
+        device_id = device_data["id"]
+        last_sync_time = device_data["lastSyncTime"]
+        device_version = device_data["deviceVersion"]
+        device_type = device_data["type"]
+        battery = device_data["battery"]
+        battery_level = device_data["batteryLevel"]
+
+        device_id_pair[device_id] = DeviceInfo(uid=uid, device_id=device_id, last_sync_time=last_sync_time,
+                                               device_version=device_version, device_type=device_type,
+                                               battery=battery, battery_level=battery_level)
+    return device_id_pair
+
+
+def update_devices(device_id_pair):
+    try:
+        connection = db.Connection(host=HOST, port=PORT,
+                                   user=USER, passwd=PASSWORD, db=DB)
+
+        cursor = connection.cursor(db.cursors.DictCursor)
+        result = cursor.execute("SELECT * FROM PC_Devices")
+        now_time = str(datetime.datetime.now())
+        # print(now_time)
+        rows = cursor.fetchall()
+ 
+        for device_id in device_id_pair:
+            # print(row["submitted_at"] < datetime.datetime.now())
+            print("DEVICE : " + device_id)
+            device = device_id_pair[device_id]
+            result = cursor.execute("INSERT INTO PC_Devices \
+                (fitbit_uid, device_id, last_sync_time, device_version, device_type, battery, battery_level, updated_at)\
+                VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')\
+                ON DUPLICATE KEY UPDATE last_sync_time='%s', battery='%s', battery_level='%s', updated_at='%s'"
+                                    % (device.uid, device_id, device.last_sync_time, device.device_version,
+                                       device.device_type, device.battery, device.battery_level, now_time,
+                                       device.last_sync_time, device.battery, device.battery_level, now_time))
+    except Exception as e:
+        print(e)
+ 
+    finally:
+        cursor.close()
+        connection.commit()
+        connection.close()
 
 def insert_weight_dict(time_pair):
     insert_set = []
