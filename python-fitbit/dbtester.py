@@ -280,7 +280,8 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
     light_active_payload = get_activity_details(token_dict, uid, date_string, "minutesLightlyActive")
     fairly_active_payload = get_activity_details(token_dict, uid, date_string, "minutesFairlyActive")
     very_active_payload = get_activity_details(token_dict, uid, date_string, "minutesVeryActive")
-    activity_dict = combine_activity_levels(sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
+    activity_dict = combine_activity_levels(
+        sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
     time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, device_dict, uid)
     insert_intraday_dict(time_dict)
@@ -438,6 +439,7 @@ def get_intraday_activity(token_dict, uid, query_date):
 # Database Manipulation Functions                          #
 #                                                          #
 ############################################################
+
 
 def combine_activity_levels(sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload):
     print("Converting Activity Level JSON data to dictionary...")

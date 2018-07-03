@@ -10,10 +10,11 @@ import base64
 import sys
 
 class FitbitTimeSet:
-    def __init__(self, heart_rate=0, step_count=0, activity_level=0, uid="***NO UID SUPPLIED***"):
+    def __init__(self, heart_rate=0, step_count=0, activity_level=0, distance=0, uid="***NO UID SUPPLIED***"):
         self.heart_rate = heart_rate
         self.step_count = step_count
         self.activity_level = activity_level
+        self.distance = distance
         self.uid = uid
 
     def __repr__(self):
@@ -107,6 +108,7 @@ def data_retrieval_routine(token_dict, uid, start_time):
 def execute_heart_and_step(token_dict, uid, date_string):
     heart_json = get_intraday_heart(token_dict, uid, date_string)
     step_json = get_intraday_activity(token_dict, uid, date_string)
+    distance_json = get_intraday_distance(token_dict, uid, date_string)
         
     sedentary_payload =  get_activity_details(token_dict, uid, date_string, "minutesSedentary")
     light_active_payload = get_activity_details(token_dict, uid, date_string, "minutesLightlyActive")
@@ -114,7 +116,7 @@ def execute_heart_and_step(token_dict, uid, date_string):
     very_active_payload = get_activity_details(token_dict, uid, date_string, "minutesVeryActive")
     activity_dict = combine_activity_levels(sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
-    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, uid)
+    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, distance_json, activity_dict, uid)
     insert_intraday_dict(time_dict)
 
 
@@ -165,11 +167,26 @@ def get_intraday_activity(token_dict, uid, query_date):
 
     return r.text
 
-def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, uid):
+def get_intraday_distance(token_dict, uid, query_date):
+    print("Getting Intraday Activity in Steps")
+    headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
+    r = requests.get("https://api.fitbit.com/1/user/-/activities/distance/date/" + query_date + "/1d.json",
+                      headers=headers)
+    print(r.text)
+    if(r.status_code != 200):
+        print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
+        print(r.text)
+        raise AssertionError("API call response is other than 200 OK.")
+    print("\t...Done getting intraday distance")
+
+    return r.text
+
+def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distance_json, activity_level_dict, uid):
     print("Converting HR and Step JSON data to dictionary...")
 
     heart_rates = json.loads(heart_rate_json)
     step_counts = json.loads(step_count_json)
+    distance_records = json.loads(distance_json)
     sed_json = activity_level_dict["sedentary"]
     lightly_json = activity_level_dict["lightly"]
     fairly_json = activity_level_dict["fairly"]
