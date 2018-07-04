@@ -209,7 +209,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
             user_id = uid
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
-                time_pair[dtstring] = FitbitTimeSet(data["value"], 0, 0, uid)
+                time_pair[dtstring] = FitbitTimeSet(heart_rate=data["value"], step_count=0, activity_level=0, distance=0, uid=uid)
             else:
                 time_pair[dtstring].heart_rate = data["value"]
         print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
@@ -223,7 +223,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"]
                 if(dtstring not in time_pair):
-                    time_pair[dtstring] = FitbitTimeSet(0, data["value"], 0, uid)
+                    time_pair[dtstring] = FitbitTimeSet(heart_rate=0, step_count=data["value"], activity_level=0, distance=0, uid=uid)
                 else:
                     time_pair[dtstring].step_count = data["value"]
 
@@ -258,6 +258,18 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
                 dtstring = date + " " + data["time"];
                 if(dtstring in time_pair):
                     time_pair[dtstring].activity_level += 4
+
+    for one_day_distance in distance_records["activities-distance"]:
+        date = distance_records["activities-distance"][0]["dateTime"]
+        dist_array = distance_records["activities-distance-intraday"]
+        dist_dataset = dist_array["dataset"]
+        for data in dist_dataset:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"]
+                if(dtstring not in time_pair):
+                    time_pair[dtstring] = FitbitTimeSet(heart_rate=0, step_count=0, activity_level=0, distance=data["value"], uid=uid)
+                else:
+                    time_pair[dtstring].distance = data["value"]
 
     print("\t...Done converting JSON data to dictionary")
 
@@ -301,14 +313,14 @@ def insert_intraday_dict(time_pair):
     for time in time_pair:
         fitbit_data = time_pair[time]
         # print(str(time) + " / " + str(fitbit_data))
-        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.activity_level, str(datetime.datetime.now())))
+        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.distance, fitbit_data.activity_level, str(datetime.datetime.now())))
 
     try:
         connection = db.Connection(host=HOST, port=PORT,
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s)"
+        stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
