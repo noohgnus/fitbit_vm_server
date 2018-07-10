@@ -1925,3 +1925,585 @@ Getting weight log for 2018-07-02
 	-------data as of: 2018-07-02-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-07-04 07:30:03.351392
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	347 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-03
+	...Done getting weight log
+{u'weight': 95, u'bmi': 10.56, u'logId': 1530662399000, u'source': u'API', u'time': u'23:59:59', u'date': u'2018-07-03'}
+	-------data as of: 2018-07-03-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-03T10:12:27.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-03T10:12:27.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-03
+	...Done getting weight log
+{u'weight': 67.9, u'bmi': 22.12, u'fat': 18.134000778198242, u'logId': 1530607153000, u'source': u'Aria', u'time': u'08:39:13', u'date': u'2018-07-03'}
+{u'weight': 67.9, u'bmi': 22.12, u'fat': 19.7450008392334, u'logId': 1530612726000, u'source': u'Aria', u'time': u'10:12:06', u'date': u'2018-07-03'}
+	-------data as of: 2018-07-03-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	713 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-03
+	...Done getting weight log
+{u'weight': 65.9, u'bmi': 24.97, u'fat': 29.194000244140625, u'logId': 1530612114000, u'source': u'Aria', u'time': u'10:01:54', u'date': u'2018-07-03'}
+	-------data as of: 2018-07-03-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-05 07:30:03.097512
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-07-05T07:03:11.289,Alta HR,100), DeviceInfo(5T82TY,2018-07-04T20:21:38.000,Aria 2,90)]
+DeviceInfo(5T82TY,2018-07-05T07:03:11.289,Alta HR,100)
+Has synced recently. Last sync time: 2018-07-05T07:03:11.289
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-07-04-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-04T21:04:26.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-04T21:04:26.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-04
+	...Done getting weight log
+	-------data as of: 2018-07-04-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	745 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-04
+	...Done getting weight log
+	-------data as of: 2018-07-04-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-06 07:30:03.631760
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-07-06T01:00:10.000,Alta HR,100), DeviceInfo(5T82TY,2018-07-05T20:21:41.000,Aria 2,91)]
+DeviceInfo(5T82TY,2018-07-06T01:00:10.000,Alta HR,100)
+Has synced recently. Last sync time: 2018-07-06T01:00:10.000
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-07-05-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-06T03:07:56.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-06T03:07:56.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-05
+	...Done getting weight log
+	-------data as of: 2018-07-05-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	929 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-05
+	...Done getting weight log
+	-------data as of: 2018-07-05-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-07 07:30:03.909456
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-07-07T07:16:59.434,Alta HR,100), DeviceInfo(5T82TY,2018-07-06T20:21:47.000,Aria 2,89)]
+DeviceInfo(5T82TY,2018-07-07T07:16:59.434,Alta HR,100)
+Has synced recently. Last sync time: 2018-07-07T07:16:59.434
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-07-06-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-07T03:14:26.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-07T03:14:26.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-06
+	...Done getting weight log
+	-------data as of: 2018-07-06-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	141 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-06
+	...Done getting weight log
+	-------data as of: 2018-07-06-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-08 07:30:03.492728
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	274 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-07
+	...Done getting weight log
+	-------data as of: 2018-07-07-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-07T12:03:17.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-07T12:03:17.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-07
+	...Done getting weight log
+{u'weight': 68.2, u'bmi': 22.22, u'fat': 19.27400016784668, u'logId': 1530964976000, u'source': u'Aria', u'time': u'12:02:56', u'date': u'2018-07-07'}
+	-------data as of: 2018-07-07-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-07-06T11:15:45.000,Alta HR,69), DeviceInfo(5TQ66D,2018-07-03T10:26:58.000,Aria,79)]
+DeviceInfo(5TQ66D,2018-07-06T11:15:45.000,Alta HR,69)
+Hasn't synced recently. Last sync time: 2018-07-06T11:15:45.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-07
+	...Done getting weight log
+	-------data as of: 2018-07-07-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-09 07:30:03.077712
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-07-08T20:35:05.000,Alta HR,90), DeviceInfo(5T82TY,2018-07-08T20:21:32.000,Aria 2,90)]
+DeviceInfo(5T82TY,2018-07-08T20:35:05.000,Alta HR,90)
+Has synced recently. Last sync time: 2018-07-08T20:35:05.000
+HR Dataset for selected date is empty. Sending ping to Non-compliance table
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+	-------data as of: 2018-07-08-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-08T18:11:24.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-08T18:11:24.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-08
+	...Done getting weight log
+	-------data as of: 2018-07-08-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-07-06T11:15:45.000,Alta HR,69), DeviceInfo(5TQ66D,2018-07-03T10:26:58.000,Aria,79)]
+DeviceInfo(5TQ66D,2018-07-06T11:15:45.000,Alta HR,69)
+Hasn't synced recently. Last sync time: 2018-07-06T11:15:45.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-08
+	...Done getting weight log
+	-------data as of: 2018-07-08-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-07-10 07:30:03.149823
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5T82TY
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-07-08T20:35:05.000,Alta HR,90), DeviceInfo(5T82TY,2018-07-09T20:21:30.000,Aria 2,91)]
+DeviceInfo(5T82TY,2018-07-08T20:35:05.000,Alta HR,90)
+Hasn't synced recently. Last sync time: 2018-07-08T20:35:05.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-09
+	...Done getting weight log
+	-------data as of: 2018-07-09-------
+Pulling user : 5RZJTJ
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5RZJTJ
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-07-09T18:16:10.000,Aria,100), DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)]
+DeviceInfo(5RZJTJ,2018-07-09T18:16:10.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-06-27T04:24:06.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-06-27T04:24:06.000
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-09
+	...Done getting weight log
+	-------data as of: 2018-07-09-------
+Pulling user : 5TQ66D
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+Data retrieval routine for user: 5TQ66D
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Converting HR and Step JSON data to dictionary...
+	866 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-07-09
+	...Done getting weight log
+	-------data as of: 2018-07-09-------
+	...Done refreshing
+===============================================================
