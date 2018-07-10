@@ -250,8 +250,9 @@ def data_retrieval_routine(token_dict, uid):
         print("Data retrieval routine for user: " + uid)
         device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
         update_devices(device_dict)
-        execute_heart_and_step(token_dict, uid, date_string, device_dict)
-        execute_weight(token_dict, uid, date_string)
+        # execute_heart_and_step(token_dict, uid, date_string, device_dict)
+        # execute_weight(token_dict, uid, date_string)
+        execute_user_info(token_dict, uid)
     except ValueError as ve:
         print ve
 
@@ -270,6 +271,11 @@ def loop_data_retrieval_routine(token_dict, uid, days_ago):
         print ve
 
     print "\t-------data as of: " + str(yesterday.date()) + "-------"
+
+def execute_user_info(token_dict, uid):
+    user_json = get_user(token_dict, uid)
+    print(user_json)
+
 
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
