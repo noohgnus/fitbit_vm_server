@@ -86,3 +86,95 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-07-03 07:30:23.476703
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-04 07:30:25.996900
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-05 07:30:23.379767
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 82, "userid": 2525, "ping_type": 1, "time": "2018-07-05T22:49:42.330Z"}, {"id": 83, "userid": 2525, "ping_type": 0, "time": "2018-07-05T22:49:42.790Z"}, {"id": 84, "userid": 2525, "ping_type": 0, "time": "2018-07-05T22:49:58.421Z"}]}
+2018-07-05 18:49:42
+2018-07-05 18:49:42
+2018-07-05 18:49:58
+[CheckinData(User: 2525, time: 2018-07-05 18:49:42, type: 1), CheckinData(User: 2525, time: 2018-07-05 18:49:42, type: 0), CheckinData(User: 2525, time: 2018-07-05 18:49:58, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-06 07:30:26.880236
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 85, "userid": 2, "ping_type": 0, "time": "2018-07-06T14:56:15.070Z"}, {"id": 86, "userid": 1, "ping_type": 0, "time": "2018-07-06T14:58:59.167Z"}, {"id": 87, "userid": 1, "ping_type": 0, "time": "2018-07-06T14:59:14.313Z"}, {"id": 88, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:00:58.778Z"}, {"id": 89, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:01:10.591Z"}, {"id": 90, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:01:24.118Z"}, {"id": 91, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:01:40.503Z"}, {"id": 92, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:01:41.976Z"}, {"id": 93, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:02:05.732Z"}, {"id": 94, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:02:21.752Z"}, {"id": 95, "userid": 1, "ping_type": 0, "time": "2018-07-06T15:02:43.364Z"}]}
+2018-07-06 10:56:15
+2018-07-06 10:58:59
+2018-07-06 10:59:14
+2018-07-06 11:00:58
+2018-07-06 11:01:10
+2018-07-06 11:01:24
+2018-07-06 11:01:40
+2018-07-06 11:01:41
+2018-07-06 11:02:05
+2018-07-06 11:02:21
+2018-07-06 11:02:43
+[CheckinData(User: 2, time: 2018-07-06 10:56:15, type: 0), CheckinData(User: 1, time: 2018-07-06 10:58:59, type: 0), CheckinData(User: 1, time: 2018-07-06 10:59:14, type: 0), CheckinData(User: 1, time: 2018-07-06 11:00:58, type: 0), CheckinData(User: 1, time: 2018-07-06 11:01:10, type: 0), CheckinData(User: 1, time: 2018-07-06 11:01:24, type: 0), CheckinData(User: 1, time: 2018-07-06 11:01:40, type: 0), CheckinData(User: 1, time: 2018-07-06 11:01:41, type: 0), CheckinData(User: 1, time: 2018-07-06 11:02:05, type: 0), CheckinData(User: 1, time: 2018-07-06 11:02:21, type: 0), CheckinData(User: 1, time: 2018-07-06 11:02:43, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-07 07:30:23.069103
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-08 07:30:22.888031
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-09 07:30:30.594642
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 96, "userid": 456, "ping_type": 0, "time": "2018-07-10T04:40:40.313Z"}]}
+2018-07-10 00:40:40
+[CheckinData(User: 456, time: 2018-07-10 00:40:40, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-10 07:30:23.582420
+==========================================
