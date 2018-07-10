@@ -250,13 +250,13 @@ def data_retrieval_routine(token_dict, uid):
         print("Data retrieval routine for user: " + uid)
         device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
         update_devices(device_dict)
-        # execute_heart_and_step(token_dict, uid, date_string, device_dict)
-        # execute_weight(token_dict, uid, date_string)
+        execute_heart_and_step(token_dict, uid, date_string, device_dict)
+        execute_weight(token_dict, uid, date_string)
         execute_user_info(token_dict, uid)
     except ValueError as ve:
         print ve
 
-    print "\t-------data as of: " + str(yesterday.date()) + "-------"
+    print "\t-------data as of yesterday that is: " + str(yesterday.date()) + "-------"
 
 
 def loop_data_retrieval_routine(token_dict, uid, days_ago):
@@ -275,6 +275,30 @@ def loop_data_retrieval_routine(token_dict, uid, days_ago):
 def execute_user_info(token_dict, uid):
     user_json = get_user(token_dict, uid)
     print(user_json)
+    insert_user_info(user_json)
+
+def insert_user_info(user_json):
+    insert_set = []
+
+    try:
+        connection = db.Connection(host=HOST, port=PORT,
+                                   user=USER, passwd=PASSWORD, db=DB)
+
+        user = user_json["user"]
+        dbhandler = connection.cursor()
+        stmt = "UPDATE PC_Users SET height=%s WHERE fitbit_uid='%s'" % (user["height"], user["encodedId"])
+        dbhandler.execute(stmt)
+
+    except Exception as e:
+        print "EXCEPTION IN insert_user_info: " + str(e)
+        print(dbhandler._last_executed)
+
+
+    finally:
+        connection.commit()
+        connection.close()
+
+
 
 
 
@@ -346,13 +370,13 @@ def get_user(token_dict, uid):
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
     r = requests.get("https://api.fitbit.com/1/user/-/profile.json",
                       headers=headers)
-    # print(r.text)
+    print(r.text)
     user_json = json.loads(r.text)
     uid = user_json["user"]["encodedId"]
     # print(uid)
     print("\t...Done getting user info")
 
-    return uid
+    return user_json
 
 def get_devices(token_dict, uid):
     print("Getting Devices")
