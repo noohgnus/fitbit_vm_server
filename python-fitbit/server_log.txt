@@ -2507,3 +2507,11 @@ Getting weight log for 2018-07-09
 	-------data as of: 2018-07-09-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-07-11 07:30:03.319197
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> c79bc5aabd011ac539f3d19114da5cb60321d44295e28e749ecc81b2677a079e
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: a287ec738a9227ada47c4dcc5a185a17d9e8d56c821f57b26f50d644d10720db. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
