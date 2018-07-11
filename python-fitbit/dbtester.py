@@ -186,6 +186,7 @@ def register_new_auth_code():
             write_file = open("tokens.json", 'w+')
             response["modified_at"] = str(datetime.datetime.now())
             json_user_datas["users"][response["user_id"]] = response
+            json_user_datas["global_refresh_token"] = response["refresh_token"]
             json.dump(json_user_datas, write_file, indent=4)
             write_file.close()
     except IOError as e:
@@ -260,7 +261,7 @@ def data_retrieval_routine(token_dict, uid):
 
 
 def loop_data_retrieval_routine(token_dict, uid, days_ago):
-    yesterday = datetime.datetime.now() - datetime.timedelta(days = days_ago)
+    yesterday = datetime.datetime.now() - datetime.timedelta(days=days_ago)
     date_string = str(yesterday.date())
     # date_string = "2018-06-01"
     try:

@@ -17,6 +17,7 @@ import datetime
 import MySQLdb as db
 import MySQLdb.cursors
 import traceback
+import requests
 
 import json
 import fitbit
@@ -32,11 +33,13 @@ USER = "fitbitter"
 PASSWORD = "yiGLeVihDHhQMJPo"
 DB = "mmcfitbit"
 
+upload_feedback_url = "https://jhprohealth.herokuapp.com/polls/submit_feedback/"
+
 now_zero = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
 
 class FeedbackData:
-    def __init__(self, fitbit_uid, patient_id="NOT_SUPPLIED", week=-1, avg_weight=-1, avg_steps=-1, total_active_mins=-1, height=-1):
+    def __init__(self, fitbit_uid, patient_id="NOT_SUPPLIED", week=0, avg_weight=0, avg_steps=0, total_active_mins=0, height=0):
         self.patient_id = patient_id
         self.fitbit_uid = fitbit_uid
         self.week = week
@@ -65,9 +68,10 @@ def read_from_db():
 # GET WHICH USER TO UPDATE
 ###############################
         for row in user_cursor:
-            if row["last_feedback"] < now_zero - datetime.timedelta(days=7) and row["week"] <= 5:
-                print(row['notes'])
-                update_ids[row["fitbit_uid"]] = {"user_id": row["user_id"], "week": row["week"]}
+            # print row
+            # if row["last_feedback"] < now_zero - datetime.timedelta(days=7) and row["week"] <= 5:
+            #     print(row['notes'])
+            update_ids[row["fitbit_uid"]] = row
 
 ###############################
 # RETRIEVE UPDATABLE INNER JOINED ROWS FROM DB
@@ -163,14 +167,11 @@ def read_from_db():
         ###################
 
         for key in user_activity_set:
-            print("acti set enter")
             if user_activity_set[key] > 0:
                 if feedback_dict.get(key) is None:
-                    print("acti set true")
 
                     feedback_dict[key] = FeedbackData(fitbit_uid=key, total_active_mins=user_activity_set[key])
                 else:
-                    print("acti set else")
                     feedback_dict[key].total_active_mins = user_activity_set[key]
 
 
@@ -194,6 +195,7 @@ def read_from_db():
         for key in feedback_dict:
             feedback_dict[key].patient_id = update_ids[key]["user_id"]
             feedback_dict[key].week = update_ids[key]["week"]
+            feedback_dict[key].height = update_ids[key]["height"]
 
 ###############################
 # UPDATE FEEDBACK TABLE
@@ -203,6 +205,7 @@ def read_from_db():
             fb = feedback_dict[key]
             insert_set.append((fb.patient_id, fb.fitbit_uid, fb.week, fb.avg_weight, fb.avg_steps,
                                fb.total_active_mins, fb.height, str(datetime.datetime.now())))
+            push_feedback_to_webapp(fb)
 
         # for user_id in update_ids:
             ################################################################
@@ -224,10 +227,21 @@ def read_from_db():
 
         connection.commit()
         connection.close()
+
+
+
     except Exception as e:
         traceback.print_exc()
         # if insert_cursor is not None:
         #     print(insert_cursor._last_executed)
+
+
+def push_feedback_to_webapp(fb):
+    print("Pushing feedback to webapp...")
+    url = upload_feedback_url + "%s/%s/%s/%s/%s/%s" % (fb.patient_id, fb.week, fb.avg_weight, fb.avg_steps,
+                                                       fb.total_active_mins, fb.height)
+    r = requests.get(url)
+    print(r.text)
 
 
 def temp():
