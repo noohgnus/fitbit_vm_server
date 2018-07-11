@@ -519,15 +519,20 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
         date = heart_rates["activities-heart"][0]["dateTime"]
         hr_array = heart_rates["activities-heart-intraday"]
         hr_dataset = hr_array["dataset"]
-        if len(hr_dataset) < 1 and has_synced_yesterday(device_dict):
-            print("HR Dataset for selected date is empty. Sending ping to Non-compliance table")
-            # print(len(step_counts["activities-steps-intraday"]["dataset"]))
-            # print(step_counts["activities-steps"][0]["value"] < "1")
-            if(int(step_counts["activities-steps"][0]["value"]) < 1):
-                print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
+        print(hr_dataset)
+        print("HR_DATASET LENGTH: " + str(len(hr_dataset)))
+        if len(hr_dataset) < 1:
+            if not has_synced_yesterday(device_dict):
+                print("Hasn't synced yesterday. Sending ping to Non-compliance table")
                 insert_noncompliance_ping(uid, date)
-                raise ValueError("Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table")
-                return;
+                raise ValueError(
+                    "_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table")
+            else:
+                print("HR Dataset for selected date is empty. Checking if steps is also empty")
+                if int(step_counts["activities-steps"][0]["value"]) < 1:
+                    print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
+                    insert_noncompliance_ping(uid, date)
+                    raise ValueError("Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table")
         for data in hr_dataset:
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
@@ -770,33 +775,6 @@ def connect_db():
         connection.close()
 
 
-
-def main():
-    token = login_routine()
-    fitbit_user_id = get_user(token)
-    yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
-    date_string = str(yesterday.date())
-    # date_string = "2018-06-01"
-    try:
-        heart_json = get_intraday_heart(token, date_string)
-        step_json = get_intraday_activity(token, date_string)
-        
-        sedentary_payload =  get_activity_details(token, date_string, "minutesSedentary")
-        light_active_payload = get_activity_details(token, date_string, "minutesLightlyActive")
-        fairly_active_payload = get_activity_details(token, date_string, "minutesFairlyActive")
-        very_active_payload = get_activity_details(token, date_string, "minutesVeryActive")
-        activity_dict = combine_activity_levels(sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
-        
-        time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, fitbit_user_id)
-        insert_intraday_dict(time_dict)
-        # temp_insert_intraday_dict(time_dict)
-
-    except ValueError as ve:
-        print ve
-
-    print "\t-------data as of: " + str(yesterday.date()) + "-------"
-
-    # insert_noncompliance_ping("ABCDE", "2018-05-05")
 
 
 

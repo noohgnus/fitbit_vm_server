@@ -186,6 +186,8 @@ def insert_surveys(survey_set):
             + tuple(dataset))
 
     try:
+        print("Inserting surveys into DB...")
+        print(insert_set)
         connection = db.Connection(host=HOST, port=PORT,
                                    user=USER, passwd=PASSWORD, db=DB)
 
@@ -203,7 +205,6 @@ def insert_surveys(survey_set):
             %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, \
             %s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
-
 
     except Exception as e:
         print "EXCEPTION IN insert_surveys: " + str(e)
