@@ -15,12 +15,14 @@
 import json
 import datetime
 import MySQLdb as db
+import MySQLdb.cursors as cursors
 
 import json
 import fitbit
 import requests
 import base64
 import sys
+import traceback
 
 
 class FitbitTimeSet:
@@ -304,13 +306,13 @@ def insert_user_info(user_json):
 
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
-    heart_json = get_intraday_heart(token_dict, uid, date_string)
-    step_json = get_intraday_activity(token_dict, uid, date_string)
+    heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
+    step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
         
-    sedentary_payload =  get_activity_details(token_dict, uid, date_string, "minutesSedentary")
-    light_active_payload = get_activity_details(token_dict, uid, date_string, "minutesLightlyActive")
-    fairly_active_payload = get_activity_details(token_dict, uid, date_string, "minutesFairlyActive")
-    very_active_payload = get_activity_details(token_dict, uid, date_string, "minutesVeryActive")
+    sedentary_payload =  get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
+    light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesLightlyActive")
+    fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesFairlyActive")
+    very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesVeryActive")
     activity_dict = combine_activity_levels(
         sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
@@ -451,11 +453,14 @@ def get_intraday_heart(token_dict, uid, query_date):
     return r.text
 
 
-def get_intraday_activity(token_dict, uid, query_date):
+def get_intraday_activity(token_dict, uid, query_date, query_start_date="0"):
     print("Getting Intraday Activity in Steps")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
-    r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/" + query_date + "/1d.json",
+    if(query_start_date is "0"):
+        r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/" + query_date + "/1d.json",
                       headers=headers)
+    else:
+        r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/%s/%s.json" % (query_start_date, query_date))
     # print(r.text)
     if(r.status_code != 200):
         print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
@@ -807,13 +812,32 @@ def hr_step_check():
     print "\t-------data as of: " + str(yesterday.date()) + "-------"
 
 
-
+def get_query_start_date(uid):
+    def get_db_last_hr_record():
+        try:
+            connection = db.Connection(host=HOST, port=PORT,
+                                       user=USER, passwd=PASSWORD, db=DB,
+                                       cursorclass=cursors.SSCursor)
+            dbhandler = connection.cursor(cursors.DictCursor)
+            stmt = "SELECT * FROM PC_Step_HeartRate WHERE fitbit_uid = '%s' ORDER BY timestamp DESC LIMIT 1" % uid
+            dbhandler.execute(stmt)
+            for row in dbhandler:
+                return row["timestamp"]
+            return None
+        except Exception as e:
+            traceback.print_exc()
+            print "EXCEPTION get_db_last_hr_record: " + str(e)
+        finally:
+            connection.close()
+    result = get_db_last_hr_record()
+    if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=1):
+        return "0"
+    else:
+        return str(result.date() + datetime.timedelta(days=1))
 print("===============================================================")
-# main()
-# devtestground()
-# hr_step_check()
+
 print("Logging event at: " + str(datetime.datetime.now()))
 token = multi_login_routine()
-# print(get_intraday_activity(token, "5T82TY", str(datetime.datetime.now().date)))
-
+# result = get_query_start_date("5TQ66D")
+# print result
 print("===============================================================")
