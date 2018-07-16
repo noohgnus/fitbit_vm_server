@@ -306,6 +306,7 @@ def insert_user_info(user_json):
 
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
+
     heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
     step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
         
@@ -453,14 +454,12 @@ def get_intraday_heart(token_dict, uid, query_date):
     return r.text
 
 
-def get_intraday_activity(token_dict, uid, query_date, query_start_date="0"):
+def get_intraday_activity(token_dict, uid, query_date):
     print("Getting Intraday Activity in Steps")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
-    if(query_start_date is "0"):
-        r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/" + query_date + "/1d.json",
+
+    r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/" + query_date + "/1d.json",
                       headers=headers)
-    else:
-        r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/%s/%s.json" % (query_start_date, query_date))
     # print(r.text)
     if(r.status_code != 200):
         print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
@@ -833,11 +832,15 @@ def get_query_start_date(uid):
     if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=1):
         return "0"
     else:
-        return str(result.date() + datetime.timedelta(days=1))
+        return result.date() + datetime.timedelta(days=1)
+
+
 print("===============================================================")
 
 print("Logging event at: " + str(datetime.datetime.now()))
-token = multi_login_routine()
+# token = multi_login_routine()
 # result = get_query_start_date("5TQ66D")
+print get_query_start_date("5T82TY")
+print (datetime.date.today() - get_query_start_date("5T82TY")).days
 # print result
 print("===============================================================")
