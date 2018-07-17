@@ -237,8 +237,6 @@ def refresh_multi_user_token(token_dict):
             json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
             json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
             data_retrieval_routine(json_user_datas, user)
-            # for i in range(0,7):
-            #     loop_data_retrieval_routine(json_user_datas, user, i)
 
     write_file = open("tokens.json", 'w+')
     json.dump(json_user_datas, write_file, indent=4)
@@ -250,39 +248,50 @@ def refresh_multi_user_token(token_dict):
 
 def data_retrieval_routine(token_dict, uid):
     yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
+
     date_string = str(yesterday.date())
     # date_string = "2018-06-01"
     try:
-        print("Data retrieval routine for user: " + uid)
-        device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
-        update_devices(device_dict)
-        execute_heart_and_step(token_dict, uid, date_string, device_dict)
-        execute_weight(token_dict, uid, date_string)
-        execute_user_info(token_dict, uid)
+        print("Data retrieval routine for user: %s" % uid)
+        last_logged_date = get_query_start_date(uid)
+        if last_logged_date + datetime.timedelta(days=1) < datetime.date.today():
+            print("last_logged: %s / today: %s" % (str(last_logged_date), str(datetime.date.today())))
+            device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
+            update_devices(device_dict)
+            execute_heart_and_step(token_dict, uid, date_string, device_dict)
+            execute_weight(token_dict, uid, date_string)
+            execute_user_info(token_dict, uid)
+
+            query_start_date = last_logged_date + datetime.timedelta(days=1)
+            query_end_date = datetime.date.today() - datetime.timedelta(days=2)
+
+            if query_start_date < datetime.date.today():
+                print("Looping retroactive data for %s from %s to %s"
+                      % (uid, str(query_start_date), str(query_end_date)))
+                loop_retroactive_data(token_dict, uid, query_start_date, query_end_date)
+        else:
+            print("Already retrieved yesterday's data.")
+
     except ValueError as ve:
         print ve
 
     print "\t-------data as of yesterday that is: " + str(yesterday.date()) + "-------"
 
 
-def loop_data_retrieval_routine(token_dict, uid, days_ago):
-    yesterday = datetime.datetime.now() - datetime.timedelta(days=days_ago)
-    date_string = str(yesterday.date())
-    # date_string = "2018-06-01"
-    try:
-        # execute_heart_and_step(token_dict, uid, date_string)
-        execute_weight(token_dict, uid, date_string)
+def loop_retroactive_data(token_dict, uid, query_start_date, query_end_date):
+    temp_date = query_start_date
+    while temp_date <= query_end_date:
+        print("Retroactively executing hr/step for %s on %s" % (uid, str(temp_date)))
+        retroactive_execute_heart_and_step(token_dict, uid, str(temp_date))
+        temp_date = temp_date + datetime.timedelta(days=1)
 
-    except ValueError as ve:
-        print ve
-
-    print "\t-------data as of: " + str(yesterday.date()) + "-------"
 
 def execute_user_info(token_dict, uid):
     user_json = get_user(token_dict, uid)
     if debug_flag:
         print(user_json)
     insert_user_info(user_json)
+
 
 def insert_user_info(user_json):
     insert_set = []
@@ -300,13 +309,9 @@ def insert_user_info(user_json):
         print "EXCEPTION IN insert_user_info: " + str(e)
         print(dbhandler._last_executed)
 
-
     finally:
         connection.commit()
         connection.close()
-
-
-
 
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
@@ -314,7 +319,7 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
     heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
     step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
         
-    sedentary_payload =  get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
+    sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
     light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesLightlyActive")
     fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesFairlyActive")
     very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesVeryActive")
@@ -322,6 +327,25 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
         sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
     time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, device_dict, uid)
+    insert_intraday_dict(time_dict)
+
+
+def retroactive_execute_heart_and_step(token_dict, uid, date_string):
+    heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
+    step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+
+    sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                             activity_resource_path="minutesSedentary")
+    light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                activity_resource_path="minutesLightlyActive")
+    fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                 activity_resource_path="minutesFairlyActive")
+    very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                               activity_resource_path="minutesVeryActive")
+    activity_dict = combine_activity_levels(
+        sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
+
+    time_dict = retroactive_make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, uid)
     insert_intraday_dict(time_dict)
 
 
@@ -598,7 +622,8 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
 
     return time_pair
 
-def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, device_dict, uid):
+
+def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, uid):
 
     print("Retroactively converting HR and Step JSON data to dictionary...")
 
@@ -864,9 +889,6 @@ def connect_db():
         connection.close()
 
 
-
-
-
 def devtestground():
     token = login_routine()
     fitbit_user_id = get_user(token)
@@ -877,6 +899,7 @@ def devtestground():
     weight_dict = make_weight_dict_from_json(get_weight_log(token, date_string), fitbit_user_id)
     # print(weight_dict)
     insert_weight_dict(weight_dict)
+
 
 def hr_step_check():
     token = login_routine()
@@ -914,10 +937,13 @@ def get_query_start_date(uid):
         finally:
             connection.close()
     result = get_db_last_hr_record()
-    if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=2):
-        return "0"
+    # if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=2):
+    if result is None:
+        return datetime.date.today()
+    elif result.date() <= datetime.date.today() - datetime.timedelta(days=5):
+        return datetime.date.today() - datetime.timedelta(days=5)
     else:
-        return result.date() + datetime.timedelta(days=1)
+        return result.date()
 
 
 print("===============================================================")
