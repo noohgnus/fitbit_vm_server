@@ -190,7 +190,7 @@ def register_new_auth_code():
             write_file = open("tokens.json", 'w+')
             response["modified_at"] = str(datetime.datetime.now())
             json_user_datas["users"][response["user_id"]] = response
-            json_user_datas["global_refresh_token"] = response["refresh_token"]
+            # json_user_datas["global_refresh_token"] = response["refresh_token"]
             json.dump(json_user_datas, write_file, indent=4)
             write_file.close()
     except IOError as e:
@@ -215,8 +215,9 @@ def refresh_multi_user_token(token_dict):
         print("Pulling user : " + str(json_user_datas["users"][user]["user_id"]))
         headers = {'Authorization':'Basic ' + base64_key_secret,
                    'Content-Type':'application/x-www-form-urlencoded'}
-        print("Using refresh_token -> " + str(json_user_datas["global_refresh_token"]))
+        print("Using refresh_token -> " + str(json_user_datas["users"][user]["refresh_token"]))
         BodyText = {
+                # 'refresh_token' : json_user_datas["users"][user]["refresh_token"],
                 'refresh_token' : json_user_datas["users"][user]["refresh_token"],
                 'grant_type' : 'refresh_token'}
         r = requests.post(TokenURL, headers=headers, data=BodyText)
@@ -597,6 +598,85 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
 
     return time_pair
 
+def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, device_dict, uid):
+
+    print("Retroactively converting HR and Step JSON data to dictionary...")
+
+    heart_rates = json.loads(heart_rate_json)
+    step_counts = json.loads(step_count_json)
+    sed_json = activity_level_dict["sedentary"]
+    lightly_json = activity_level_dict["lightly"]
+    fairly_json = activity_level_dict["fairly"]
+    very_json = activity_level_dict["very"]
+    time_pair = dict()
+
+    for one_day_hr in heart_rates["activities-heart"]:
+        date = heart_rates["activities-heart"][0]["dateTime"]
+        hr_array = heart_rates["activities-heart-intraday"]
+        hr_dataset = hr_array["dataset"]
+        print(hr_dataset)
+        print("HR_DATASET LENGTH: " + str(len(hr_dataset)))
+        if len(hr_dataset) < 1:
+            print("HR Dataset for selected date is empty. Checking if steps is also empty")
+            if int(step_counts["activities-steps"][0]["value"]) < 1:
+                print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
+                raise ValueError("Both HR and Step Dataset for selected retroactive date are empty.")
+        for data in hr_dataset:
+            dtstring = date + " " + data["time"]
+            if(dtstring not in time_pair):
+                time_pair[dtstring] = FitbitTimeSet(data["value"], 0, 0, uid)
+            else:
+                time_pair[dtstring].heart_rate = data["value"]
+        print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
+
+    for one_day_steps in step_counts["activities-steps"]:
+        date = step_counts["activities-steps"][0]["dateTime"]
+        hr_array = step_counts["activities-steps-intraday"]
+        hr_dataset = hr_array["dataset"]
+        for data in hr_dataset:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"]
+                if(dtstring not in time_pair):
+                    time_pair[dtstring] = FitbitTimeSet(0, data["value"], 0, uid)
+                else:
+                    time_pair[dtstring].step_count = data["value"]
+
+    if(sed_json["activities-minutesSedentary"][0]["value"] != 0):
+        date = sed_json["activities-minutesSedentary"][0]["dateTime"]
+        for data in sed_json["activities-minutesSedentary-intraday"]["dataset"]:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"];
+                if(dtstring in time_pair):
+                    time_pair[dtstring].activity_level += 1
+
+    if(lightly_json["activities-minutesLightlyActive"][0]["value"] != 0):
+        date = lightly_json["activities-minutesLightlyActive"][0]["dateTime"]
+        for data in lightly_json["activities-minutesLightlyActive-intraday"]["dataset"]:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"];
+                if(dtstring in time_pair):
+                    time_pair[dtstring].activity_level += 2
+
+    if(fairly_json["activities-minutesFairlyActive"][0]["value"] != 0):
+        date = fairly_json["activities-minutesFairlyActive"][0]["dateTime"]
+        for data in fairly_json["activities-minutesFairlyActive-intraday"]["dataset"]:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"];
+                if(dtstring in time_pair):
+                    time_pair[dtstring].activity_level += 3
+
+    if(very_json["activities-minutesVeryActive"][0]["value"] != 0):
+        date = very_json["activities-minutesVeryActive"][0]["dateTime"]
+        for data in very_json["activities-minutesVeryActive-intraday"]["dataset"]:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"];
+                if(dtstring in time_pair):
+                    time_pair[dtstring].activity_level += 4
+
+    print("\t...Done converting JSON data to dictionary")
+
+    return time_pair
+
 def make_weight_dict_from_json(weight_payload, uid, date_string):
     weight_json = json.loads(weight_payload)
 
@@ -834,7 +914,7 @@ def get_query_start_date(uid):
         finally:
             connection.close()
     result = get_db_last_hr_record()
-    if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=1):
+    if result is None or result.date() >= datetime.date.today() - datetime.timedelta(days=2):
         return "0"
     else:
         return result.date() + datetime.timedelta(days=1)
@@ -843,9 +923,9 @@ def get_query_start_date(uid):
 print("===============================================================")
 
 print("Logging event at: " + str(datetime.datetime.now()))
-# token = multi_login_routine()
+token = multi_login_routine()
 # result = get_query_start_date("5TQ66D")
-print get_query_start_date("5T82TY")
-print (datetime.date.today() - get_query_start_date("5T82TY")).days
+# print get_query_start_date("5T82TY")
+# print (datetime.date.today() - get_query_start_date("5T82TY")).days
 # print result
 print("===============================================================")
