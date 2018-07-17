@@ -83,6 +83,8 @@ file_name = "token.json"
 
 token_pair = {"access_token" : "at1", "refresh_token" : "rf1", "time" : now}
 
+debug_flag = False
+
 
 def read():
     print("Reading from existing token file...")
@@ -277,7 +279,8 @@ def loop_data_retrieval_routine(token_dict, uid, days_ago):
 
 def execute_user_info(token_dict, uid):
     user_json = get_user(token_dict, uid)
-    print(user_json)
+    if debug_flag:
+        print(user_json)
     insert_user_info(user_json)
 
 def insert_user_info(user_json):
@@ -374,7 +377,8 @@ def get_user(token_dict, uid):
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
     r = requests.get("https://api.fitbit.com/1/user/-/profile.json",
                       headers=headers)
-    print(r.text)
+    if debug_flag:
+        print(r.text)
     user_json = json.loads(r.text)
     uid = user_json["user"]["encodedId"]
     # print(uid)
@@ -601,7 +605,8 @@ def make_weight_dict_from_json(weight_payload, uid, date_string):
     for weight_data in weight_json["weight"]:
         if(weight_data["date"] != date_string):
             continue
-        print(weight_data)
+        if debug_flag:
+            print(weight_data)
         date = weight_data["date"]
         time = weight_data["time"]
         dtstring = date + " " + time
