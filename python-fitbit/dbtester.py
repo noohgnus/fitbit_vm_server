@@ -939,36 +939,6 @@ def connect_db():
         connection.close()
 
 
-def devtestground():
-    token = login_routine()
-    fitbit_user_id = get_user(token)
-    yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
-    date_string = str(yesterday.date())
-    # TODO: ASSIGN WEIGHTED VALUES FOR ACTIVITIES
-    # print(get_weight_log(token))
-    weight_dict = make_weight_dict_from_json(get_weight_log(token, date_string), fitbit_user_id)
-    # print(weight_dict)
-    insert_weight_dict(weight_dict)
-
-
-def hr_step_check():
-    token = login_routine()
-    fitbit_user_id = get_user(token)
-    yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
-    date_string = str(yesterday.date())
-    # date_string = "2018-06-01"
-    try:
-        heart_json = get_intraday_heart(token, date_string)
-        step_json = get_intraday_activity(token, date_string)
-        print(heart_json)
-        print(step_json)
-
-    except ValueError as ve:
-        print ve
-
-    print "\t-------data as of: " + str(yesterday.date()) + "-------"
-
-
 def get_query_start_date(uid):
     def get_db_last_hr_record():
         try:
