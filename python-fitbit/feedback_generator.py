@@ -80,7 +80,7 @@ def read_from_db():
         join_cursor = connection.cursor(db.cursors.DictCursor)
         join_cursor.execute("""SELECT * FROM PC_Users INNER JOIN PC_Step_HeartRate ON PC_Step_HeartRate.timestamp > '%s'
             AND PC_Users.fitbit_uid = PC_Step_HeartRate.fitbit_uid
-            AND PC_Users.last_feedback < '%s' AND PC_Users.week <= 5"""
+            AND PC_Users.last_feedback != '%s' AND PC_Users.week <= 25"""
                             % (str(now_zero - datetime.timedelta(days=7)), str(now_zero - datetime.timedelta(days=1))))
         weight_cursor = connection.cursor(db.cursors.DictCursor)
         weight_cursor.execute("""SELECT * FROM PC_Weight WHERE timestamp > '%s' 
@@ -193,8 +193,9 @@ def read_from_db():
         print(feedback_dict)
 
         for key in feedback_dict:
+            print feedback_dict[key]
             feedback_dict[key].patient_id = update_ids[key]["user_id"]
-            feedback_dict[key].week = update_ids[key]["week"]
+            feedback_dict[key].week = update_ids[key]["week"] + 1
             feedback_dict[key].height = update_ids[key]["height"]
 
 ###############################
@@ -222,10 +223,25 @@ def read_from_db():
         stmt = "INSERT INTO PC_Feedback \
                         (patient_id, fitbit_uid, week, avg_weight, avg_steps, total_active_mins, height, added_on) \
                         VALUES ('%s', %s, '%s', '%s', '%s', '%s', '%s', %s)"
-
         insert_cursor.executemany(stmt, insert_set)
 
         connection.commit()
+
+
+        week_cursor = connection.cursor()
+        week_set = []
+        for key in feedback_dict:
+            fb = feedback_dict[key]
+            week_set.append((fb.week, str(datetime.datetime.now()), str(fb.fitbit_uid)))
+        print week_set
+        stmt2 = """
+                    UPDATE PC_Users SET week=%s, last_feedback=%s WHERE fitbit_uid=%s
+                """
+        week_cursor.executemany(stmt2, week_set)
+        print(week_cursor._last_executed)
+
+        connection.commit()
+
         connection.close()
 
 

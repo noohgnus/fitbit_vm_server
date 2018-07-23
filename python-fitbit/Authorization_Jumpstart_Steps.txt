@@ -13,11 +13,10 @@ Authorization Jumpstart Steps
     CTRL + C
 
 4. Run command:
-    python authorizer.py [CODE]
-    python apipuller.py [CODE]
+    python dbtester.py [CODE]
         * Here, replace the "[CODE]" part in the command to the actual authorization code you got in step 2.
         * So, the actual command here would be: 
-            python authorizer.py fc749e3de9551ea853dbce84e7c706a6c6c2db7e
+            python dbtester.py fc749e3de9551ea853dbce84e7c706a6c6c2db7e
 
 5. (OPTIONAL) If no cron job is running and you wish to do one-time data-pulling, run command:
     python token_alive.py

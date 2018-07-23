@@ -26,10 +26,11 @@ import traceback
 
 
 class FitbitTimeSet:
-    def __init__(self, heart_rate=0, step_count=0, activity_level=0, uid="***NO UID SUPPLIED***"):
+    def __init__(self, heart_rate=0, step_count=0, activity_level=0, distance=0, uid="***NO UID SUPPLIED***"):
         self.heart_rate = heart_rate
         self.step_count = step_count
         self.activity_level = activity_level
+        self.distance = distance
         self.uid = uid
 
     def __repr__(self):
@@ -255,12 +256,15 @@ def data_retrieval_routine(token_dict, uid):
         print("Data retrieval routine for user: %s" % uid)
         last_logged_date = get_query_start_date(uid)
         if last_logged_date + datetime.timedelta(days=1) < datetime.date.today():
-            print("last_logged: %s / today: %s" % (str(last_logged_date), str(datetime.date.today())))
-            device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
-            update_devices(device_dict)
-            execute_heart_and_step(token_dict, uid, date_string, device_dict)
-            execute_weight(token_dict, uid, date_string)
-            execute_user_info(token_dict, uid)
+            try:
+                print("last_logged: %s / today: %s" % (str(last_logged_date), str(datetime.date.today())))
+                device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
+                update_devices(device_dict)
+                execute_heart_and_step(token_dict, uid, date_string, device_dict)
+                execute_weight(token_dict, uid, date_string)
+                execute_user_info(token_dict, uid)
+            except ValueError as vale:
+                print vale
 
             query_start_date = last_logged_date + datetime.timedelta(days=1)
             query_end_date = datetime.date.today() - datetime.timedelta(days=2)
@@ -318,6 +322,8 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
 
     heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
     step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+    distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
+
         
     sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
     light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesLightlyActive")
@@ -326,27 +332,33 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
     activity_dict = combine_activity_levels(
         sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
     
-    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, device_dict, uid)
+    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, distance_json, activity_dict, device_dict, uid)
     insert_intraday_dict(time_dict)
 
 
 def retroactive_execute_heart_and_step(token_dict, uid, date_string):
-    heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
-    step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+    try:
+        heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
+        step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+        distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
 
-    sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
-                                             activity_resource_path="minutesSedentary")
-    light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
-                                                activity_resource_path="minutesLightlyActive")
-    fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
-                                                 activity_resource_path="minutesFairlyActive")
-    very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
-                                               activity_resource_path="minutesVeryActive")
-    activity_dict = combine_activity_levels(
-        sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
+        sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                 activity_resource_path="minutesSedentary")
+        light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                    activity_resource_path="minutesLightlyActive")
+        fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                     activity_resource_path="minutesFairlyActive")
+        very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
+                                                   activity_resource_path="minutesVeryActive")
+        activity_dict = combine_activity_levels(
+            sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
 
-    time_dict = retroactive_make_intraday_dict_from_json_datas(heart_json, step_json, activity_dict, uid)
-    insert_intraday_dict(time_dict)
+        time_dict = retroactive_make_intraday_dict_from_json_datas(heart_json, step_json, distance_json, activity_dict, uid)
+        insert_intraday_dict(time_dict)
+
+    except ValueError as ve:
+        print ve
+
 
 
 def execute_weight(token_dict, uid, date_string):
@@ -448,6 +460,22 @@ def get_weight_log(token_dict, uid, query_date):
 
     return r.text
 
+
+def get_intraday_distance(token_dict, uid, query_date):
+    print("Getting Intraday Activity in Steps")
+    headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
+    r = requests.get("https://api.fitbit.com/1/user/-/activities/distance/date/" + query_date + "/1d.json",
+                      headers=headers)
+    # print(r.text)
+    if(r.status_code != 200):
+        print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
+        print(r.text)
+        raise AssertionError("API call response is other than 200 OK.")
+    print("\t...Done getting intraday distance")
+
+    return r.text
+
+
 def get_activity_details(token_dict, uid, query_date, activity_resource_path):
     print("Getting activity details")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
@@ -460,6 +488,7 @@ def get_activity_details(token_dict, uid, query_date, activity_resource_path):
     
     return r.text
 
+
 def get_activities(token_dict, uid, query_date):
     print("Getting activity list")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
@@ -467,6 +496,7 @@ def get_activities(token_dict, uid, query_date):
                       headers=headers)
     # print(r.text)
     return r.text
+
 
 def get_intraday_heart(token_dict, uid, query_date):
     print("Getting Intraday HR")
@@ -522,8 +552,8 @@ def combine_activity_levels(sedentary_payload, light_active_payload, fairly_acti
     return activity_level_dict
 
 
-def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, device_dict, uid):
-
+def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distance_json, activity_level_dict, device_dict, uid):
+    print "making intraday hr/step dict from user: %s" % uid
     def has_synced_yesterday(device_info_dict):
         print("HAS SYNCED RECENTLY?: " + str(device_info_dict.values()))
         for device_info in device_info_dict.values():
@@ -542,6 +572,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
 
     heart_rates = json.loads(heart_rate_json)
     step_counts = json.loads(step_count_json)
+    distance_records = json.loads(distance_json)
     sed_json = activity_level_dict["sedentary"]
     lightly_json = activity_level_dict["lightly"]
     fairly_json = activity_level_dict["fairly"]
@@ -557,7 +588,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
         if len(hr_dataset) < 1:
             if not has_synced_yesterday(device_dict):
                 print("Hasn't synced yesterday. Sending ping to Non-compliance table")
-                insert_noncompliance_ping(uid, date)
+                insert_noncompliance_ping(user_id=uid, ping_date=date, sync_ping_type=1)
                 raise ValueError(
                     "_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table")
             else:
@@ -569,7 +600,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
         for data in hr_dataset:
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
-                time_pair[dtstring] = FitbitTimeSet(data["value"], 0, 0, uid)
+                time_pair[dtstring] = FitbitTimeSet(heart_rate=data["value"], uid=uid)
             else:
                 time_pair[dtstring].heart_rate = data["value"]
         print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
@@ -582,7 +613,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"]
                 if(dtstring not in time_pair):
-                    time_pair[dtstring] = FitbitTimeSet(0, data["value"], 0, uid)
+                    time_pair[dtstring] = FitbitTimeSet(step_count=data["value"], uid=uid)
                 else:
                     time_pair[dtstring].step_count = data["value"]
 
@@ -623,17 +654,23 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activit
     return time_pair
 
 
-def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, activity_level_dict, uid):
+def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distance_json, activity_level_dict, uid):
 
-    print("Retroactively converting HR and Step JSON data to dictionary...")
+    print("Retroactively converting HR and Step JSON data to dictionary for %s..." % uid)
 
     heart_rates = json.loads(heart_rate_json)
     step_counts = json.loads(step_count_json)
+    distance_records = json.loads(distance_json)
     sed_json = activity_level_dict["sedentary"]
     lightly_json = activity_level_dict["lightly"]
     fairly_json = activity_level_dict["fairly"]
     very_json = activity_level_dict["very"]
     time_pair = dict()
+
+    if int(step_counts["activities-steps"][0]["value"]) < 1 and len(heart_rates["activities-heart-intraday"]["dataset"]) < 1:
+        date = heart_rates["activities-heart"][0]["dateTime"]
+        insert_noncompliance_ping(user_id=uid, ping_date=date)
+
 
     for one_day_hr in heart_rates["activities-heart"]:
         date = heart_rates["activities-heart"][0]["dateTime"]
@@ -649,7 +686,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
         for data in hr_dataset:
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
-                time_pair[dtstring] = FitbitTimeSet(data["value"], 0, 0, uid)
+                time_pair[dtstring] = FitbitTimeSet(heart_rate=data["value"], uid=uid)
             else:
                 time_pair[dtstring].heart_rate = data["value"]
         print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
@@ -662,9 +699,21 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"]
                 if(dtstring not in time_pair):
-                    time_pair[dtstring] = FitbitTimeSet(0, data["value"], 0, uid)
+                    time_pair[dtstring] = FitbitTimeSet(step_count=data["value"], uid=uid)
                 else:
                     time_pair[dtstring].step_count = data["value"]
+
+    for one_day_distance in distance_records["activities-distance"]:
+        date = distance_records["activities-distance"][0]["dateTime"]
+        dist_array = distance_records["activities-distance-intraday"]
+        dist_dataset = dist_array["dataset"]
+        for data in dist_dataset:
+            if(data["value"] != 0):
+                dtstring = date + " " + data["time"]
+                if(dtstring not in time_pair):
+                    time_pair[dtstring] = FitbitTimeSet(distance=data["value"], uid=uid)
+                else:
+                    time_pair[dtstring].distance = data["value"]
 
     if(sed_json["activities-minutesSedentary"][0]["value"] != 0):
         date = sed_json["activities-minutesSedentary"][0]["dateTime"]
@@ -811,14 +860,15 @@ def insert_intraday_dict(time_pair):
     for time in time_pair:
         fitbit_data = time_pair[time]
         # print(str(time) + " / " + str(fitbit_data))
-        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.activity_level, str(datetime.datetime.now())))
+        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.distance,
+                           fitbit_data.activity_level, str(datetime.datetime.now())))
 
     try:
         connection = db.Connection(host=HOST, port=PORT,
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s)"
+        stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
@@ -850,15 +900,15 @@ def temp_insert_intraday_dict(time_pair):
         connection.commit()
         connection.close()
 
-def insert_noncompliance_ping(user_id, ping_date):
+def insert_noncompliance_ping(user_id, ping_date, sync_ping_type=0):
     try:
         connection = db.Connection(host=HOST, port=PORT,
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = """INSERT INTO PC_Noncompliance_Ping (date, fitbit_uid, not_equipped_flag, added_on) VALUES (%s, %s, %s, %s)"""
+        stmt = """INSERT INTO PC_Noncompliance_Ping (date, fitbit_uid, not_equipped_flag, not_synced_flag, added_on) VALUES (%s, %s, %s, %s, %s)"""
 
-        dbhandler.execute(stmt, (ping_date, user_id, 1, str(datetime.datetime.now())))
+        dbhandler.execute(stmt, (ping_date, user_id, 1, sync_ping_type, str(datetime.datetime.now())))
 
     except Exception as e:
         print "EXCEPTION IN insert_noncompliance_ping: " + str(e)
