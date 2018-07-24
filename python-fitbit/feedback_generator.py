@@ -84,7 +84,7 @@ def read_from_db():
                             % (str(now_zero - datetime.timedelta(days=7)), str(now_zero - datetime.timedelta(days=1))))
         weight_cursor = connection.cursor(db.cursors.DictCursor)
         weight_cursor.execute("""SELECT * FROM PC_Weight WHERE timestamp > '%s' 
-            """ % str(now_zero - datetime.timedelta(days=30)))
+            """ % str(now_zero - datetime.timedelta(days=7)))
 
 ###############################
 # GENERATE NEW FEEDBACK DATA
@@ -106,7 +106,6 @@ def read_from_db():
                 total_weight += w
             avg_weight = total_weight / weigh_in_num
             user_weight_set[key]["avg_weight"] = avg_weight
-
 
         print(user_weight_set)
 
