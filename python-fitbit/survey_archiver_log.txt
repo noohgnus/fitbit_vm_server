@@ -306,3 +306,35 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-07-26 07:30:28.269175
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 182, "userid": 3, "ping_type": 0, "time": "2018-07-27T04:53:12.688Z"}, {"id": 183, "userid": 3, "ping_type": 1, "time": "2018-07-27T04:53:14.920Z"}, {"id": 184, "userid": 3, "ping_type": 0, "time": "2018-07-27T04:53:50.678Z"}, {"id": 185, "userid": 3, "ping_type": 0, "time": "2018-07-27T04:55:15.845Z"}, {"id": 186, "userid": 3, "ping_type": 1, "time": "2018-07-27T04:55:57.481Z"}, {"id": 187, "userid": 3, "ping_type": 0, "time": "2018-07-27T04:57:08.720Z"}, {"id": 188, "userid": 3, "ping_type": 1, "time": "2018-07-27T04:57:26.438Z"}, {"id": 189, "userid": 3, "ping_type": 0, "time": "2018-07-27T04:57:31.360Z"}, {"id": 190, "userid": 3, "ping_type": 1, "time": "2018-07-27T04:57:32.261Z"}, {"id": 191, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:10:48.068Z"}, {"id": 192, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:10:51.176Z"}, {"id": 193, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:10:53.671Z"}, {"id": 194, "userid": 3, "ping_type": 0, "time": "2018-07-27T05:10:55.797Z"}, {"id": 195, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:10:56.615Z"}, {"id": 196, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:11:41.049Z"}, {"id": 197, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:11:46.411Z"}, {"id": 198, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:11:48.843Z"}, {"id": 199, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:11:53.028Z"}, {"id": 200, "userid": 3, "ping_type": 1, "time": "2018-07-27T05:11:55.429Z"}]}
+2018-07-27 00:53:12
+2018-07-27 00:53:14
+2018-07-27 00:53:50
+2018-07-27 00:55:15
+2018-07-27 00:55:57
+2018-07-27 00:57:08
+2018-07-27 00:57:26
+2018-07-27 00:57:31
+2018-07-27 00:57:32
+2018-07-27 01:10:48
+2018-07-27 01:10:51
+2018-07-27 01:10:53
+2018-07-27 01:10:55
+2018-07-27 01:10:56
+2018-07-27 01:11:41
+2018-07-27 01:11:46
+2018-07-27 01:11:48
+2018-07-27 01:11:53
+2018-07-27 01:11:55
+[CheckinData(User: 3, time: 2018-07-27 00:53:12, type: 0), CheckinData(User: 3, time: 2018-07-27 00:53:14, type: 1), CheckinData(User: 3, time: 2018-07-27 00:53:50, type: 0), CheckinData(User: 3, time: 2018-07-27 00:55:15, type: 0), CheckinData(User: 3, time: 2018-07-27 00:55:57, type: 1), CheckinData(User: 3, time: 2018-07-27 00:57:08, type: 0), CheckinData(User: 3, time: 2018-07-27 00:57:26, type: 1), CheckinData(User: 3, time: 2018-07-27 00:57:31, type: 0), CheckinData(User: 3, time: 2018-07-27 00:57:32, type: 1), CheckinData(User: 3, time: 2018-07-27 01:10:48, type: 1), CheckinData(User: 3, time: 2018-07-27 01:10:51, type: 1), CheckinData(User: 3, time: 2018-07-27 01:10:53, type: 1), CheckinData(User: 3, time: 2018-07-27 01:10:55, type: 0), CheckinData(User: 3, time: 2018-07-27 01:10:56, type: 1), CheckinData(User: 3, time: 2018-07-27 01:11:41, type: 1), CheckinData(User: 3, time: 2018-07-27 01:11:46, type: 1), CheckinData(User: 3, time: 2018-07-27 01:11:48, type: 1), CheckinData(User: 3, time: 2018-07-27 01:11:53, type: 1), CheckinData(User: 3, time: 2018-07-27 01:11:55, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-27 07:30:35.322647
+==========================================
