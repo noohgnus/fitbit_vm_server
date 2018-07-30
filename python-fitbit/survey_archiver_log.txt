@@ -338,3 +338,83 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-07-27 07:30:35.322647
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 201, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:12:12.003Z"}, {"id": 202, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:16:05.851Z"}, {"id": 203, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:16:07.117Z"}, {"id": 204, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:33:04.813Z"}, {"id": 205, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:33:08.062Z"}, {"id": 206, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:33:10.380Z"}, {"id": 207, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:33:12.042Z"}, {"id": 208, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:33:53.612Z"}, {"id": 209, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:34:25.714Z"}, {"id": 210, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:34:44.222Z"}, {"id": 211, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:23.535Z"}, {"id": 212, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:31.894Z"}, {"id": 213, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:34.178Z"}, {"id": 214, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:48.974Z"}, {"id": 215, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:52.227Z"}, {"id": 216, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:36:54.372Z"}, {"id": 217, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:37:04.711Z"}, {"id": 218, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:37:11.296Z"}, {"id": 219, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:37:24.249Z"}, {"id": 220, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:37:30.385Z"}, {"id": 221, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:38:04.286Z"}, {"id": 222, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:38:07.286Z"}, {"id": 223, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:38:24.010Z"}, {"id": 224, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:38:27.750Z"}, {"id": 225, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:38:54.216Z"}, {"id": 226, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:39:08.110Z"}, {"id": 227, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:39:12.565Z"}, {"id": 228, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:39:17.473Z"}, {"id": 229, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:39:33.428Z"}, {"id": 230, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:39:40.631Z"}, {"id": 231, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:40:46.732Z"}, {"id": 232, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:40:49.595Z"}, {"id": 233, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:40:51.925Z"}, {"id": 234, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:41:01.775Z"}, {"id": 235, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:41:05.992Z"}, {"id": 236, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:41:07.559Z"}, {"id": 237, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:41:45.886Z"}, {"id": 238, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:41:47.336Z"}, {"id": 239, "userid": 3, "ping_type": 0, "time": "2018-07-27T14:42:34.269Z"}, {"id": 240, "userid": 3, "ping_type": 1, "time": "2018-07-27T14:42:35.220Z"}, {"id": 241, "userid": 3, "ping_type": 1, "time": "2018-07-27T16:53:22.393Z"}]}
+2018-07-27 10:12:12
+2018-07-27 10:16:05
+2018-07-27 10:16:07
+2018-07-27 10:33:04
+2018-07-27 10:33:08
+2018-07-27 10:33:10
+2018-07-27 10:33:12
+2018-07-27 10:33:53
+2018-07-27 10:34:25
+2018-07-27 10:34:44
+2018-07-27 10:36:23
+2018-07-27 10:36:31
+2018-07-27 10:36:34
+2018-07-27 10:36:48
+2018-07-27 10:36:52
+2018-07-27 10:36:54
+2018-07-27 10:37:04
+2018-07-27 10:37:11
+2018-07-27 10:37:24
+2018-07-27 10:37:30
+2018-07-27 10:38:04
+2018-07-27 10:38:07
+2018-07-27 10:38:24
+2018-07-27 10:38:27
+2018-07-27 10:38:54
+2018-07-27 10:39:08
+2018-07-27 10:39:12
+2018-07-27 10:39:17
+2018-07-27 10:39:33
+2018-07-27 10:39:40
+2018-07-27 10:40:46
+2018-07-27 10:40:49
+2018-07-27 10:40:51
+2018-07-27 10:41:01
+2018-07-27 10:41:05
+2018-07-27 10:41:07
+2018-07-27 10:41:45
+2018-07-27 10:41:47
+2018-07-27 10:42:34
+2018-07-27 10:42:35
+2018-07-27 12:53:22
+[CheckinData(User: 3, time: 2018-07-27 10:12:12, type: 1), CheckinData(User: 3, time: 2018-07-27 10:16:05, type: 1), CheckinData(User: 3, time: 2018-07-27 10:16:07, type: 0), CheckinData(User: 3, time: 2018-07-27 10:33:04, type: 0), CheckinData(User: 3, time: 2018-07-27 10:33:08, type: 1), CheckinData(User: 3, time: 2018-07-27 10:33:10, type: 0), CheckinData(User: 3, time: 2018-07-27 10:33:12, type: 1), CheckinData(User: 3, time: 2018-07-27 10:33:53, type: 1), CheckinData(User: 3, time: 2018-07-27 10:34:25, type: 1), CheckinData(User: 3, time: 2018-07-27 10:34:44, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:23, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:31, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:34, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:48, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:52, type: 1), CheckinData(User: 3, time: 2018-07-27 10:36:54, type: 1), CheckinData(User: 3, time: 2018-07-27 10:37:04, type: 1), CheckinData(User: 3, time: 2018-07-27 10:37:11, type: 1), CheckinData(User: 3, time: 2018-07-27 10:37:24, type: 1), CheckinData(User: 3, time: 2018-07-27 10:37:30, type: 1), CheckinData(User: 3, time: 2018-07-27 10:38:04, type: 1), CheckinData(User: 3, time: 2018-07-27 10:38:07, type: 1), CheckinData(User: 3, time: 2018-07-27 10:38:24, type: 1), CheckinData(User: 3, time: 2018-07-27 10:38:27, type: 1), CheckinData(User: 3, time: 2018-07-27 10:38:54, type: 1), CheckinData(User: 3, time: 2018-07-27 10:39:08, type: 1), CheckinData(User: 3, time: 2018-07-27 10:39:12, type: 1), CheckinData(User: 3, time: 2018-07-27 10:39:17, type: 1), CheckinData(User: 3, time: 2018-07-27 10:39:33, type: 1), CheckinData(User: 3, time: 2018-07-27 10:39:40, type: 1), CheckinData(User: 3, time: 2018-07-27 10:40:46, type: 1), CheckinData(User: 3, time: 2018-07-27 10:40:49, type: 1), CheckinData(User: 3, time: 2018-07-27 10:40:51, type: 1), CheckinData(User: 3, time: 2018-07-27 10:41:01, type: 1), CheckinData(User: 3, time: 2018-07-27 10:41:05, type: 0), CheckinData(User: 3, time: 2018-07-27 10:41:07, type: 1), CheckinData(User: 3, time: 2018-07-27 10:41:45, type: 0), CheckinData(User: 3, time: 2018-07-27 10:41:47, type: 1), CheckinData(User: 3, time: 2018-07-27 10:42:34, type: 0), CheckinData(User: 3, time: 2018-07-27 10:42:35, type: 1), CheckinData(User: 3, time: 2018-07-27 12:53:22, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-28 07:30:30.868881
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-29 07:30:35.541307
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-30 07:30:39.238430
+==========================================
