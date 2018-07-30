@@ -320,7 +320,7 @@ def insert_intraday_dict(time_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
