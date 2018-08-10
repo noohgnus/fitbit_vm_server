@@ -418,3 +418,328 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-07-30 07:30:39.238430
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-07-31 07:30:43.921223
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-01 07:30:45.027488
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-02 07:30:48.973016
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-03 07:30:44.172448
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-04 07:30:53.604319
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-05 07:30:49.114803
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-06 07:30:50.177784
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 242, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:10:55.638Z"}, {"id": 243, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:11:04.247Z"}, {"id": 244, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:11:05.709Z"}, {"id": 245, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:17:50.426Z"}, {"id": 246, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:19:19.817Z"}, {"id": 247, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:19:23.479Z"}, {"id": 248, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:19:29.660Z"}, {"id": 249, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:21:52.427Z"}, {"id": 250, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:37:47.075Z"}, {"id": 251, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:37:49.977Z"}, {"id": 252, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:37:53.406Z"}, {"id": 253, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:38:16.218Z"}, {"id": 254, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:39:00.130Z"}, {"id": 255, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:41:28.751Z"}, {"id": 256, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:41:31.732Z"}, {"id": 257, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:42:20.248Z"}, {"id": 258, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:42:22.243Z"}, {"id": 259, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:42:53.400Z"}, {"id": 260, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:42:54.931Z"}, {"id": 261, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:43:22.798Z"}, {"id": 262, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:43:24.593Z"}, {"id": 263, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:44:08.150Z"}, {"id": 264, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:44:10.645Z"}, {"id": 265, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:44:20.588Z"}, {"id": 266, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:45:54.971Z"}, {"id": 267, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:45:56.670Z"}, {"id": 268, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:47:08.957Z"}, {"id": 269, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:47:12.153Z"}, {"id": 270, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:47:54.741Z"}, {"id": 271, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:47:57.484Z"}, {"id": 272, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:50:10.981Z"}, {"id": 273, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:50:19.670Z"}, {"id": 274, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:52:32.537Z"}, {"id": 275, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:52:34.661Z"}, {"id": 276, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:53:39.185Z"}, {"id": 277, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:53:43.465Z"}, {"id": 278, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:55:55.418Z"}, {"id": 279, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:55:55.457Z"}, {"id": 280, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:55:57.473Z"}, {"id": 281, "userid": 3, "ping_type": 0, "time": "2018-08-06T18:57:34.772Z"}, {"id": 282, "userid": 3, "ping_type": 1, "time": "2018-08-06T18:57:41.881Z"}, {"id": 283, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:01:55.642Z"}, {"id": 284, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:01:58.368Z"}, {"id": 285, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:05:38.933Z"}, {"id": 286, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:05:40.732Z"}, {"id": 287, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:09:00.681Z"}, {"id": 288, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:09:02.529Z"}, {"id": 289, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:09:43.294Z"}, {"id": 290, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:09:45.745Z"}, {"id": 291, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:13:50.694Z"}, {"id": 292, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:13:52.657Z"}, {"id": 293, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:14:52.316Z"}, {"id": 294, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:14:53.793Z"}, {"id": 295, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:16:31.402Z"}, {"id": 296, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:16:41.045Z"}, {"id": 297, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:16:50.354Z"}, {"id": 298, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:16:52.157Z"}, {"id": 299, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:28:11.634Z"}, {"id": 300, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:29:03.523Z"}, {"id": 301, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:29:05.628Z"}, {"id": 302, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:31:04.673Z"}, {"id": 303, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:31:06.623Z"}, {"id": 304, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:31:40.511Z"}, {"id": 305, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:31:42.106Z"}, {"id": 306, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:31:52.520Z"}, {"id": 307, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:33:52.249Z"}, {"id": 308, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:38:15.250Z"}, {"id": 309, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:38:40.949Z"}, {"id": 310, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:38:45.284Z"}, {"id": 311, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:38:48.549Z"}, {"id": 312, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:39:28.970Z"}, {"id": 313, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:39:31.155Z"}, {"id": 314, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:40:16.500Z"}, {"id": 315, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:40:18.120Z"}, {"id": 316, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:41:47.064Z"}, {"id": 317, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:41:49.894Z"}, {"id": 321, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:45:14.125Z"}, {"id": 318, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:41:50.903Z"}, {"id": 319, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:43:27.058Z"}, {"id": 320, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:45:12.029Z"}, {"id": 322, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:46:36.761Z"}, {"id": 323, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:46:38.786Z"}, {"id": 324, "userid": 3, "ping_type": 0, "time": "2018-08-06T19:47:25.822Z"}, {"id": 325, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:47:27.897Z"}, {"id": 326, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:47:45.419Z"}, {"id": 327, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:52:58.613Z"}, {"id": 328, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:53:03.575Z"}, {"id": 329, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:53:06.482Z"}, {"id": 330, "userid": 3, "ping_type": 1, "time": "2018-08-06T19:53:09.073Z"}, {"id": 331, "userid": 4, "ping_type": 0, "time": "2018-08-06T19:54:10.209Z"}, {"id": 332, "userid": 4, "ping_type": 0, "time": "2018-08-06T19:54:13.405Z"}, {"id": 333, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:54:14.505Z"}, {"id": 334, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:54:22.893Z"}, {"id": 335, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:55:49.487Z"}, {"id": 336, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:55:56.068Z"}, {"id": 337, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:56:00.352Z"}, {"id": 338, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:57:05.858Z"}, {"id": 339, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:57:10.058Z"}, {"id": 340, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:57:14.214Z"}, {"id": 341, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:57:19.504Z"}, {"id": 342, "userid": 4, "ping_type": 0, "time": "2018-08-06T19:57:42.239Z"}, {"id": 343, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:57:43.264Z"}, {"id": 344, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:58:49.999Z"}, {"id": 345, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:58:54.237Z"}, {"id": 346, "userid": 4, "ping_type": 0, "time": "2018-08-06T19:59:42.438Z"}, {"id": 347, "userid": 4, "ping_type": 1, "time": "2018-08-06T19:59:44.602Z"}, {"id": 348, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:01:24.213Z"}, {"id": 349, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:01:33.380Z"}, {"id": 350, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:01:56.970Z"}, {"id": 351, "userid": 4, "ping_type": 0, "time": "2018-08-06T20:03:40.922Z"}, {"id": 352, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:03:41.663Z"}, {"id": 353, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:03:46.438Z"}, {"id": 354, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:04:13.050Z"}, {"id": 355, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:04:30.574Z"}, {"id": 356, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:04:38.002Z"}, {"id": 357, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:04:48.509Z"}, {"id": 358, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:04:56.479Z"}, {"id": 359, "userid": 4, "ping_type": 1, "time": "2018-08-06T20:05:19.678Z"}, {"id": 360, "userid": 2, "ping_type": 0, "time": "2018-08-06T20:06:10.932Z"}, {"id": 361, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:06:12.783Z"}, {"id": 362, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:06:22.073Z"}, {"id": 363, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:06:25.334Z"}, {"id": 364, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:07:34.057Z"}, {"id": 365, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:07:39.450Z"}, {"id": 366, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:07:42.621Z"}, {"id": 367, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:08:27.369Z"}, {"id": 368, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:08:33.534Z"}, {"id": 369, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:08:41.526Z"}, {"id": 370, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:08:44.483Z"}, {"id": 371, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:10:23.362Z"}, {"id": 372, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:12:30.646Z"}, {"id": 373, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:13:54.066Z"}, {"id": 374, "userid": 2, "ping_type": 1, "time": "2018-08-06T20:13:56.748Z"}, {"id": 375, "userid": 3, "ping_type": 0, "time": "2018-08-06T20:14:47.626Z"}, {"id": 376, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:14:49.407Z"}, {"id": 377, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:11.014Z"}, {"id": 378, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:17.078Z"}, {"id": 379, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:19.809Z"}, {"id": 380, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:23.004Z"}, {"id": 381, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:25.137Z"}, {"id": 382, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:40.833Z"}, {"id": 383, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:15:43.959Z"}, {"id": 384, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:13.647Z"}, {"id": 385, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:18.356Z"}, {"id": 386, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:49.447Z"}, {"id": 387, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:52.334Z"}, {"id": 388, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:56.113Z"}, {"id": 389, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:16:58.450Z"}, {"id": 390, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:17:14.627Z"}, {"id": 391, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:17:24.508Z"}, {"id": 392, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:17:39.730Z"}, {"id": 393, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:17:42.257Z"}, {"id": 394, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:17:54.663Z"}, {"id": 395, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:18:03.624Z"}, {"id": 396, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:18:07.522Z"}, {"id": 397, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:18:10.563Z"}, {"id": 398, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:18:38.162Z"}, {"id": 399, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:18:43.261Z"}, {"id": 400, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:19:58.359Z"}, {"id": 401, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:20:04.547Z"}, {"id": 402, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:20:39.946Z"}, {"id": 403, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:20:49.324Z"}, {"id": 404, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:12.033Z"}, {"id": 405, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:33.498Z"}, {"id": 406, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:39.873Z"}, {"id": 407, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:44.079Z"}, {"id": 408, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:46.881Z"}, {"id": 409, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:51.087Z"}, {"id": 410, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:21:54.380Z"}, {"id": 411, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:06.024Z"}, {"id": 412, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:09.949Z"}, {"id": 413, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:17.089Z"}, {"id": 414, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:19.847Z"}, {"id": 415, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:24.893Z"}, {"id": 416, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:29.134Z"}, {"id": 417, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:40.109Z"}, {"id": 418, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:47.917Z"}, {"id": 419, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:22:50.925Z"}, {"id": 420, "userid": 3, "ping_type": 1, "time": "2018-08-06T20:23:26.017Z"}, {"id": 421, "userid": 3, "ping_type": 1, "time": "2018-08-06T21:25:45.263Z"}, {"id": 422, "userid": 3, "ping_type": 0, "time": "2018-08-06T21:25:45.657Z"}, {"id": 423, "userid": 3, "ping_type": 0, "time": "2018-08-06T21:26:22.840Z"}, {"id": 424, "userid": 3, "ping_type": 1, "time": "2018-08-06T21:26:25.250Z"}, {"id": 425, "userid": 4, "ping_type": 0, "time": "2018-08-06T21:26:59.857Z"}, {"id": 426, "userid": 4, "ping_type": 1, "time": "2018-08-06T21:27:01.882Z"}, {"id": 427, "userid": 4, "ping_type": 1, "time": "2018-08-06T21:27:19.401Z"}, {"id": 428, "userid": 2, "ping_type": 0, "time": "2018-08-06T21:27:39.107Z"}, {"id": 429, "userid": 2, "ping_type": 1, "time": "2018-08-06T21:27:40.777Z"}, {"id": 430, "userid": 2, "ping_type": 1, "time": "2018-08-06T21:33:33.898Z"}, {"id": 431, "userid": 2, "ping_type": 1, "time": "2018-08-06T21:33:36.741Z"}, {"id": 432, "userid": 3, "ping_type": 0, "time": "2018-08-06T21:33:51.031Z"}, {"id": 433, "userid": 3, "ping_type": 1, "time": "2018-08-06T21:33:52.773Z"}, {"id": 434, "userid": 3, "ping_type": 1, "time": "2018-08-06T21:34:51.971Z"}, {"id": 435, "userid": 3, "ping_type": 0, "time": "2018-08-06T21:36:55.258Z"}, {"id": 436, "userid": 3, "ping_type": 1, "time": "2018-08-06T21:36:59.753Z"}]}
+2018-08-06 14:10:55
+2018-08-06 14:11:04
+2018-08-06 14:11:05
+2018-08-06 14:17:50
+2018-08-06 14:19:19
+2018-08-06 14:19:23
+2018-08-06 14:19:29
+2018-08-06 14:21:52
+2018-08-06 14:37:47
+2018-08-06 14:37:49
+2018-08-06 14:37:53
+2018-08-06 14:38:16
+2018-08-06 14:39:00
+2018-08-06 14:41:28
+2018-08-06 14:41:31
+2018-08-06 14:42:20
+2018-08-06 14:42:22
+2018-08-06 14:42:53
+2018-08-06 14:42:54
+2018-08-06 14:43:22
+2018-08-06 14:43:24
+2018-08-06 14:44:08
+2018-08-06 14:44:10
+2018-08-06 14:44:20
+2018-08-06 14:45:54
+2018-08-06 14:45:56
+2018-08-06 14:47:08
+2018-08-06 14:47:12
+2018-08-06 14:47:54
+2018-08-06 14:47:57
+2018-08-06 14:50:10
+2018-08-06 14:50:19
+2018-08-06 14:52:32
+2018-08-06 14:52:34
+2018-08-06 14:53:39
+2018-08-06 14:53:43
+2018-08-06 14:55:55
+2018-08-06 14:55:55
+2018-08-06 14:55:57
+2018-08-06 14:57:34
+2018-08-06 14:57:41
+2018-08-06 15:01:55
+2018-08-06 15:01:58
+2018-08-06 15:05:38
+2018-08-06 15:05:40
+2018-08-06 15:09:00
+2018-08-06 15:09:02
+2018-08-06 15:09:43
+2018-08-06 15:09:45
+2018-08-06 15:13:50
+2018-08-06 15:13:52
+2018-08-06 15:14:52
+2018-08-06 15:14:53
+2018-08-06 15:16:31
+2018-08-06 15:16:41
+2018-08-06 15:16:50
+2018-08-06 15:16:52
+2018-08-06 15:28:11
+2018-08-06 15:29:03
+2018-08-06 15:29:05
+2018-08-06 15:31:04
+2018-08-06 15:31:06
+2018-08-06 15:31:40
+2018-08-06 15:31:42
+2018-08-06 15:31:52
+2018-08-06 15:33:52
+2018-08-06 15:38:15
+2018-08-06 15:38:40
+2018-08-06 15:38:45
+2018-08-06 15:38:48
+2018-08-06 15:39:28
+2018-08-06 15:39:31
+2018-08-06 15:40:16
+2018-08-06 15:40:18
+2018-08-06 15:41:47
+2018-08-06 15:41:49
+2018-08-06 15:45:14
+2018-08-06 15:41:50
+2018-08-06 15:43:27
+2018-08-06 15:45:12
+2018-08-06 15:46:36
+2018-08-06 15:46:38
+2018-08-06 15:47:25
+2018-08-06 15:47:27
+2018-08-06 15:47:45
+2018-08-06 15:52:58
+2018-08-06 15:53:03
+2018-08-06 15:53:06
+2018-08-06 15:53:09
+2018-08-06 15:54:10
+2018-08-06 15:54:13
+2018-08-06 15:54:14
+2018-08-06 15:54:22
+2018-08-06 15:55:49
+2018-08-06 15:55:56
+2018-08-06 15:56:00
+2018-08-06 15:57:05
+2018-08-06 15:57:10
+2018-08-06 15:57:14
+2018-08-06 15:57:19
+2018-08-06 15:57:42
+2018-08-06 15:57:43
+2018-08-06 15:58:49
+2018-08-06 15:58:54
+2018-08-06 15:59:42
+2018-08-06 15:59:44
+2018-08-06 16:01:24
+2018-08-06 16:01:33
+2018-08-06 16:01:56
+2018-08-06 16:03:40
+2018-08-06 16:03:41
+2018-08-06 16:03:46
+2018-08-06 16:04:13
+2018-08-06 16:04:30
+2018-08-06 16:04:38
+2018-08-06 16:04:48
+2018-08-06 16:04:56
+2018-08-06 16:05:19
+2018-08-06 16:06:10
+2018-08-06 16:06:12
+2018-08-06 16:06:22
+2018-08-06 16:06:25
+2018-08-06 16:07:34
+2018-08-06 16:07:39
+2018-08-06 16:07:42
+2018-08-06 16:08:27
+2018-08-06 16:08:33
+2018-08-06 16:08:41
+2018-08-06 16:08:44
+2018-08-06 16:10:23
+2018-08-06 16:12:30
+2018-08-06 16:13:54
+2018-08-06 16:13:56
+2018-08-06 16:14:47
+2018-08-06 16:14:49
+2018-08-06 16:15:11
+2018-08-06 16:15:17
+2018-08-06 16:15:19
+2018-08-06 16:15:23
+2018-08-06 16:15:25
+2018-08-06 16:15:40
+2018-08-06 16:15:43
+2018-08-06 16:16:13
+2018-08-06 16:16:18
+2018-08-06 16:16:49
+2018-08-06 16:16:52
+2018-08-06 16:16:56
+2018-08-06 16:16:58
+2018-08-06 16:17:14
+2018-08-06 16:17:24
+2018-08-06 16:17:39
+2018-08-06 16:17:42
+2018-08-06 16:17:54
+2018-08-06 16:18:03
+2018-08-06 16:18:07
+2018-08-06 16:18:10
+2018-08-06 16:18:38
+2018-08-06 16:18:43
+2018-08-06 16:19:58
+2018-08-06 16:20:04
+2018-08-06 16:20:39
+2018-08-06 16:20:49
+2018-08-06 16:21:12
+2018-08-06 16:21:33
+2018-08-06 16:21:39
+2018-08-06 16:21:44
+2018-08-06 16:21:46
+2018-08-06 16:21:51
+2018-08-06 16:21:54
+2018-08-06 16:22:06
+2018-08-06 16:22:09
+2018-08-06 16:22:17
+2018-08-06 16:22:19
+2018-08-06 16:22:24
+2018-08-06 16:22:29
+2018-08-06 16:22:40
+2018-08-06 16:22:47
+2018-08-06 16:22:50
+2018-08-06 16:23:26
+2018-08-06 17:25:45
+2018-08-06 17:25:45
+2018-08-06 17:26:22
+2018-08-06 17:26:25
+2018-08-06 17:26:59
+2018-08-06 17:27:01
+2018-08-06 17:27:19
+2018-08-06 17:27:39
+2018-08-06 17:27:40
+2018-08-06 17:33:33
+2018-08-06 17:33:36
+2018-08-06 17:33:51
+2018-08-06 17:33:52
+2018-08-06 17:34:51
+2018-08-06 17:36:55
+2018-08-06 17:36:59
+[CheckinData(User: 3, time: 2018-08-06 14:10:55, type: 0), CheckinData(User: 3, time: 2018-08-06 14:11:04, type: 0), CheckinData(User: 3, time: 2018-08-06 14:11:05, type: 1), CheckinData(User: 3, time: 2018-08-06 14:17:50, type: 1), CheckinData(User: 3, time: 2018-08-06 14:19:19, type: 0), CheckinData(User: 3, time: 2018-08-06 14:19:23, type: 1), CheckinData(User: 3, time: 2018-08-06 14:19:29, type: 1), CheckinData(User: 3, time: 2018-08-06 14:21:52, type: 1), CheckinData(User: 3, time: 2018-08-06 14:37:47, type: 0), CheckinData(User: 3, time: 2018-08-06 14:37:49, type: 1), CheckinData(User: 3, time: 2018-08-06 14:37:53, type: 1), CheckinData(User: 3, time: 2018-08-06 14:38:16, type: 0), CheckinData(User: 3, time: 2018-08-06 14:39:00, type: 1), CheckinData(User: 3, time: 2018-08-06 14:41:28, type: 0), CheckinData(User: 3, time: 2018-08-06 14:41:31, type: 1), CheckinData(User: 3, time: 2018-08-06 14:42:20, type: 0), CheckinData(User: 3, time: 2018-08-06 14:42:22, type: 1), CheckinData(User: 3, time: 2018-08-06 14:42:53, type: 0), CheckinData(User: 3, time: 2018-08-06 14:42:54, type: 1), CheckinData(User: 3, time: 2018-08-06 14:43:22, type: 0), CheckinData(User: 3, time: 2018-08-06 14:43:24, type: 1), CheckinData(User: 3, time: 2018-08-06 14:44:08, type: 0), CheckinData(User: 3, time: 2018-08-06 14:44:10, type: 1), CheckinData(User: 3, time: 2018-08-06 14:44:20, type: 1), CheckinData(User: 3, time: 2018-08-06 14:45:54, type: 0), CheckinData(User: 3, time: 2018-08-06 14:45:56, type: 1), CheckinData(User: 3, time: 2018-08-06 14:47:08, type: 0), CheckinData(User: 3, time: 2018-08-06 14:47:12, type: 1), CheckinData(User: 3, time: 2018-08-06 14:47:54, type: 0), CheckinData(User: 3, time: 2018-08-06 14:47:57, type: 1), CheckinData(User: 3, time: 2018-08-06 14:50:10, type: 0), CheckinData(User: 3, time: 2018-08-06 14:50:19, type: 1), CheckinData(User: 3, time: 2018-08-06 14:52:32, type: 0), CheckinData(User: 3, time: 2018-08-06 14:52:34, type: 1), CheckinData(User: 3, time: 2018-08-06 14:53:39, type: 0), CheckinData(User: 3, time: 2018-08-06 14:53:43, type: 1), CheckinData(User: 3, time: 2018-08-06 14:55:55, type: 0), CheckinData(User: 3, time: 2018-08-06 14:55:55, type: 0), CheckinData(User: 3, time: 2018-08-06 14:55:57, type: 1), CheckinData(User: 3, time: 2018-08-06 14:57:34, type: 0), CheckinData(User: 3, time: 2018-08-06 14:57:41, type: 1), CheckinData(User: 3, time: 2018-08-06 15:01:55, type: 0), CheckinData(User: 3, time: 2018-08-06 15:01:58, type: 1), CheckinData(User: 3, time: 2018-08-06 15:05:38, type: 0), CheckinData(User: 3, time: 2018-08-06 15:05:40, type: 1), CheckinData(User: 3, time: 2018-08-06 15:09:00, type: 0), CheckinData(User: 3, time: 2018-08-06 15:09:02, type: 1), CheckinData(User: 3, time: 2018-08-06 15:09:43, type: 0), CheckinData(User: 3, time: 2018-08-06 15:09:45, type: 1), CheckinData(User: 3, time: 2018-08-06 15:13:50, type: 0), CheckinData(User: 3, time: 2018-08-06 15:13:52, type: 1), CheckinData(User: 3, time: 2018-08-06 15:14:52, type: 0), CheckinData(User: 3, time: 2018-08-06 15:14:53, type: 1), CheckinData(User: 3, time: 2018-08-06 15:16:31, type: 0), CheckinData(User: 3, time: 2018-08-06 15:16:41, type: 1), CheckinData(User: 3, time: 2018-08-06 15:16:50, type: 0), CheckinData(User: 3, time: 2018-08-06 15:16:52, type: 1), CheckinData(User: 3, time: 2018-08-06 15:28:11, type: 1), CheckinData(User: 3, time: 2018-08-06 15:29:03, type: 0), CheckinData(User: 3, time: 2018-08-06 15:29:05, type: 1), CheckinData(User: 3, time: 2018-08-06 15:31:04, type: 0), CheckinData(User: 3, time: 2018-08-06 15:31:06, type: 1), CheckinData(User: 3, time: 2018-08-06 15:31:40, type: 0), CheckinData(User: 3, time: 2018-08-06 15:31:42, type: 1), CheckinData(User: 3, time: 2018-08-06 15:31:52, type: 1), CheckinData(User: 3, time: 2018-08-06 15:33:52, type: 1), CheckinData(User: 3, time: 2018-08-06 15:38:15, type: 0), CheckinData(User: 3, time: 2018-08-06 15:38:40, type: 0), CheckinData(User: 3, time: 2018-08-06 15:38:45, type: 1), CheckinData(User: 3, time: 2018-08-06 15:38:48, type: 1), CheckinData(User: 3, time: 2018-08-06 15:39:28, type: 0), CheckinData(User: 3, time: 2018-08-06 15:39:31, type: 1), CheckinData(User: 3, time: 2018-08-06 15:40:16, type: 0), CheckinData(User: 3, time: 2018-08-06 15:40:18, type: 1), CheckinData(User: 3, time: 2018-08-06 15:41:47, type: 0), CheckinData(User: 3, time: 2018-08-06 15:41:49, type: 0), CheckinData(User: 3, time: 2018-08-06 15:45:14, type: 1), CheckinData(User: 3, time: 2018-08-06 15:41:50, type: 1), CheckinData(User: 3, time: 2018-08-06 15:43:27, type: 1), CheckinData(User: 3, time: 2018-08-06 15:45:12, type: 0), CheckinData(User: 3, time: 2018-08-06 15:46:36, type: 0), CheckinData(User: 3, time: 2018-08-06 15:46:38, type: 1), CheckinData(User: 3, time: 2018-08-06 15:47:25, type: 0), CheckinData(User: 3, time: 2018-08-06 15:47:27, type: 1), CheckinData(User: 3, time: 2018-08-06 15:47:45, type: 1), CheckinData(User: 3, time: 2018-08-06 15:52:58, type: 1), CheckinData(User: 3, time: 2018-08-06 15:53:03, type: 1), CheckinData(User: 3, time: 2018-08-06 15:53:06, type: 1), CheckinData(User: 3, time: 2018-08-06 15:53:09, type: 1), CheckinData(User: 4, time: 2018-08-06 15:54:10, type: 0), CheckinData(User: 4, time: 2018-08-06 15:54:13, type: 0), CheckinData(User: 4, time: 2018-08-06 15:54:14, type: 1), CheckinData(User: 4, time: 2018-08-06 15:54:22, type: 1), CheckinData(User: 4, time: 2018-08-06 15:55:49, type: 1), CheckinData(User: 4, time: 2018-08-06 15:55:56, type: 1), CheckinData(User: 4, time: 2018-08-06 15:56:00, type: 1), CheckinData(User: 4, time: 2018-08-06 15:57:05, type: 1), CheckinData(User: 4, time: 2018-08-06 15:57:10, type: 1), CheckinData(User: 4, time: 2018-08-06 15:57:14, type: 1), CheckinData(User: 4, time: 2018-08-06 15:57:19, type: 1), CheckinData(User: 4, time: 2018-08-06 15:57:42, type: 0), CheckinData(User: 4, time: 2018-08-06 15:57:43, type: 1), CheckinData(User: 4, time: 2018-08-06 15:58:49, type: 1), CheckinData(User: 4, time: 2018-08-06 15:58:54, type: 1), CheckinData(User: 4, time: 2018-08-06 15:59:42, type: 0), CheckinData(User: 4, time: 2018-08-06 15:59:44, type: 1), CheckinData(User: 4, time: 2018-08-06 16:01:24, type: 1), CheckinData(User: 4, time: 2018-08-06 16:01:33, type: 1), CheckinData(User: 4, time: 2018-08-06 16:01:56, type: 1), CheckinData(User: 4, time: 2018-08-06 16:03:40, type: 0), CheckinData(User: 4, time: 2018-08-06 16:03:41, type: 1), CheckinData(User: 4, time: 2018-08-06 16:03:46, type: 1), CheckinData(User: 4, time: 2018-08-06 16:04:13, type: 1), CheckinData(User: 4, time: 2018-08-06 16:04:30, type: 1), CheckinData(User: 4, time: 2018-08-06 16:04:38, type: 1), CheckinData(User: 4, time: 2018-08-06 16:04:48, type: 1), CheckinData(User: 4, time: 2018-08-06 16:04:56, type: 1), CheckinData(User: 4, time: 2018-08-06 16:05:19, type: 1), CheckinData(User: 2, time: 2018-08-06 16:06:10, type: 0), CheckinData(User: 2, time: 2018-08-06 16:06:12, type: 1), CheckinData(User: 2, time: 2018-08-06 16:06:22, type: 1), CheckinData(User: 2, time: 2018-08-06 16:06:25, type: 1), CheckinData(User: 2, time: 2018-08-06 16:07:34, type: 1), CheckinData(User: 2, time: 2018-08-06 16:07:39, type: 1), CheckinData(User: 2, time: 2018-08-06 16:07:42, type: 1), CheckinData(User: 2, time: 2018-08-06 16:08:27, type: 1), CheckinData(User: 2, time: 2018-08-06 16:08:33, type: 1), CheckinData(User: 2, time: 2018-08-06 16:08:41, type: 1), CheckinData(User: 2, time: 2018-08-06 16:08:44, type: 1), CheckinData(User: 2, time: 2018-08-06 16:10:23, type: 1), CheckinData(User: 2, time: 2018-08-06 16:12:30, type: 1), CheckinData(User: 2, time: 2018-08-06 16:13:54, type: 1), CheckinData(User: 2, time: 2018-08-06 16:13:56, type: 1), CheckinData(User: 3, time: 2018-08-06 16:14:47, type: 0), CheckinData(User: 3, time: 2018-08-06 16:14:49, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:11, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:17, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:19, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:23, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:25, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:40, type: 1), CheckinData(User: 3, time: 2018-08-06 16:15:43, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:13, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:18, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:49, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:52, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:56, type: 1), CheckinData(User: 3, time: 2018-08-06 16:16:58, type: 1), CheckinData(User: 3, time: 2018-08-06 16:17:14, type: 1), CheckinData(User: 3, time: 2018-08-06 16:17:24, type: 1), CheckinData(User: 3, time: 2018-08-06 16:17:39, type: 1), CheckinData(User: 3, time: 2018-08-06 16:17:42, type: 1), CheckinData(User: 3, time: 2018-08-06 16:17:54, type: 1), CheckinData(User: 3, time: 2018-08-06 16:18:03, type: 1), CheckinData(User: 3, time: 2018-08-06 16:18:07, type: 1), CheckinData(User: 3, time: 2018-08-06 16:18:10, type: 1), CheckinData(User: 3, time: 2018-08-06 16:18:38, type: 1), CheckinData(User: 3, time: 2018-08-06 16:18:43, type: 1), CheckinData(User: 3, time: 2018-08-06 16:19:58, type: 1), CheckinData(User: 3, time: 2018-08-06 16:20:04, type: 1), CheckinData(User: 3, time: 2018-08-06 16:20:39, type: 1), CheckinData(User: 3, time: 2018-08-06 16:20:49, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:12, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:33, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:39, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:44, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:46, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:51, type: 1), CheckinData(User: 3, time: 2018-08-06 16:21:54, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:06, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:09, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:17, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:19, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:24, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:29, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:40, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:47, type: 1), CheckinData(User: 3, time: 2018-08-06 16:22:50, type: 1), CheckinData(User: 3, time: 2018-08-06 16:23:26, type: 1), CheckinData(User: 3, time: 2018-08-06 17:25:45, type: 1), CheckinData(User: 3, time: 2018-08-06 17:25:45, type: 0), CheckinData(User: 3, time: 2018-08-06 17:26:22, type: 0), CheckinData(User: 3, time: 2018-08-06 17:26:25, type: 1), CheckinData(User: 4, time: 2018-08-06 17:26:59, type: 0), CheckinData(User: 4, time: 2018-08-06 17:27:01, type: 1), CheckinData(User: 4, time: 2018-08-06 17:27:19, type: 1), CheckinData(User: 2, time: 2018-08-06 17:27:39, type: 0), CheckinData(User: 2, time: 2018-08-06 17:27:40, type: 1), CheckinData(User: 2, time: 2018-08-06 17:33:33, type: 1), CheckinData(User: 2, time: 2018-08-06 17:33:36, type: 1), CheckinData(User: 3, time: 2018-08-06 17:33:51, type: 0), CheckinData(User: 3, time: 2018-08-06 17:33:52, type: 1), CheckinData(User: 3, time: 2018-08-06 17:34:51, type: 1), CheckinData(User: 3, time: 2018-08-06 17:36:55, type: 0), CheckinData(User: 3, time: 2018-08-06 17:36:59, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-07 07:30:40.798629
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-08 07:30:41.494368
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-08-09 07:30:36.073470
+==========================================
