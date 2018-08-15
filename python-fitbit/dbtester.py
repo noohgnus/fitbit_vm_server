@@ -49,6 +49,23 @@ class FitbitWeightSet:
         return "FitbitWeightSet(" + str(self.weight) + ',' + str(self.bmi) + ',' + str(self.fat) + ',' + str(self.source) + ',' + self.uid + ")"
 
 
+class DailyActivitySet:
+    def __init__(self, uid="***NOT SUPPLIED***", date="", daily_steps=0, sedentary_mins=0, lightly_mins=0, fairly_mins=0, very_mins=0, distance=0):
+        self.uid = uid
+        self.date = date
+        self.daily_steps = daily_steps
+        self.sedentary_mins = sedentary_mins
+        self.lightly_mins = lightly_mins
+        self.fairly_mins = fairly_mins
+        self.very_mins = very_mins
+        self.distance = distance
+
+    def __repr__(self):
+        return "DailyActivitySet(%s, %s, %s, [%s/%s/%s/%s], %s)" % (
+            self.uid, self.date, self.daily_steps, self.sedentary_mins, self.lightly_mins,
+            self.fairly_mins, self.very_mins, self.distance)
+
+
 class DeviceInfo:
     def __init__(self, uid, device_id, last_sync_time, device_version, device_type, battery, battery_level):
         self.uid = uid
@@ -210,34 +227,64 @@ def get_multi_token_dict():
     return st
 
 
+def is_token_fresh_introspect(token_dict, uid):
+    print("Introspecting user %s" % uid)
+    headers = {"Authorization": "Bearer " + token_dict["users"][uid]["access_token"]}
+    body_text = {
+        'token': token_dict["users"][uid]["access_token"],
+        }
+    r = requests.post("https://api.fitbit.com/1.1/oauth2/introspect",
+                      headers=headers, data=body_text)
+
+    print("Introspect for " + uid + ":\n" + r.text)
+    introspect_json = json.loads(r.text)
+    print introspect_json["active"]
+    return introspect_json["active"]
+    # if uid == "5T82TY":
+    # return False
+    # else:
+    #     return True
+
 def refresh_multi_user_token(token_dict):
     json_user_datas = token_dict
     for user in json_user_datas["users"]:
-        print("Pulling user : " + str(json_user_datas["users"][user]["user_id"]))
-        headers = {'Authorization':'Basic ' + base64_key_secret,
-                   'Content-Type':'application/x-www-form-urlencoded'}
-        print("Using refresh_token -> " + str(json_user_datas["users"][user]["refresh_token"]))
-        BodyText = {
-                # 'refresh_token' : json_user_datas["users"][user]["refresh_token"],
-                'refresh_token' : json_user_datas["users"][user]["refresh_token"],
-                'grant_type' : 'refresh_token'}
-        r = requests.post(TokenURL, headers=headers, data=BodyText)
-        # print(r.status_code)
-        # print(r.text)
-        # print('\n========\n')
+        uid = json_user_datas["users"][user]["user_id"]
+        print("Pulling user : " + str(uid))
 
+        # is_token_fresh_introspect(token_dict, uid)
+        # continue
 
-        if(r.status_code != 200):
-            print(r.text)
-            raise Exception("While refreshing user " + user + " , HTTP returned code ", str(r.status_code))
-        else:
-            # print(r.text)
-            response = json.loads(r.text)
-            # json_user_datas["global_refresh_token"] = response["refresh_token"]
-            json_user_datas["users"][user]["access_token"] = response["access_token"]
-            json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
-            json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
+        if is_token_fresh_introspect(token_dict, uid):
             data_retrieval_routine(json_user_datas, user)
+            pass
+        else:
+            # Refreshing user
+            headers = {'Authorization':'Basic ' + base64_key_secret,
+                       'Content-Type':'application/x-www-form-urlencoded'}
+            print("Using refresh_token -> " + str(json_user_datas["users"][user]["refresh_token"]))
+            BodyText = {
+                    # 'refresh_token' : json_user_datas["users"][user]["refresh_token"],
+                    'refresh_token' : json_user_datas["users"][user]["refresh_token"],
+                    'grant_type' : 'refresh_token'}
+            r = requests.post(TokenURL, headers=headers, data=BodyText)
+            # print(r.status_code)
+            # print(r.text)
+            # print('\n========\n')
+
+            if(r.status_code != 200):
+                print(r.text)
+                print(r.headers)
+                # raise Exception("While refreshing user " + user + " , HTTP returned code ", str(r.status_code))
+                print ("While refreshing user " + user + " , HTTP returned code ", str(r.status_code))
+
+            else:
+                # print(r.text)
+                response = json.loads(r.text)
+                # json_user_datas["global_refresh_token"] = response["refresh_token"]
+                json_user_datas["users"][user]["access_token"] = response["access_token"]
+                json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
+                json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
+                data_retrieval_routine(json_user_datas, user)
 
     write_file = open("tokens.json", 'w+')
     json.dump(json_user_datas, write_file, indent=4)
@@ -255,26 +302,28 @@ def data_retrieval_routine(token_dict, uid):
     try:
         print("Data retrieval routine for user: %s" % uid)
         last_logged_date = get_query_start_date(uid)
-        if last_logged_date + datetime.timedelta(days=1) < datetime.date.today():
-            try:
-                print("last_logged: %s / today: %s" % (str(last_logged_date), str(datetime.date.today())))
-                device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
-                update_devices(device_dict)
-                execute_heart_and_step(token_dict, uid, date_string, device_dict)
-                execute_weight(token_dict, uid, date_string)
-                execute_user_info(token_dict, uid)
-            except ValueError as vale:
-                print vale
+        # if last_logged_date + datetime.timedelta(days=1) < datetime.date.today():
+        try:
+            print("last_logged: %s / today: %s" % (str(last_logged_date), str(datetime.date.today())))
+            device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
+            update_devices(device_dict)
+            execute_heart_and_step(token_dict, uid, date_string, device_dict)
+            execute_weight(token_dict, uid, date_string)
+            execute_user_info(token_dict, uid)
+        except ValueError as vale:
+            print vale
 
-            query_start_date = last_logged_date + datetime.timedelta(days=1)
-            query_end_date = datetime.date.today() - datetime.timedelta(days=2)
+        # query_start_date = last_logged_date + datetime.timedelta(days=1)
+        # force rewrite last week's data
+        query_start_date = datetime.date.today() - datetime.timedelta(days=7)
+        query_end_date = datetime.date.today() - datetime.timedelta(days=2)
 
-            if query_start_date < datetime.date.today():
-                print("Looping retroactive data for %s from %s to %s"
-                      % (uid, str(query_start_date), str(query_end_date)))
-                loop_retroactive_data(token_dict, uid, query_start_date, query_end_date)
-        else:
-            print("Already retrieved yesterday's data.")
+        if query_start_date < datetime.date.today():
+            print("Retroactively fetching data for %s from %s to %s"
+                  % (uid, str(query_start_date), str(query_end_date)))
+            loop_retroactive_data(token_dict, uid, query_start_date, query_end_date)
+        # else:
+        #     print("Already retrieved yesterday's data.")
 
     except ValueError as ve:
         print ve
@@ -321,7 +370,7 @@ def insert_user_info(user_json):
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
 
     heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
-    step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+    step_json = get_intraday_steps(token_dict=token_dict, uid=uid, query_date=date_string)
     distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
 
         
@@ -339,7 +388,7 @@ def execute_heart_and_step(token_dict, uid, date_string, device_dict):
 def retroactive_execute_heart_and_step(token_dict, uid, date_string):
     try:
         heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
-        step_json = get_intraday_activity(token_dict=token_dict, uid=uid, query_date=date_string)
+        step_json = get_intraday_steps(token_dict=token_dict, uid=uid, query_date=date_string)
         distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
 
         sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string,
@@ -489,15 +538,6 @@ def get_activity_details(token_dict, uid, query_date, activity_resource_path):
     return r.text
 
 
-def get_activities(token_dict, uid, query_date):
-    print("Getting activity list")
-    headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
-    r = requests.get('https://api.fitbit.com/1/user/-/activities/date/%s.json' % query_date,
-                      headers=headers)
-    # print(r.text)
-    return r.text
-
-
 def get_intraday_heart(token_dict, uid, query_date):
     print("Getting Intraday HR")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
@@ -513,7 +553,7 @@ def get_intraday_heart(token_dict, uid, query_date):
     return r.text
 
 
-def get_intraday_activity(token_dict, uid, query_date):
+def get_intraday_steps(token_dict, uid, query_date):
     print("Getting Intraday Activity in Steps")
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
 
@@ -583,7 +623,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
         date = heart_rates["activities-heart"][0]["dateTime"]
         hr_array = heart_rates["activities-heart-intraday"]
         hr_dataset = hr_array["dataset"]
-        print(hr_dataset)
+        # print(hr_dataset)
         print("HR_DATASET LENGTH: " + str(len(hr_dataset)))
         if len(hr_dataset) < 1:
             if not has_synced_yesterday(device_dict):
@@ -607,6 +647,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
 
     for one_day_steps in step_counts["activities-steps"]:
         date = step_counts["activities-steps"][0]["dateTime"]
+
         hr_array = step_counts["activities-steps-intraday"]
         hr_dataset = hr_array["dataset"]
         for data in hr_dataset:
@@ -619,6 +660,8 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
 
     if(sed_json["activities-minutesSedentary"][0]["value"] != 0):
         date = sed_json["activities-minutesSedentary"][0]["dateTime"]
+
+
         for data in sed_json["activities-minutesSedentary-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -627,6 +670,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
 
     if(lightly_json["activities-minutesLightlyActive"][0]["value"] != 0):
         date = lightly_json["activities-minutesLightlyActive"][0]["dateTime"]
+
         for data in lightly_json["activities-minutesLightlyActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -635,6 +679,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
 
     if(fairly_json["activities-minutesFairlyActive"][0]["value"] != 0):
         date = fairly_json["activities-minutesFairlyActive"][0]["dateTime"]
+
         for data in fairly_json["activities-minutesFairlyActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -643,6 +688,7 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
 
     if(very_json["activities-minutesVeryActive"][0]["value"] != 0):
         date = very_json["activities-minutesVeryActive"][0]["dateTime"]
+
         for data in very_json["activities-minutesVeryActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -666,6 +712,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
     fairly_json = activity_level_dict["fairly"]
     very_json = activity_level_dict["very"]
     time_pair = dict()
+    daily_dataset = DailyActivitySet(uid=uid)
+
 
     if int(step_counts["activities-steps"][0]["value"]) < 1 and len(heart_rates["activities-heart-intraday"]["dataset"]) < 1:
         date = heart_rates["activities-heart"][0]["dateTime"]
@@ -676,7 +724,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
         date = heart_rates["activities-heart"][0]["dateTime"]
         hr_array = heart_rates["activities-heart-intraday"]
         hr_dataset = hr_array["dataset"]
-        print(hr_dataset)
+        # print(hr_dataset)
         print("HR_DATASET LENGTH: " + str(len(hr_dataset)))
         if len(hr_dataset) < 1:
             print("HR Dataset for selected date is empty. Checking if steps is also empty")
@@ -693,6 +741,9 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     for one_day_steps in step_counts["activities-steps"]:
         date = step_counts["activities-steps"][0]["dateTime"]
+        daily_dataset.date = date
+        daily_dataset.daily_steps = step_counts["activities-steps"][0]["value"]
+
         hr_array = step_counts["activities-steps-intraday"]
         hr_dataset = hr_array["dataset"]
         for data in hr_dataset:
@@ -705,6 +756,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     for one_day_distance in distance_records["activities-distance"]:
         date = distance_records["activities-distance"][0]["dateTime"]
+        daily_dataset.distance = distance_records["activities-distance"][0]["value"]
+
         dist_array = distance_records["activities-distance-intraday"]
         dist_dataset = dist_array["dataset"]
         for data in dist_dataset:
@@ -717,6 +770,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if(sed_json["activities-minutesSedentary"][0]["value"] != 0):
         date = sed_json["activities-minutesSedentary"][0]["dateTime"]
+        daily_dataset.sedentary_mins = sed_json["activities-minutesSedentary"][0]["value"]
+
         for data in sed_json["activities-minutesSedentary-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -725,6 +780,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if(lightly_json["activities-minutesLightlyActive"][0]["value"] != 0):
         date = lightly_json["activities-minutesLightlyActive"][0]["dateTime"]
+        daily_dataset.lightly_mins = lightly_json["activities-minutesLightlyActive"][0]["value"]
+
         for data in lightly_json["activities-minutesLightlyActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -733,6 +790,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if(fairly_json["activities-minutesFairlyActive"][0]["value"] != 0):
         date = fairly_json["activities-minutesFairlyActive"][0]["dateTime"]
+        daily_dataset.fairly_mins = fairly_json["activities-minutesFairlyActive"][0]["value"]
+
         for data in fairly_json["activities-minutesFairlyActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -741,6 +800,8 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if(very_json["activities-minutesVeryActive"][0]["value"] != 0):
         date = very_json["activities-minutesVeryActive"][0]["dateTime"]
+        daily_dataset.very_mins = very_json["activities-minutesVeryActive"][0]["value"]
+
         for data in very_json["activities-minutesVeryActive-intraday"]["dataset"]:
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"];
@@ -748,6 +809,9 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
                     time_pair[dtstring].activity_level += 4
 
     print("\t...Done converting JSON data to dictionary")
+
+    # print daily_dataset
+    insert_daily_activity(daily_dataset)
 
     return time_pair
 
@@ -829,6 +893,7 @@ def update_devices(device_id_pair):
         connection.commit()
         connection.close()
 
+
 def insert_weight_dict(time_pair):
     insert_set = []
     for time in time_pair:
@@ -852,9 +917,79 @@ def insert_weight_dict(time_pair):
         connection.close()
 
 
-
-
 def insert_intraday_dict(time_pair):
+
+    insert_set = []
+    for time in time_pair:
+        fitbit_data = time_pair[time]
+        # print(str(time) + " / " + str(fitbit_data))
+        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.distance,
+                           fitbit_data.activity_level, str(datetime.datetime.now())))
+
+    if len(insert_set) == 0:
+        return
+
+    connection = db.Connection(host=HOST, port=PORT,
+                               user=USER, passwd=PASSWORD, db=DB)
+    try:
+        dbhandler = connection.cursor()
+        flush_user = insert_set[0][1]
+        flush_date = insert_set[0][0][:10]
+        # flush that day's existing data
+        flush_stmt = "DELETE FROM PC_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
+            flush_user, flush_date)
+        dbhandler.execute(flush_stmt)
+        connection.commit()
+
+        # repopulate that day's data
+        insert_stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        dbhandler.executemany(insert_stmt, insert_set)
+
+    except Exception as e:
+        traceback.print_exc()
+        print "EXCEPTION IN insert_intraday_dict: " + str(e)
+
+    finally:
+        connection.commit()
+        connection.close()
+
+
+def insert_daily_activity(ds):
+
+    connection = db.Connection(host=HOST, port=PORT,
+                               user=USER, passwd=PASSWORD, db=DB)
+    try:
+        print("Inserting daily set: " + str(ds))
+        dbhandler = connection.cursor()
+        flush_user = ds.uid
+        flush_date = ds.date
+        # flush that day's existing data
+        flush_stmt = "DELETE FROM PC_Daily_Activities WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
+            flush_user, flush_date)
+        dbhandler.execute(flush_stmt)
+        connection.commit()
+
+        # repopulate that day's data
+        insert_set = (ds.date, ds.uid, ds.daily_steps, ds.sedentary_mins, ds.lightly_mins, ds.fairly_mins, ds.very_mins,
+                      ds.distance, str(datetime.datetime.now()))
+        insert_stmt = "INSERT INTO PC_Daily_Activities (timestamp, fitbit_uid, daily_step_total, " \
+                      "minutes_sedentary, minutes_lightly_active, minutes_fairly_active, minutes_very_active, " \
+                      "distance, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        dbhandler.execute(insert_stmt, insert_set)
+
+    except Exception as e:
+        print "EXCEPTION IN insert_daily_activity: " + str(e)
+        print(dbhandler._last_executed)
+        traceback.print_exc()
+
+    finally:
+        connection.commit()
+        connection.close()
+        print("Done inserting daily set: " + str(ds))
+
+
+
+def retroactive_insert_intraday_dict(time_pair):
 
     insert_set = []
     for time in time_pair:
@@ -866,6 +1001,12 @@ def insert_intraday_dict(time_pair):
     try:
         connection = db.Connection(host=HOST, port=PORT,
                                    user=USER, passwd=PASSWORD, db=DB)
+
+        dbflusher = connection.cursor()
+        flush_user = insert_set[0][1]
+        flush_date = insert_set[0][0][:10]
+        flush_stmt = "DELETE FROM Temp_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (flush_user, flush_date)
+        dbflusher.execute(flush_stmt)
 
         dbhandler = connection.cursor()
         stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
@@ -930,7 +1071,6 @@ def connect_db():
         for item in result:
             print item
 
-
     except Exception as e:
         print e
 
@@ -961,7 +1101,7 @@ def get_query_start_date(uid):
     if result is None:
         return datetime.date.today()
     elif result.date() <= datetime.date.today() - datetime.timedelta(days=5):
-        return datetime.date.today() - datetime.timedelta(days=5)
+        return datetime.date.today() - datetime.timedelta(days=7)
     else:
         return result.date()
 

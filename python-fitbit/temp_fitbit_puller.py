@@ -50,6 +50,9 @@ def multi_login_routine():
     if(len(sys.argv) == 3):
         token_dict = get_multi_token_dict()
         refresh_user_token(token_dict, sys.argv[1], sys.argv[2])
+    elif(len(sys.argv) == 4):
+        token_dict = get_multi_token_dict()
+        refresh_user_token(token_dict, sys.argv[1], sys.argv[2])
     elif(len(sys.argv) == 2 and sys.argv[1] == "flush"):
         flush_temp_db()
         print("Temp DB flushed.")
@@ -158,7 +161,7 @@ def get_intraday_activity(token_dict, uid, query_date):
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
     r = requests.get("https://api.fitbit.com/1/user/-/activities/steps/date/" + query_date + "/1d.json",
                       headers=headers)
-    # print(r.text)
+    print(r.text)
     if(r.status_code != 200):
         print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
         print(r.text)
@@ -172,7 +175,7 @@ def get_intraday_distance(token_dict, uid, query_date):
     headers = {"Authorization":"Bearer " + token_dict["users"][uid]["access_token"]}
     r = requests.get("https://api.fitbit.com/1/user/-/activities/distance/date/" + query_date + "/1d.json",
                       headers=headers)
-    print(r.text)
+    # print(r.text)
     if(r.status_code != 200):
         print(">\n>>\n>>>ERROR: GETTING HTTP " + str(r.status_code) + " with UID " + uid)
         print(r.text)
@@ -214,18 +217,23 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
                 time_pair[dtstring].heart_rate = data["value"]
         print("\t" + str(len(hr_dataset)) + " is the total heart rate timestamps in selected date: ")
 
+    my_sum = 0
 
     for one_day_steps in step_counts["activities-steps"]:
         date = step_counts["activities-steps"][0]["dateTime"]
         hr_array = step_counts["activities-steps-intraday"]
         hr_dataset = hr_array["dataset"]
         for data in hr_dataset:
+            my_sum += data["value"]
             if(data["value"] != 0):
                 dtstring = date + " " + data["time"]
                 if(dtstring not in time_pair):
                     time_pair[dtstring] = FitbitTimeSet(heart_rate=0, step_count=data["value"], activity_level=0, distance=0, uid=uid)
                 else:
                     time_pair[dtstring].step_count = data["value"]
+
+
+    print my_sum
 
     if(sed_json["activities-minutesSedentary"][0]["value"] != 0):
         date = sed_json["activities-minutesSedentary"][0]["dateTime"]
@@ -320,8 +328,33 @@ def insert_intraday_dict(time_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
-        stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        dbhandler.executemany(stmt, insert_set)
+        if(len(sys.argv) == 3):
+            print "Inserting to Temp_Step_HeartRate DB."
+            flush_user = insert_set[0][1]
+            flush_date = insert_set[0][0][:10]
+            # flush_date = str(datetime.date.today() - datetime.timedelta(days=7))
+            print(datetime.date.today())
+            print(flush_date)
+            # stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+            stmt = "DELETE FROM Temp_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (flush_user, flush_date)
+            dbhandler.execute(stmt)
+            stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+            dbhandler.executemany(stmt, insert_set)
+
+        elif(len(sys.argv) == 4 and sys.argv[3] == "temp"):
+            print "Inserting to Temp_Step_HeartRate DB."
+            stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        elif(len(sys.argv) == 4 and sys.argv[3] == "pc"):
+            print "Inserting to PC_Step_HeartRate DB."
+            stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        else:
+            print "INVALID SYSARGV. Exiting on insert phase."
+            exit()
+
+        if len(sys.argv) == 3:
+            pass
+        else:
+            dbhandler.executemany(stmt, insert_set)
 
     except Exception as e:
         print "EXCEPTION IN insert_intraday_dict: " + str(e)

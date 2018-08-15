@@ -1,0 +1,17 @@
+===============================================================
+Logging event at: 2018-08-15 13:41:10.298510
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"active":true,"scope":"{HEARTRATE=READ_WRITE, PROFILE=READ_WRITE, SETTINGS=READ_WRITE, NUTRITION=READ_WRITE, WEIGHT=READ_WRITE, LOCATION=READ_WRITE, SOCIAL=READ_WRITE, ACTIVITY=READ_WRITE, SLEEP=READ_WRITE}","client_id":"22CMWS","user_id":"5T82TY","token_type":"access_token","exp":1534379434000,"iat":1534350634000}
+True
+Using refresh_token -> bc5acc97791cd4b984847fa16a7e821ee301f6ea67e9466389afb0b858714d1d
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: bc5acc97791cd4b984847fa16a7e821ee301f6ea67e9466389afb0b858714d1d. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+(u'While refreshing user 5T82TY , HTTP returned code ', '400')
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+Too Many Requests
