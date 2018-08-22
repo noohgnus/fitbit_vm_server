@@ -238,8 +238,11 @@ def is_token_fresh_introspect(token_dict, uid):
 
     print("Introspect for " + uid + ":\n" + r.text)
     introspect_json = json.loads(r.text)
-    print introspect_json["active"]
-    return introspect_json["active"]
+    if "active" in introspect_json:
+        print introspect_json["active"]
+        return introspect_json["active"]
+    else:
+        return False
     # if uid == "5T82TY":
     # return False
     # else:

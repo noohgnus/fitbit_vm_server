@@ -7804,3 +7804,2992 @@ Looping retroactive data for 5TQ66D from 2018-08-08 to 2018-08-07
 	-------data as of yesterday that is: 2018-08-08-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-08-10 07:30:04.388387
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-11 07:30:04.891586
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-12 07:30:03.694428
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-13 07:30:03.861459
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-14 07:30:04.032606
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-15 07:30:04.659342
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Using refresh_token -> 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53
+{"errors":[{"errorType":"invalid_grant","message":"Refresh token invalid: 566f3c9b69637be4ed03ef4518dbb762bd79217037374a6d3aa1660669b57e53. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-16 07:30:04.550515
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0Mzg1NjE2LCJpYXQiOjE1MzQzNTY4MTZ9.KwEWBiZr_i7s3cfRGNpyl9GmuTBKI3D0vKcNL7d5x0M. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-17 07:30:03.639984
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0Mzg1NjE2LCJpYXQiOjE1MzQzNTY4MTZ9.KwEWBiZr_i7s3cfRGNpyl9GmuTBKI3D0vKcNL7d5x0M. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+===============================================================
+Logging event at: 2018-08-18 07:30:03.953029
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NTUzMzEzLCJpYXQiOjE1MzQ1MjQ1MTN9.tyVfcJiUkjktyb7-mA1433edFxBPyaeuPAuB1rAwmE8. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 26feb8194763745edcb32211e97eb692a5474dec6d7eaf591ccc21d7e88e4da5
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-08-11 / today: 2018-08-18
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5)
+Hasn't synced recently. Last sync time: 2018-08-16T20:32:58.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5T82TY from 2018-08-11 to 2018-08-16
+Retroactively executing hr/step for 5T82TY on 2018-08-11
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-17-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NTUzMzIzLCJpYXQiOjE1MzQ1MjQ1MjN9.VkFuGl9LWvqf69JSvZOoUziifk1cwzadksPh5lGVZS4. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> e737e1486a3e1dc60f0ed33e328dedc08b10561fef80244b9cea4d568f4668d3
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-08-15 / today: 2018-08-18
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 28
+	28 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-17
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-08-11 to 2018-08-16
+Retroactively executing hr/step for 6RDVLK on 2018-08-11
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 6RDVLK on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 24
+	24 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-12, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-12, 0, [1440/0/0/0], 0.0)
+Retroactively executing hr/step for 6RDVLK on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Retroactively executing hr/step for 6RDVLK on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 810
+	810 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Retroactively executing hr/step for 6RDVLK on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Retroactively executing hr/step for 6RDVLK on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-17-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NTUzMzM2LCJpYXQiOjE1MzQ1MjQ1MzZ9.ENu3HFBp6ajb4cJmZOi6yobwqmaTkO5ycICL3VNIoWI. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 961cf9dec34a7f3df39e35a698e701e7e1e2cc70a9bbcec1d8580d0cae4b7365
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-08-11 / today: 2018-08-18
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5RZJTJ from 2018-08-11 to 2018-08-16
+Retroactively executing hr/step for 5RZJTJ on 2018-08-11
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-17-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0NTUzMzQ5LCJpYXQiOjE1MzQ1MjQ1NDl9.dqaCTlMg1Z2GkHiEH7n0p40dQJAehNlt_OtOZ3ox_OY. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> e15c154df95c23c1c376e698032515ce0bfb03568ada0f7a67d4a29a9f9e7c41
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-08-16 / today: 2018-08-18
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 114
+	114 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-17
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-08-11 to 2018-08-16
+Retroactively executing hr/step for 5TQ66D on 2018-08-11
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 838
+	838 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-11, 15782, [907/464/23/46], 11.810559999999999)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-11, 15782, [907/464/23/46], 11.810559999999999)
+Retroactively executing hr/step for 5TQ66D on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 462
+	462 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-12, 1260, [1283/136/6/15], 0.84546)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-12, 1260, [1283/136/6/15], 0.84546)
+Retroactively executing hr/step for 5TQ66D on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 503
+	503 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Retroactively executing hr/step for 5TQ66D on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Retroactively executing hr/step for 5TQ66D on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 919
+	919 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Retroactively executing hr/step for 5TQ66D on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 710
+	710 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+	-------data as of yesterday that is: 2018-08-17-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-08-19 07:30:04.655271
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0NjIwNjA0LCJpYXQiOjE1MzQ1OTE4MDR9.Zx9AyvaQeAkx8rof6v7JTRbUdUIPBwrWZlwKmk99WZU. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 08451786635d0a89d6192b2378350859a60e37429383a3763ca85d8c01b18830
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-08-12 / today: 2018-08-19
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5)
+Hasn't synced recently. Last sync time: 2018-08-16T20:32:58.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5T82TY from 2018-08-12 to 2018-08-17
+Retroactively executing hr/step for 5T82TY on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-18-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NjIwNjE1LCJpYXQiOjE1MzQ1OTE4MTV9.4dOr0KrHUMApbYw_j6AIss_W5gSxhj-lakqbElaeekQ. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> cc18695c2063c6174a06aadf1e97c86afeb3e2b9cfcf5724d0c644460e791941
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-08-17 / today: 2018-08-19
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 773
+	773 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-18
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-08-12 to 2018-08-17
+Retroactively executing hr/step for 6RDVLK on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 24
+	24 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-12, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-12, 0, [1440/0/0/0], 0.0)
+Retroactively executing hr/step for 6RDVLK on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Retroactively executing hr/step for 6RDVLK on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 810
+	810 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Retroactively executing hr/step for 6RDVLK on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Retroactively executing hr/step for 6RDVLK on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 6RDVLK on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+	-------data as of yesterday that is: 2018-08-18-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NjIwNjI4LCJpYXQiOjE1MzQ1OTE4Mjh9.uPqNKDXDdNLHYrl5nB5w8G67clO0V8SrN9AjccJfR3M. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 4c6650b88b8715a50daa4882aa0c79fe426e3f49175694a421bf57a671e2ac24
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-08-12 / today: 2018-08-19
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5RZJTJ from 2018-08-12 to 2018-08-17
+Retroactively executing hr/step for 5RZJTJ on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-18-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NjIwNjM4LCJpYXQiOjE1MzQ1OTE4Mzh9.j33S_CYOOQoYeucfajO1sC-nniQfidf6_RwnftkRWt4. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 2591d81f73321e5cc0e06faf94fc3b36ab7c2d795bf38aa9870ec29e26b804c3
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-08-17 / today: 2018-08-19
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-08-17T12:21:16.000,Alta HR,45), DeviceInfo(5TQ66D,2018-08-17T09:42:35.000,Aria,67)]
+DeviceInfo(5TQ66D,2018-08-17T12:21:16.000,Alta HR,45)
+Hasn't synced recently. Last sync time: 2018-08-17T12:21:16.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5TQ66D from 2018-08-12 to 2018-08-17
+Retroactively executing hr/step for 5TQ66D on 2018-08-12
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 462
+	462 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-12, 1260, [1283/136/6/15], 0.84546)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-12, 1260, [1283/136/6/15], 0.84546)
+Retroactively executing hr/step for 5TQ66D on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 503
+	503 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Retroactively executing hr/step for 5TQ66D on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Retroactively executing hr/step for 5TQ66D on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 919
+	919 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Retroactively executing hr/step for 5TQ66D on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 710
+	710 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Retroactively executing hr/step for 5TQ66D on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 114
+	114 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 2441, [1377/54/4/5], 1.63791)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 2441, [1377/54/4/5], 1.63791)
+	-------data as of yesterday that is: 2018-08-18-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-08-20 07:30:04.443771
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzA3MDA1LCJpYXQiOjE1MzQ2NzgyMDV9.IoLzz0hBjdxjiZ1fe2c-4ryfbFcgQkOISYUi7LUAR78. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> c0da71ff729e0587ae91436d55fa23772c216f25bc6c6b62dc888fcfe1430b5e
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-08-13 / today: 2018-08-20
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5)
+Hasn't synced recently. Last sync time: 2018-08-16T20:32:58.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5T82TY from 2018-08-13 to 2018-08-18
+Retroactively executing hr/step for 5T82TY on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-19-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzA3MDE4LCJpYXQiOjE1MzQ2NzgyMTh9.aELoud_HUlJHYxTJOa_lA_kFofdG4KkoHhoqAK3Hc0E. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 47d6f1dbc952361ca21c4e964f1e02ecdca6f400a8b434860f830b8daee6797b
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-08-18 / today: 2018-08-20
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 16
+	16 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-19
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-08-13 to 2018-08-18
+Retroactively executing hr/step for 6RDVLK on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+	0 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-13, 20, [1439/1/0/0], 0.0155)
+Retroactively executing hr/step for 6RDVLK on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 810
+	810 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Retroactively executing hr/step for 6RDVLK on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Retroactively executing hr/step for 6RDVLK on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 6RDVLK on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Retroactively executing hr/step for 6RDVLK on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 968
+	968 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+	-------data as of yesterday that is: 2018-08-19-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzA3MDMyLCJpYXQiOjE1MzQ2NzgyMzJ9.nWdwFjBiwoFSxpf-vmx63pBX9igSvGnPsxTQzV5b-Ks. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 7604b654a5cec7014560ba3bd00fe20713b6e30010881d8fb52079616a55ef5c
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-08-13 / today: 2018-08-20
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5RZJTJ from 2018-08-13 to 2018-08-18
+Retroactively executing hr/step for 5RZJTJ on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-19-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzA3MDQxLCJpYXQiOjE1MzQ2NzgyNDF9.B0tDUDHBgPx5gUxv5zFYjIaSCt-EISmbE9xrvOjdl3k. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 7b7dcfa5fb606562175e79b852e69cd72ac92a126cd2a2ef57647872ff95dc86
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-08-17 / today: 2018-08-20
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-08-17T12:21:16.000,Alta HR,45), DeviceInfo(5TQ66D,2018-08-17T09:42:35.000,Aria,67)]
+DeviceInfo(5TQ66D,2018-08-17T12:21:16.000,Alta HR,45)
+Hasn't synced recently. Last sync time: 2018-08-17T12:21:16.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5TQ66D from 2018-08-13 to 2018-08-18
+Retroactively executing hr/step for 5TQ66D on 2018-08-13
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 503
+	503 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-13, 7264, [1253/149/23/15], 4.87414)
+Retroactively executing hr/step for 5TQ66D on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Retroactively executing hr/step for 5TQ66D on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 919
+	919 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Retroactively executing hr/step for 5TQ66D on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 710
+	710 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Retroactively executing hr/step for 5TQ66D on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 114
+	114 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 2441, [1377/54/4/5], 1.63791)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 2441, [1377/54/4/5], 1.63791)
+Retroactively executing hr/step for 5TQ66D on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-19-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-08-21 07:30:04.086082
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzkzNDA0LCJpYXQiOjE1MzQ3NjQ2MDR9.t7U-9edzcpBrKjefbbv3roln2zHhXCS3OZQiLj8JWMc. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 57ef0a7d1fb3fad478d1da9ab34b896b0de660c9df96bd4ec2b12e582aa47ea0
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-08-14 / today: 2018-08-21
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5)
+Hasn't synced recently. Last sync time: 2018-08-16T20:32:58.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5T82TY from 2018-08-14 to 2018-08-19
+Retroactively executing hr/step for 5T82TY on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-20-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzkzNDE3LCJpYXQiOjE1MzQ3NjQ2MTd9.mFYAjNJHj7EaawzUoxFqThAs-KvPTNVY_T19rYiQ-gU. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 39073926c746914f80c1d600ecb68bca048c89c18383220771e6800f51626ed4
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-08-19 / today: 2018-08-21
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 13
+	13 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-20
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-08-14 to 2018-08-19
+Retroactively executing hr/step for 6RDVLK on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 810
+	810 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-14, 3724, [1191/183/42/24], 2.8861)
+Retroactively executing hr/step for 6RDVLK on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Retroactively executing hr/step for 6RDVLK on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 6RDVLK on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Retroactively executing hr/step for 6RDVLK on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 968
+	968 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+Retroactively executing hr/step for 6RDVLK on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 16
+	16 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-19, 22, [1438/2/0/0], 0.01705)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-19, 22, [1438/2/0/0], 0.01705)
+	-------data as of yesterday that is: 2018-08-20-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzkzNDMzLCJpYXQiOjE1MzQ3NjQ2MzN9.MknLzHqXNiGcV46vhgmJBTLKIswArtyLql4Q35MRvZw. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 8c1c91c9cbea686b9fabae166de7e6f87a0f44687a04721fa8ca1e28b5a0c20f
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-08-14 / today: 2018-08-21
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5RZJTJ from 2018-08-14 to 2018-08-19
+Retroactively executing hr/step for 5RZJTJ on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-20-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0NzkzNDQ0LCJpYXQiOjE1MzQ3NjQ2NDR9.0fMobNMdiyllXYWwuo0mspNLoHGNnwhuPI8lubk3CBA. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> b05c4fd292b1d488769d140a9b209e804f1e1d3a8165d7887de7fa50f6c1710d
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-08-17 / today: 2018-08-21
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 132
+	132 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-20
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-08-14 to 2018-08-19
+Retroactively executing hr/step for 5TQ66D on 2018-08-14
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-14, 13917, [1046/243/39/30], 9.3383)
+Retroactively executing hr/step for 5TQ66D on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 919
+	919 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Retroactively executing hr/step for 5TQ66D on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 710
+	710 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Retroactively executing hr/step for 5TQ66D on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 647
+	647 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 13269, [1151/207/23/59], 8.90349)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 13269, [1151/207/23/59], 8.90349)
+Retroactively executing hr/step for 5TQ66D on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5TQ66D on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 394
+	394 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-19, 10577, [1208/161/44/27], 7.09716)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-19, 10577, [1208/161/44/27], 7.09716)
+	-------data as of yesterday that is: 2018-08-20-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-08-22 07:30:05.098403
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0ODc5ODA0LCJpYXQiOjE1MzQ4NTEwMDR9.0gLAjhkqQTGvMSg4aAw6C_fN1OX4hicWdpBmBMqd7tg. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 167d615cc1245e1c88dca7148bd13f72a2183f88ca7235a86a3cf130b4c78324
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-08-15 / today: 2018-08-22
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-08-16T20:32:58.000,Alta HR,5)
+Hasn't synced recently. Last sync time: 2018-08-16T20:32:58.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5T82TY from 2018-08-15 to 2018-08-20
+Retroactively executing hr/step for 5T82TY on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5T82TY on 2018-08-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-21-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM0ODc5ODE0LCJpYXQiOjE1MzQ4NTEwMTR9.vnGnuK4l6kT82DGJKMZW28CKvEDndlJyGSavyLGSw4w. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> e69756e2527388496b3c70d372ebee9d6f90288263b4c62fe8112eb9a5137995
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-08-20 / today: 2018-08-22
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(6RDVLK,2018-08-22T05:01:10.000,Aria 2,96), DeviceInfo(6RDVLK,2018-08-21T01:05:31.000,Alta HR,48)]
+DeviceInfo(6RDVLK,2018-08-22T05:01:10.000,Aria 2,96)
+DeviceInfo(6RDVLK,2018-08-21T01:05:31.000,Alta HR,48)
+Has synced recently. Last sync time: 2018-08-21T01:05:31.000
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+Retroactively fetching data for 6RDVLK from 2018-08-15 to 2018-08-20
+Retroactively executing hr/step for 6RDVLK on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-15, 77, [1434/6/0/0], 0.059669999999999994)
+Retroactively executing hr/step for 6RDVLK on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 6RDVLK on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 653
+	653 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-17, 2343, [1311/129/0/0], 1.81582)
+Retroactively executing hr/step for 6RDVLK on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 968
+	968 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-18, 5415, [721/165/12/9], 4.19662)
+Retroactively executing hr/step for 6RDVLK on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 16
+	16 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-19, 22, [1438/2/0/0], 0.01705)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-19, 22, [1438/2/0/0], 0.01705)
+Retroactively executing hr/step for 6RDVLK on 2018-08-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 13
+	13 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-08-20, 14, [1439/1/0/0], 0.01085)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-08-20, 14, [1439/1/0/0], 0.01085)
+	-------data as of yesterday that is: 2018-08-21-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0ODc5ODI3LCJpYXQiOjE1MzQ4NTEwMjd9.4g_8YPz06tMbHxmE9-Utt34C3T9Jmk8ktVVs5cUoxIc. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 619b65dfcc16068bcdc79d1283fc1e51cbeef3fa15f406600e0b559a0339c543
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-08-15 / today: 2018-08-22
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+Retroactively fetching data for 5RZJTJ from 2018-08-15 to 2018-08-20
+Retroactively executing hr/step for 5RZJTJ on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5RZJTJ on 2018-08-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+	-------data as of yesterday that is: 2018-08-21-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM0ODc5ODM2LCJpYXQiOjE1MzQ4NTEwMzZ9.NF463jBTbVGcxZTkJtvXSVceSdDX0nNQEvphqaVT840. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> f1fc34734b6836a72dec63f4a2056e2a108deeebff9ee41d7b11314e0d8a7871
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-08-20 / today: 2018-08-22
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 170
+	170 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Getting weight log for 2018-08-21
+	...Done getting weight log
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-08-15 to 2018-08-20
+Retroactively executing hr/step for 5TQ66D on 2018-08-15
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 919
+	919 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-15, 20320, [1050/267/43/80], 14.75983)
+Retroactively executing hr/step for 5TQ66D on 2018-08-16
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 710
+	710 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-16, 7953, [1228/177/24/11], 5.33646)
+Retroactively executing hr/step for 5TQ66D on 2018-08-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 647
+	647 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 13269, [1151/207/23/59], 8.90349)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-17, 13269, [1151/207/23/59], 8.90349)
+Retroactively executing hr/step for 5TQ66D on 2018-08-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+Retroactively executing hr/step for 5TQ66D on 2018-08-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 394
+	394 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-19, 10577, [1208/161/44/27], 7.09716)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-19, 10577, [1208/161/44/27], 7.09716)
+Retroactively executing hr/step for 5TQ66D on 2018-08-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 609
+	609 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-08-20, 13034, [1140/238/25/37], 9.18597)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-08-20, 13034, [1140/238/25/37], 9.18597)
+	-------data as of yesterday that is: 2018-08-21-------
+	...Done refreshing
+===============================================================
