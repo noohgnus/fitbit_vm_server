@@ -339,6 +339,8 @@ def loop_retroactive_data(token_dict, uid, query_start_date, query_end_date):
     while temp_date <= query_end_date:
         print("Retroactively executing hr/step for %s on %s" % (uid, str(temp_date)))
         retroactive_execute_heart_and_step(token_dict, uid, str(temp_date))
+        execute_weight(token_dict, uid, str(temp_date))
+
         temp_date = temp_date + datetime.timedelta(days=1)
 
 
@@ -372,20 +374,23 @@ def insert_user_info(user_json):
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
 
-    heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
-    step_json = get_intraday_steps(token_dict=token_dict, uid=uid, query_date=date_string)
-    distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
+    try:
+        heart_json = get_intraday_heart(token_dict=token_dict, uid=uid, query_date=date_string)
+        step_json = get_intraday_steps(token_dict=token_dict, uid=uid, query_date=date_string)
+        distance_json = get_intraday_distance(token_dict=token_dict, uid=uid, query_date=date_string)
 
-        
-    sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
-    light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesLightlyActive")
-    fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesFairlyActive")
-    very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesVeryActive")
-    activity_dict = combine_activity_levels(
-        sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
-    
-    time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, distance_json, activity_dict, device_dict, uid)
-    insert_intraday_dict(time_dict)
+        sedentary_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesSedentary")
+        light_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesLightlyActive")
+        fairly_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesFairlyActive")
+        very_active_payload = get_activity_details(token_dict=token_dict, uid=uid, query_date=date_string, activity_resource_path="minutesVeryActive")
+        activity_dict = combine_activity_levels(
+            sedentary_payload, light_active_payload, fairly_active_payload, very_active_payload)
+
+        time_dict = make_intraday_dict_from_json_datas(heart_json, step_json, distance_json, activity_dict, device_dict, uid)
+        insert_intraday_dict(time_dict)
+
+    except ValueError as ve:
+        print ve
 
 
 def retroactive_execute_heart_and_step(token_dict, uid, date_string):
@@ -414,6 +419,7 @@ def retroactive_execute_heart_and_step(token_dict, uid, date_string):
 
 
 def execute_weight(token_dict, uid, date_string):
+    print("executing weight for " + date_string)
     weight_data = get_weight_log(token_dict, uid, date_string)
     weight_dict = make_weight_dict_from_json(weight_data, uid, date_string)
     insert_weight_dict(weight_dict)
@@ -909,8 +915,17 @@ def insert_weight_dict(time_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         dbhandler = connection.cursor()
+        flush_user = insert_set[0][1]
+        flush_date = insert_set[0][0][:10]
+        # flush that day's existing data
+        flush_stmt = "DELETE FROM PC_Weight WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
+            flush_user, flush_date)
+        dbhandler.execute(flush_stmt)
+        connection.commit()
+
+        insert_cursor = connection.cursor()
         stmt = "INSERT INTO PC_Weight (timestamp, fitbit_uid, weight, bmi, fat, source, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        dbhandler.executemany(stmt, insert_set)
+        insert_cursor.executemany(stmt, insert_set)
 
     except Exception as e:
         print "EXCEPTION IN insert_weight_dict: " + str(e)
@@ -991,37 +1006,6 @@ def insert_daily_activity(ds):
         print("Done inserting daily set: " + str(ds))
 
 
-
-def retroactive_insert_intraday_dict(time_pair):
-
-    insert_set = []
-    for time in time_pair:
-        fitbit_data = time_pair[time]
-        # print(str(time) + " / " + str(fitbit_data))
-        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.distance,
-                           fitbit_data.activity_level, str(datetime.datetime.now())))
-
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        dbflusher = connection.cursor()
-        flush_user = insert_set[0][1]
-        flush_date = insert_set[0][0][:10]
-        flush_stmt = "DELETE FROM Temp_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (flush_user, flush_date)
-        dbflusher.execute(flush_stmt)
-
-        dbhandler = connection.cursor()
-        stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        dbhandler.executemany(stmt, insert_set)
-
-    except Exception as e:
-        print "EXCEPTION IN insert_intraday_dict: " + str(e)
-
-    finally:
-        connection.commit()
-        connection.close()
-
 def temp_insert_intraday_dict(time_pair):
     insert_set = []
     for time in time_pair:
@@ -1084,10 +1068,10 @@ def connect_db():
 
 def get_query_start_date(uid):
     def get_db_last_hr_record():
+        connection = db.Connection(host=HOST, port=PORT,
+                                   user=USER, passwd=PASSWORD, db=DB,
+                                   cursorclass=cursors.SSCursor)
         try:
-            connection = db.Connection(host=HOST, port=PORT,
-                                       user=USER, passwd=PASSWORD, db=DB,
-                                       cursorclass=cursors.SSCursor)
             dbhandler = connection.cursor(cursors.DictCursor)
             stmt = "SELECT * FROM PC_Step_HeartRate WHERE fitbit_uid = '%s' ORDER BY timestamp DESC LIMIT 1" % uid
             dbhandler.execute(stmt)
