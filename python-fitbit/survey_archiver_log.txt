@@ -1561,3 +1561,47 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-09-23 07:31:05.303483
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-09-24 07:31:08.004905
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 973, "userid": 4, "ping_type": 1, "time": "2018-09-24T20:03:35.916Z"}, {"id": 974, "userid": 4, "ping_type": 1, "time": "2018-09-24T20:03:40.887Z"}, {"id": 975, "userid": 4, "ping_type": 1, "time": "2018-09-24T20:03:45.035Z"}, {"id": 976, "userid": 4, "ping_type": 1, "time": "2018-09-24T20:03:56.583Z"}]}
+2018-09-24 16:03:35
+2018-09-24 16:03:40
+2018-09-24 16:03:45
+2018-09-24 16:03:56
+[CheckinData(User: 4, time: 2018-09-24 16:03:35, type: 1), CheckinData(User: 4, time: 2018-09-24 16:03:40, type: 1), CheckinData(User: 4, time: 2018-09-24 16:03:45, type: 1), CheckinData(User: 4, time: 2018-09-24 16:03:56, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2018-09-25 07:31:02.203517
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 977, "userid": 4, "ping_type": 1, "time": "2018-09-25T19:24:20.619Z"}]}
+2018-09-25 15:24:20
+[CheckinData(User: 4, time: 2018-09-25 15:24:20, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2018-09-26 07:30:59.868815
+==========================================

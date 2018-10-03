@@ -29000,3 +29000,2157 @@ EXCEPTION IN insert_weight_dict: list index out of range
 	-------data as of yesterday that is: 2018-09-22-------
 	...Done refreshing
 ===============================================================
+===============================================================
+Logging event at: 2018-09-24 07:30:02.164051
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTM3NzMxMDAyLCJpYXQiOjE1Mzc3MDIyMDJ9.bSDcPGtKjpm3W7mLrK9zo-7soIJb8Nv8v1SRfsAzoxA. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> c1b5efaf02589ba6f61f6c791aeec300874b6055adf9007b884480a2f98b0072
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-09-20 / today: 2018-09-24
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-09-20T19:01:41.000,Alta HR,100), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-09-20T19:01:41.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-09-20T19:01:41.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5T82TY from 2018-09-17 to 2018-09-22
+Retroactively executing hr/step for 5T82TY on 2018-09-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-17
+Getting weight log for 2018-09-17
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 1
+	1 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-18, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-18, 0, [1440/0/0/0], 0.0)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 181
+	181 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-23-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3NzMxMDEzLCJpYXQiOjE1Mzc3MDIyMTN9.GXxhkxHlFN4sXrnv6K_DvUvec7HW8ntWkSJCh1RyY3I. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 5f32681a996c01267b1785c36fc2ff145f6b6be797fe92d0088c0752c4c1cf75
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-09-22 / today: 2018-09-24
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 140
+	140 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-09-17 to 2018-09-22
+Retroactively executing hr/step for 6RDVLK on 2018-09-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-17
+Getting weight log for 2018-09-17
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 3
+	3 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-18, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-18, 0, [1440/0/0/0], 0.0)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 389
+	389 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 1311
+	1311 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 85
+	85 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 103
+	103 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-23-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3NzMxMDI3LCJpYXQiOjE1Mzc3MDIyMjd9.MyAKhMGI3A33kjxw-TlksmjIQIbxl20RuGrJRD68sIM. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> beb732001b63f8ddf3350f71082d1cc4b9caed18756de4ec7391d99fb7d28938
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-09-17 / today: 2018-09-24
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5RZJTJ from 2018-09-17 to 2018-09-22
+Retroactively executing hr/step for 5RZJTJ on 2018-09-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-17
+Getting weight log for 2018-09-17
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-23-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3NzMxMDM3LCJpYXQiOjE1Mzc3MDIyMzd9.eRZ1CmsvxRtiiGWjG1oOM47oxyxTsMjO2_VO7OWiW7o. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 486e6f4a0c9f95261aeb05f6e5f3e3dfa4b9ce2b7d27aa294ac3253c4c32f245
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-09-21 / today: 2018-09-24
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-09-21T13:54:35.000,Alta HR,95), DeviceInfo(5TQ66D,2018-09-13T10:26:59.000,Aria,61)]
+DeviceInfo(5TQ66D,2018-09-21T13:54:35.000,Alta HR,95)
+Hasn't synced recently. Last sync time: 2018-09-21T13:54:35.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-09-17 to 2018-09-22
+Retroactively executing hr/step for 5TQ66D on 2018-09-17
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 588
+	588 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-17, 13223, [1202/152/39/47], 9.74389)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-17, 13223, [1202/152/39/47], 9.74389)
+executing weight for 2018-09-17
+Getting weight log for 2018-09-17
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 401
+	401 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-18, 10756, [1233/158/10/39], 7.95927)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-18, 10756, [1233/158/10/39], 7.95927)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 348
+	348 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 250
+	250 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 275
+	275 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 3934, [1340/77/15/8], 2.63434)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 3934, [1340/77/15/8], 2.63434)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-23-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-09-25 07:30:02.759411
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3ODE3NDAyLCJpYXQiOjE1Mzc3ODg2MDJ9.iFMe7dlOpUYkWmasfHeozy16xc1iwxyWW8GBTRuq_qY. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 7de470d51bf09aeb25043eb7513ad9c2563e3fe7292c39a9576b61948569f5d1
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-09-18 / today: 2018-09-25
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-09-20T19:01:41.000,Alta HR,100), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-09-20T19:01:41.000,Alta HR,100)
+Hasn't synced recently. Last sync time: 2018-09-20T19:01:41.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5T82TY from 2018-09-18 to 2018-09-23
+Retroactively executing hr/step for 5T82TY on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 1
+	1 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-18, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-18, 0, [1440/0/0/0], 0.0)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 181
+	181 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-24-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3ODE3NDEyLCJpYXQiOjE1Mzc3ODg2MTJ9.ZYrNubbKUkeXbV-svJBPPZUX9Hw0fnf9W0r771GqBtA. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> b25adb24621280c076573cc0a59dbb122481ec685d9dc03928b05ddfa3e7bddb
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-09-23 / today: 2018-09-25
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-09-18 to 2018-09-23
+Retroactively executing hr/step for 6RDVLK on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 3
+	3 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-18, 0, [1440/0/0/0], 0.0)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-18, 0, [1440/0/0/0], 0.0)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 389
+	389 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 1311
+	1311 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 85
+	85 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 103
+	103 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 140
+	140 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-23, 174, [880/55/7/46], 0.13485)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-23, 174, [880/55/7/46], 0.13485)
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-24-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3ODE3NDI2LCJpYXQiOjE1Mzc3ODg2MjZ9.NHmfGNfD4CpnqxAJcSfnRRLbwT3W5mRhjse846SE0po. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 93b5f54ef76a85b975350501b308ec213e000bb49142037a8b9d3d1755ae9c89
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-09-18 / today: 2018-09-25
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5RZJTJ from 2018-09-18 to 2018-09-23
+Retroactively executing hr/step for 5RZJTJ on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-24-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3ODE3NDM3LCJpYXQiOjE1Mzc3ODg2Mzd9.bY7LfTH5Q8xGqAWVlhoZk-2kcbORz4xyGNkwrTU3voU. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 8610dcb18e5781602b49f0e5edf66fdf66fe12ad230a7498b9627ce65cec57fd
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-09-21 / today: 2018-09-25
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 766
+	766 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-09-18 to 2018-09-23
+Retroactively executing hr/step for 5TQ66D on 2018-09-18
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 401
+	401 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-18, 10756, [1233/158/10/39], 7.95927)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-18, 10756, [1233/158/10/39], 7.95927)
+executing weight for 2018-09-18
+Getting weight log for 2018-09-18
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 348
+	348 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 250
+	250 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 848
+	848 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 13759, [1111/263/31/35], 9.30383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 13759, [1111/263/31/35], 9.30383)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 1385
+	1385 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-22, 35203, [456/348/74/167], 23.621209999999998)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-22, 35203, [456/348/74/167], 23.621209999999998)
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 966
+	966 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-23, 6041, [622/145/18/10], 4.05351)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-23, 6041, [622/145/18/10], 4.05351)
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-24-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-09-26 07:30:01.928095
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+Introspect for 5T82TY:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VDgyVFkiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3OTAzODAzLCJpYXQiOjE1Mzc4NzUwMDN9.StKyyoUES0L6h9fmk6C9ruBxeaGcE9w4_uGpOB5dgOI. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 89a7c047fbb233e4f1827c506c077f98cea0bffb468427b3be6c357a57ae5b39
+Data retrieval routine for user: 5T82TY
+last_logged: 2018-09-19 / today: 2018-09-26
+Getting Devices
+	...Done getting device info
+DEVICE : 543915941
+DEVICE : FX0081613702080017122224B0B83A9117
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5T82TY
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5T82TY,2018-09-25T15:25:09.000,Alta HR,100), DeviceInfo(5T82TY,2018-08-15T20:21:32.000,Aria 2,88)]
+DeviceInfo(5T82TY,2018-09-25T15:25:09.000,Alta HR,100)
+Has synced recently. Last sync time: 2018-09-25T15:25:09.000
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table
+executing weight for 2018-09-25
+Getting weight log for 2018-09-25
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5T82TY from 2018-09-19 to 2018-09-24
+Retroactively executing hr/step for 5T82TY on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 181
+	181 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-20, 3005, [1360/80/0/0], 3.7412199999999998)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 124
+	124 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5T82TY, 2018-09-23, 3910, [1380/31/8/21], 4.8679499999999996)
+Done inserting daily set: DailyActivitySet(5T82TY, 2018-09-23, 3910, [1380/31/8/21], 4.8679499999999996)
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5T82TY on 2018-09-24
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5T82TY...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-25-------
+Pulling user : 6RDVLK
+Introspecting user 6RDVLK
+Introspect for 6RDVLK:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2UkRWTEsiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3OTAzODEzLCJpYXQiOjE1Mzc4NzUwMTN9.Zb6ECIUDOTyxjHAnqqwiGeIUDfFjdscL8GmGD97yuqI. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> aeb22f112266f08298e33d1303749424a39df34d7109aadb654f1cc522851cff
+Data retrieval routine for user: 6RDVLK
+last_logged: 2018-09-24 / today: 2018-09-26
+Getting Devices
+	...Done getting device info
+DEVICE : FX0081613702080017122224B038029717
+DEVICE : 622101810
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 6RDVLK
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 6
+	6 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+executing weight for 2018-09-25
+Getting weight log for 2018-09-25
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 6RDVLK from 2018-09-19 to 2018-09-24
+Retroactively executing hr/step for 6RDVLK on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 389
+	389 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-19, 2040, [1274/68/51/47], 1.581)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 1311
+	1311 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-20, 4570, [755/189/14/10], 3.54175)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 85
+	85 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-21, 556, [1416/24/0/0], 0.4309)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 103
+	103 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-22, 179, [1415/25/0/0], 0.13871999999999998)
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 140
+	140 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-23, 174, [880/55/7/46], 0.13485)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-23, 174, [880/55/7/46], 0.13485)
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 6RDVLK on 2018-09-24
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 6RDVLK...
+HR_DATASET LENGTH: 32
+	32 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(6RDVLK, 2018-09-24, 22, [1107/19/3/4], 0.01705)
+Done inserting daily set: DailyActivitySet(6RDVLK, 2018-09-24, 22, [1107/19/3/4], 0.01705)
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-25-------
+Pulling user : 5RZJTJ
+Introspecting user 5RZJTJ
+Introspect for 5RZJTJ:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UlpKVEoiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3OTAzODI2LCJpYXQiOjE1Mzc4NzUwMjZ9.tGjoqrcWplHevzE3MZfC7qnOMCkvcIG7ine07KwnESs. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 797c5a30dac544ff4dad862102f46b4fff0fbb6f216a8d4a893bf36374800625
+Data retrieval routine for user: 5RZJTJ
+last_logged: 2018-09-19 / today: 2018-09-26
+Getting Devices
+	...Done getting device info
+DEVICE : YBJ8TCCZE0IQFK7I
+DEVICE : 597411886
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5RZJTJ
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100), DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)]
+DeviceInfo(5RZJTJ,2018-08-13T17:15:12.000,Aria,100)
+DeviceInfo(5RZJTJ,2018-07-23T15:12:28.000,Alta HR,70)
+Hasn't synced recently. Last sync time: 2018-07-23T15:12:28.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-25
+Getting weight log for 2018-09-25
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5RZJTJ from 2018-09-19 to 2018-09-24
+Retroactively executing hr/step for 5RZJTJ on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5RZJTJ on 2018-09-24
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5RZJTJ...
+HR_DATASET LENGTH: 0
+HR Dataset for selected date is empty. Checking if steps is also empty
+STEP Dataset for selected date is empty. Sending ping to Non-compliance table
+Both HR and Step Dataset for selected retroactive date are empty.
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-25-------
+Pulling user : 5TQ66D
+Introspecting user 5TQ66D
+Introspect for 5TQ66D:
+{"errors":[{"errorType":"expired_token","message":"Access token expired: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1VFE2NkQiLCJhdWQiOiIyMkNNV1MiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM3OTAzODM1LCJpYXQiOjE1Mzc4NzUwMzV9.fL9dzNuykGj-p7lxlJk5T73J-BtH2oWLfzG3CSjDKvY. Visit https://dev.fitbit.com/docs/oauth2 for more information on the Fitbit Web API authorization process."}],"success":false}
+Using refresh_token -> 4900d65182aaa255bf0aca65969e8cb7356406d813219ae78adc9fdbfc420138
+Data retrieval routine for user: 5TQ66D
+last_logged: 2018-09-24 / today: 2018-09-26
+Getting Devices
+	...Done getting device info
+DEVICE : 600805140
+DEVICE : YO6MAFCMYAKCV1MC
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+making intraday hr/step dict from user: 5TQ66D
+Converting HR and Step JSON data to dictionary...
+HR_DATASET LENGTH: 0
+HAS SYNCED RECENTLY?: [DeviceInfo(5TQ66D,2018-09-24T22:50:24.000,Alta HR,65), DeviceInfo(5TQ66D,2018-09-13T10:26:59.000,Aria,61)]
+DeviceInfo(5TQ66D,2018-09-24T22:50:24.000,Alta HR,65)
+Hasn't synced recently. Last sync time: 2018-09-24T22:50:24.000
+Hasn't synced yesterday. Sending ping to Non-compliance table
+_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table
+executing weight for 2018-09-25
+Getting weight log for 2018-09-25
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Getting user info
+	...Done getting user info
+Retroactively fetching data for 5TQ66D from 2018-09-19 to 2018-09-24
+Retroactively executing hr/step for 5TQ66D on 2018-09-19
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 348
+	348 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-19, 5884, [1252/173/5/10], 3.9481599999999997)
+executing weight for 2018-09-19
+Getting weight log for 2018-09-19
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-20
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 250
+	250 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-20, 7608, [1297/89/22/32], 5.10496)
+executing weight for 2018-09-20
+Getting weight log for 2018-09-20
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-21
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 848
+	848 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 13759, [1111/263/31/35], 9.30383)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-21, 13759, [1111/263/31/35], 9.30383)
+executing weight for 2018-09-21
+Getting weight log for 2018-09-21
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-22
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 1385
+	1385 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-22, 35203, [456/348/74/167], 23.621209999999998)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-22, 35203, [456/348/74/167], 23.621209999999998)
+executing weight for 2018-09-22
+Getting weight log for 2018-09-22
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-23
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 966
+	966 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-23, 6041, [622/145/18/10], 4.05351)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-23, 6041, [622/145/18/10], 4.05351)
+executing weight for 2018-09-23
+Getting weight log for 2018-09-23
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+Retroactively executing hr/step for 5TQ66D on 2018-09-24
+Getting Intraday HR
+	...Done getting intraday heartrate
+Getting Intraday Activity in Steps
+	...Done getting intraday steps
+Getting Intraday Activity in Steps
+	...Done getting intraday distance
+Getting activity details
+Getting activity details
+Getting activity details
+Getting activity details
+Converting Activity Level JSON data to dictionary...
+	...Done Converting Activity Level JSON data to dictionary
+Retroactively converting HR and Step JSON data to dictionary for 5TQ66D...
+HR_DATASET LENGTH: 766
+	766 is the total heart rate timestamps in selected date: 
+	...Done converting JSON data to dictionary
+Inserting daily set: DailyActivitySet(5TQ66D, 2018-09-24, 8633, [1195/210/22/13], 5.77462)
+Done inserting daily set: DailyActivitySet(5TQ66D, 2018-09-24, 8633, [1195/210/22/13], 5.77462)
+executing weight for 2018-09-24
+Getting weight log for 2018-09-24
+	...Done getting weight log
+EXCEPTION IN insert_weight_dict: list index out of range
+	-------data as of yesterday that is: 2018-09-25-------
+	...Done refreshing
+===============================================================
+===============================================================
+Logging event at: 2018-09-27 07:30:02.627968
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-09-28 07:30:02.393214
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-09-29 07:30:02.191546
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-09-30 07:30:01.958604
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-10-01 07:30:02.709433
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-10-02 07:30:02.485121
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
+===============================================================
+Logging event at: 2018-10-03 07:30:02.304042
+Populating data by refreshing previous token sessions.
+Reading in from existing tokens.json ...
+	...Done reading tokens.json.
+Pulling user : 5T82TY
+Introspecting user 5T82TY
