@@ -96,38 +96,7 @@ PASSWORD = "yiGLeVihDHhQMJPo"
 DB = "mmcfitbit"
 
 now = str(datetime.datetime.now())
-file_name = "/Users/anthony/Desktop/python_api_puller/python-fitbit/token.json"
-file_name = "token.json"
 
-token_pair = {"access_token" : "at1", "refresh_token" : "rf1", "time" : now}
-
-debug_flag = False
-
-
-def read():
-    print("Reading from existing token file...")
-    file_obj = open(file_name, 'r')
-    # s = file_obj.read()
-    st = json.load(file_obj)
-    a_token = st["access_token"]
-    r_token = st["refresh_token"]
-    # print('\n' + a_token + " / " + r_token)
-    file_obj.close()
-    print("\t...Done reading token file.")
-    return {"access_token":a_token, "refresh_token":r_token}
-
-
-def write():
-    print("Writing...")
-
-    file_obj = open(file_name, 'wb')
-    # file_obj.write("access" + "\n")
-    # file_obj.write("refresh" + "\n")
-    # print(json.dumps(my))
-    json.dump(token_pair, file_obj)
-    file_obj.close()
-
-    print("\t...Done writing!")
 
 ############################################################
 #                                                          #
@@ -200,12 +169,12 @@ def register_new_auth_code():
     read_token.close()
 
     try:
-        read_mult_tokens = open("tokens.json", 'r')
+        read_mult_tokens = open("csf_tokens.json", 'r')
         json_user_datas = json.load(read_mult_tokens)
         read_mult_tokens.close()
 
         if(response["user_id"] != None):
-            write_file = open("tokens.json", 'w+')
+            write_file = open("csf_tokens.json", 'w+')
             response["modified_at"] = str(datetime.datetime.now())
             json_user_datas["users"][response["user_id"]] = response
             # json_user_datas["global_refresh_token"] = response["refresh_token"]
@@ -219,11 +188,11 @@ def register_new_auth_code():
     return json_user_datas
 
 def get_multi_token_dict():
-    print("Reading in from existing tokens.json ...")
-    file_obj = open("tokens.json", 'r')
+    print("Reading in from existing csf_tokens.json ...")
+    file_obj = open("csf_tokens.json", 'r')
     st = json.load(file_obj)
     file_obj.close()
-    print("\t...Done reading tokens.json.")
+    print("\t...Done reading csf_tokens.json.")
     return st
 
 
@@ -289,7 +258,7 @@ def refresh_multi_user_token(token_dict):
                 json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
                 data_retrieval_routine(json_user_datas, user)
 
-    write_file = open("tokens.json", 'w+')
+    write_file = open("csf_tokens.json", 'w+')
     json.dump(json_user_datas, write_file, indent=4)
     write_file.close()
 
@@ -312,7 +281,6 @@ def data_retrieval_routine(token_dict, uid):
             update_devices(device_dict)
             execute_heart_and_step(token_dict, uid, date_string, device_dict)
             execute_weight(token_dict, uid, date_string)
-            # execute_user_info(token_dict, uid)
         except ValueError as vale:
             print vale
 

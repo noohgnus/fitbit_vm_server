@@ -255,8 +255,9 @@ def push_feedback_to_webapp(fb):
     print("Pushing feedback to webapp...")
     url = upload_feedback_url + "%s/%s/%s/%s/%s/%s" % (fb.patient_id, fb.week, fb.avg_weight, fb.avg_steps,
                                                        fb.total_active_mins, fb.height)
-    r = requests.get(url)
-    print(r.text)
+    # r = requests.get(url)
+    # print(r.text)
+    print(url)
 
 
 def temp():
