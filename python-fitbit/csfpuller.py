@@ -217,7 +217,7 @@ def is_token_fresh_introspect(token_dict, uid):
     # else:
     #     return True
 
-def refresh_multi_user_token(token_dict):
+def refresh_multi_user_token(token_dict, query_uid=""):
     json_user_datas = token_dict
     for user in json_user_datas["users"]:
         uid = json_user_datas["users"][user]["user_id"]
@@ -226,9 +226,8 @@ def refresh_multi_user_token(token_dict):
         # is_token_fresh_introspect(token_dict, uid)
         # continue
 
-        if is_token_fresh_introspect(token_dict, uid):
+        if (query_uid == "" or query_uid == uid) and is_token_fresh_introspect(token_dict, uid):
             data_retrieval_routine(json_user_datas, user)
-            pass
         else:
             # Refreshing user
             headers = {'Authorization':'Basic ' + base64_key_secret,
@@ -256,7 +255,11 @@ def refresh_multi_user_token(token_dict):
                 json_user_datas["users"][user]["access_token"] = response["access_token"]
                 json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
                 json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
-                data_retrieval_routine(json_user_datas, user)
+                if query_uid == "" or query_uid == uid:
+                    data_retrieval_routine(json_user_datas, user)
+                else:
+                    continue
+
 
     write_file = open("csf_tokens.json", 'w+')
     json.dump(json_user_datas, write_file, indent=4)
@@ -280,14 +283,13 @@ def data_retrieval_routine(token_dict, uid):
             device_dict = make_device_dict_from_json(get_devices(token_dict, uid), uid)
             update_devices(device_dict)
             execute_heart_and_step(token_dict, uid, date_string, device_dict)
-            execute_weight(token_dict, uid, date_string)
         except ValueError as vale:
             print vale
 
         # query_start_date = last_logged_date + datetime.timedelta(days=1)
         # force rewrite last week's data
-        query_start_date = datetime.date.today() - datetime.timedelta(days=7)
-        query_end_date = datetime.date.today() - datetime.timedelta(days=2)
+        query_start_date = datetime.date.today() - datetime.timedelta(days=21)
+        query_end_date = datetime.date.today() - datetime.timedelta(days=3)
 
         if query_start_date < datetime.date.today():
             print("Retroactively fetching data for %s from %s to %s"
@@ -307,37 +309,8 @@ def loop_retroactive_data(token_dict, uid, query_start_date, query_end_date):
     while temp_date <= query_end_date:
         print("Retroactively executing hr/step for %s on %s" % (uid, str(temp_date)))
         retroactive_execute_heart_and_step(token_dict, uid, str(temp_date))
-        execute_weight(token_dict, uid, str(temp_date))
 
         temp_date = temp_date + datetime.timedelta(days=1)
-
-
-def execute_user_info(token_dict, uid):
-    user_json = get_user(token_dict, uid)
-    if debug_flag:
-        print(user_json)
-    insert_user_info(user_json)
-
-
-def insert_user_info(user_json):
-    insert_set = []
-
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        user = user_json["user"]
-        dbhandler = connection.cursor()
-        stmt = "UPDATE PC_Users SET height=%s WHERE fitbit_uid='%s'" % (user["height"], user["encodedId"])
-        dbhandler.execute(stmt)
-
-    except Exception as e:
-        print "EXCEPTION IN insert_user_info: " + str(e)
-        print(dbhandler._last_executed)
-
-    finally:
-        connection.commit()
-        connection.close()
 
 
 def execute_heart_and_step(token_dict, uid, date_string, device_dict):
@@ -386,29 +359,21 @@ def retroactive_execute_heart_and_step(token_dict, uid, date_string):
 
 
 
-def execute_weight(token_dict, uid, date_string):
-    print("executing weight for " + date_string)
-    weight_data = get_weight_log(token_dict, uid, date_string)
-    weight_dict = make_weight_dict_from_json(weight_data, uid, date_string)
-    insert_weight_dict(weight_dict)
-
-
 def multi_login_routine():
     if(len(sys.argv) == 2):
         print("Registering a new user with given AUTH CODE.")
         token_dict = register_new_auth_code()
     elif(len(sys.argv) == 1):
-        print("Populating data by refreshing previous token sessions.")
+        print("Populating data by refreshing all previous token sessions.")
         token_dict = get_multi_token_dict()
-        refresh_multi_user_token(token_dict)
-    elif(len(sys.argv) == 3):
-        if(sys.argv[1] == "loop"):
-            # token_dict = get_multi_token_dict()
-            # for i in range(0, sys.argv[2]):
-            exit()
+        refresh_multi_user_token(token_dict=token_dict)
+    elif len(sys.argv) == 3 and sys.argv[1] == "get":
+        print("Populating data by refreshing specified token: %s" % sys.argv[2])
 
+        token_dict = get_multi_token_dict()
+        refresh_multi_user_token(token_dict=token_dict, query_uid=sys.argv[2])
     else:
-        print("Needs one or no argument")
+        print("Invalid arguments.")
         sys.exit()
     # token_dict = token_refresh(token_dict)
     return token_dict
@@ -604,16 +569,16 @@ def make_intraday_dict_from_json_datas(heart_rate_json, step_count_json, distanc
         print("HR_DATASET LENGTH: " + str(len(hr_dataset)))
         if len(hr_dataset) < 1:
             if not has_synced_yesterday(device_dict):
-                print("Hasn't synced yesterday. Sending ping to Non-compliance table")
-                insert_noncompliance_ping(user_id=uid, ping_date=date, sync_ping_type=1)
+                print("Hasn't synced yesterday.")
+                # insert_noncompliance_ping(user_id=uid, ping_date=date, sync_ping_type=1)
                 raise ValueError(
-                    "_ValueError: This account hasn't been synced recently. Sending ping to Non-compliance table")
+                    "_ValueError: This account hasn't been synced recently. ")
             else:
                 print("HR Dataset for selected date is empty. Checking if steps is also empty")
                 if int(step_counts["activities-steps"][0]["value"]) < 1:
-                    print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
-                    insert_noncompliance_ping(uid, date)
-                    raise ValueError("Both HR and Step Dataset for selected date are empty. Sending ping to Non-compliance table")
+                    print("STEP Dataset for selected date is empty.")
+                    # insert_noncompliance_ping(uid, date)
+                    raise ValueError("Both HR and Step Dataset for selected date are empty.")
         for data in hr_dataset:
             dtstring = date + " " + data["time"]
             if(dtstring not in time_pair):
@@ -694,7 +659,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if int(step_counts["activities-steps"][0]["value"]) < 1 and len(heart_rates["activities-heart-intraday"]["dataset"]) < 1:
         date = heart_rates["activities-heart"][0]["dateTime"]
-        insert_noncompliance_ping(user_id=uid, ping_date=date)
+        # insert_noncompliance_ping(user_id=uid, ping_date=date)
 
 
     for one_day_hr in heart_rates["activities-heart"]:
@@ -706,7 +671,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
         if len(hr_dataset) < 1:
             print("HR Dataset for selected date is empty. Checking if steps is also empty")
             if int(step_counts["activities-steps"][0]["value"]) < 1:
-                print("STEP Dataset for selected date is empty. Sending ping to Non-compliance table")
+                print("STEP Dataset for selected date is empty.")
                 raise ValueError("Both HR and Step Dataset for selected retroactive date are empty.")
         for data in hr_dataset:
             dtstring = date + " " + data["time"]
@@ -792,34 +757,6 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     return time_pair
 
-def make_weight_dict_from_json(weight_payload, uid, date_string):
-    weight_json = json.loads(weight_payload)
-
-    time_pair = dict()
-
-    for weight_data in weight_json["weight"]:
-        if(weight_data["date"] != date_string):
-            continue
-        if debug_flag:
-            print(weight_data)
-        date = weight_data["date"]
-        time = weight_data["time"]
-        dtstring = date + " " + time
-
-
-        weight = weight_data["weight"]
-        bmi = weight_data["bmi"]
-        if "fat" in weight_data:
-            fat = weight_data["fat"]
-        else:
-            fat = 0
-        source = weight_data["source"]
-
-        time_pair[dtstring] = FitbitWeightSet(weight=weight, bmi=bmi, fat=fat, source=source, uid=uid)
-
-    return time_pair
-
-
 def make_device_dict_from_json(devices_payload, uid):
     device_json = json.loads(devices_payload)
 
@@ -846,7 +783,7 @@ def update_devices(device_id_pair):
                                    user=USER, passwd=PASSWORD, db=DB)
 
         cursor = connection.cursor(db.cursors.DictCursor)
-        result = cursor.execute("SELECT * FROM PC_Devices")
+        result = cursor.execute("SELECT * FROM CSF_Devices")
         now_time = str(datetime.datetime.now())
         # print(now_time)
         rows = cursor.fetchall()
@@ -855,7 +792,7 @@ def update_devices(device_id_pair):
             # print(row["submitted_at"] < datetime.datetime.now())
             print("DEVICE : " + device_id)
             device = device_id_pair[device_id]
-            result = cursor.execute("INSERT INTO PC_Devices \
+            result = cursor.execute("INSERT INTO CSF_Devices \
                 (fitbit_uid, device_id, last_sync_time, device_version, device_type, battery, battery_level, updated_at)\
                 VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')\
                 ON DUPLICATE KEY UPDATE last_sync_time='%s', battery='%s', battery_level='%s', updated_at='%s'"
@@ -871,39 +808,6 @@ def update_devices(device_id_pair):
         connection.close()
 
 
-def insert_weight_dict(time_pair):
-    if len(time_pair) == 0:
-        return
-    insert_set = []
-
-    for time in time_pair:
-        fitbit_data = time_pair[time]
-        # print(str(time) + " / " + str(fitbit_data))
-        insert_set.append((time, fitbit_data.uid, fitbit_data.weight, fitbit_data.bmi, fitbit_data.fat, fitbit_data.source, str(datetime.datetime.now())))
-
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        dbhandler = connection.cursor()
-        flush_user = insert_set[0][1]
-        flush_date = insert_set[0][0][:10]
-        # flush that day's existing data
-        flush_stmt = "DELETE FROM PC_Weight WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
-            flush_user, flush_date)
-        dbhandler.execute(flush_stmt)
-        connection.commit()
-
-        insert_cursor = connection.cursor()
-        stmt = "INSERT INTO PC_Weight (timestamp, fitbit_uid, weight, bmi, fat, source, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        insert_cursor.executemany(stmt, insert_set)
-
-    except Exception as e:
-        print "EXCEPTION IN insert_weight_dict: " + str(e)
-
-    finally:
-        connection.commit()
-        connection.close()
 
 
 def insert_intraday_dict(time_pair):
@@ -925,13 +829,13 @@ def insert_intraday_dict(time_pair):
         flush_user = insert_set[0][1]
         flush_date = insert_set[0][0][:10]
         # flush that day's existing data
-        flush_stmt = "DELETE FROM PC_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
+        flush_stmt = "DELETE FROM CSF_Step_HeartRate WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
             flush_user, flush_date)
         dbhandler.execute(flush_stmt)
         connection.commit()
 
         # repopulate that day's data
-        insert_stmt = "INSERT INTO PC_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        insert_stmt = "INSERT INTO CSF_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, distance, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         dbhandler.executemany(insert_stmt, insert_set)
 
     except Exception as e:
@@ -953,7 +857,7 @@ def insert_daily_activity(ds):
         flush_user = ds.uid
         flush_date = ds.date
         # flush that day's existing data
-        flush_stmt = "DELETE FROM PC_Daily_Activities WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
+        flush_stmt = "DELETE FROM CSF_Daily_Activities WHERE fitbit_uid = '%s' AND date(timestamp) = '%s'" % (
             flush_user, flush_date)
         dbhandler.execute(flush_stmt)
         connection.commit()
@@ -961,7 +865,7 @@ def insert_daily_activity(ds):
         # repopulate that day's data
         insert_set = (ds.date, ds.uid, ds.daily_steps, ds.sedentary_mins, ds.lightly_mins, ds.fairly_mins, ds.very_mins,
                       ds.distance, str(datetime.datetime.now()))
-        insert_stmt = "INSERT INTO PC_Daily_Activities (timestamp, fitbit_uid, daily_step_total, " \
+        insert_stmt = "INSERT INTO CSF_Daily_Activities (timestamp, fitbit_uid, daily_step_total, " \
                       "minutes_sedentary, minutes_lightly_active, minutes_fairly_active, minutes_very_active, " \
                       "distance, added_on) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
         dbhandler.execute(insert_stmt, insert_set)
@@ -977,66 +881,6 @@ def insert_daily_activity(ds):
         print("Done inserting daily set: " + str(ds))
 
 
-def temp_insert_intraday_dict(time_pair):
-    insert_set = []
-    for time in time_pair:
-        fitbit_data = time_pair[time]
-        # print(str(time) + " / " + str(fitbit_data))
-        insert_set.append((time, fitbit_data.uid, fitbit_data.heart_rate, fitbit_data.step_count, fitbit_data.activity_level, str(datetime.datetime.now())))
-
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        dbhandler = connection.cursor()
-        stmt = "INSERT INTO Temp_Step_HeartRate (timestamp, fitbit_uid, heart_rate, step_count, activity_level, added_on) VALUES (%s, %s, %s, %s, %s, %s)"
-        dbhandler.executemany(stmt, insert_set)
-
-    except Exception as e:
-        print "EXCEPTION IN temp_insert_intraday_dict: " + str(e)
-
-    finally:
-        connection.commit()
-        connection.close()
-
-def insert_noncompliance_ping(user_id, ping_date, sync_ping_type=0):
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        dbhandler = connection.cursor()
-        stmt = """INSERT INTO PC_Noncompliance_Ping (date, fitbit_uid, not_equipped_flag, not_synced_flag, added_on) VALUES (%s, %s, %s, %s, %s)"""
-
-        dbhandler.execute(stmt, (ping_date, user_id, 1, sync_ping_type, str(datetime.datetime.now())))
-
-    except Exception as e:
-        print "EXCEPTION IN insert_noncompliance_ping: " + str(e)
-
-    finally:
-        connection.commit()
-        connection.close()
-
-
-def connect_db():
-    try:
-        connection = db.Connection(host=HOST, port=PORT,
-                                   user=USER, passwd=PASSWORD, db=DB)
-
-        dbhandler = connection.cursor()
-        dbhandler.execute("SELECT * from FitbitArchiveHeartRate")
-        dbhandler.execute("")
-        result = dbhandler.fetchall()
-        for item in result:
-            print item
-
-    except Exception as e:
-        print e
-
-    finally:
-        connection.commit()
-        connection.close()
-
-
 def get_query_start_date(uid):
     def get_db_last_hr_record():
         connection = db.Connection(host=HOST, port=PORT,
@@ -1044,7 +888,7 @@ def get_query_start_date(uid):
                                    cursorclass=cursors.SSCursor)
         try:
             dbhandler = connection.cursor(cursors.DictCursor)
-            stmt = "SELECT * FROM PC_Step_HeartRate WHERE fitbit_uid = '%s' ORDER BY timestamp DESC LIMIT 1" % uid
+            stmt = "SELECT * FROM CSF_Step_HeartRate WHERE fitbit_uid = '%s' ORDER BY timestamp DESC LIMIT 1" % uid
             dbhandler.execute(stmt)
             for row in dbhandler:
                 return row["timestamp"]

@@ -726,7 +726,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if int(step_counts["activities-steps"][0]["value"]) < 1 and len(heart_rates["activities-heart-intraday"]["dataset"]) < 1:
         date = heart_rates["activities-heart"][0]["dateTime"]
-        insert_noncompliance_ping(user_id=uid, ping_date=date)
+        # insert_noncompliance_ping(user_id=uid, ping_date=date)
 
 
     for one_day_hr in heart_rates["activities-heart"]:
