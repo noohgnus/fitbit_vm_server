@@ -24,6 +24,8 @@ import base64
 import sys
 import traceback
 
+start_from_days_ago = 7
+end_on_days_ago = 2
 
 class FitbitTimeSet:
     def __init__(self, heart_rate=0, step_count=0, activity_level=0, distance=0, uid="***NO UID SUPPLIED***"):
@@ -318,8 +320,8 @@ def data_retrieval_routine(token_dict, uid):
 
         # query_start_date = last_logged_date + datetime.timedelta(days=1)
         # force rewrite last week's data
-        query_start_date = datetime.date.today() - datetime.timedelta(days=13)
-        query_end_date = datetime.date.today() - datetime.timedelta(days=8)
+        query_start_date = datetime.date.today() - datetime.timedelta(start_from_days_ago)
+        query_end_date = datetime.date.today() - datetime.timedelta(end_on_days_ago)
 
         if query_start_date < datetime.date.today():
             print("Retroactively fetching data for %s from %s to %s"
@@ -726,7 +728,7 @@ def retroactive_make_intraday_dict_from_json_datas(heart_rate_json, step_count_j
 
     if int(step_counts["activities-steps"][0]["value"]) < 1 and len(heart_rates["activities-heart-intraday"]["dataset"]) < 1:
         date = heart_rates["activities-heart"][0]["dateTime"]
-        # insert_noncompliance_ping(user_id=uid, ping_date=date)
+        insert_noncompliance_ping(user_id=uid, ping_date=date)
 
 
     for one_day_hr in heart_rates["activities-heart"]:
