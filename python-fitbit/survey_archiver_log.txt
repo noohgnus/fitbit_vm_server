@@ -1618,3 +1618,116 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-10-14 07:31:07.832371
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 16, "submit_user_id": 6, "submit_time": "2018-10-23T15:38:30.997Z", "answer_sequence": "Control: 229lbs, 342221221233111122224366556553333344"}]}
+2018-10-23 11:38:30
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1107, "userid": 5, "ping_type": 0, "time": "2018-10-24T21:31:35.227Z"}]}
+2018-10-24 17:31:35
+[CheckinData(User: 5, time: 2018-10-24 17:31:35, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-25 07:31:17.384069
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1108, "userid": 5, "ping_type": 0, "time": "2018-10-25T18:31:40.343Z"}, {"id": 1109, "userid": 5, "ping_type": 0, "time": "2018-10-26T01:25:05.092Z"}, {"id": 1110, "userid": 5, "ping_type": 0, "time": "2018-10-26T01:26:51.552Z"}, {"id": 1111, "userid": 5, "ping_type": 0, "time": "2018-10-26T01:27:01.684Z"}]}
+2018-10-25 14:31:40
+2018-10-25 21:25:05
+2018-10-25 21:26:51
+2018-10-25 21:27:01
+[CheckinData(User: 5, time: 2018-10-25 14:31:40, type: 0), CheckinData(User: 5, time: 2018-10-25 21:25:05, type: 0), CheckinData(User: 5, time: 2018-10-25 21:26:51, type: 0), CheckinData(User: 5, time: 2018-10-25 21:27:01, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-26 07:31:02.510486
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-27 07:31:08.443942
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-28 07:31:08.617751
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-29 07:31:08.545452
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-30 07:31:10.504525
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-10-31 07:31:11.700094
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-01 07:31:17.856461
+==========================================
