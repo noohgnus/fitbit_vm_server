@@ -1731,3 +1731,75 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2018-11-01 07:31:17.856461
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-02 07:30:55.874948
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1112, "userid": 5, "ping_type": 0, "time": "2018-11-02T16:14:15.003Z"}, {"id": 1113, "userid": 5, "ping_type": 0, "time": "2018-11-02T16:18:49.356Z"}, {"id": 1114, "userid": 1, "ping_type": 0, "time": "2018-11-02T16:19:38.425Z"}, {"id": 1115, "userid": 1, "ping_type": 1, "time": "2018-11-02T16:19:41.441Z"}, {"id": 1116, "userid": 1, "ping_type": 1, "time": "2018-11-02T16:19:51.485Z"}, {"id": 1117, "userid": 1, "ping_type": 0, "time": "2018-11-02T16:19:53.773Z"}, {"id": 1118, "userid": 1, "ping_type": 0, "time": "2018-11-02T16:34:57.923Z"}]}
+2018-11-02 12:14:15
+2018-11-02 12:18:49
+2018-11-02 12:19:38
+2018-11-02 12:19:41
+2018-11-02 12:19:51
+2018-11-02 12:19:53
+2018-11-02 12:34:57
+[CheckinData(User: 5, time: 2018-11-02 12:14:15, type: 0), CheckinData(User: 5, time: 2018-11-02 12:18:49, type: 0), CheckinData(User: 1, time: 2018-11-02 12:19:38, type: 0), CheckinData(User: 1, time: 2018-11-02 12:19:41, type: 1), CheckinData(User: 1, time: 2018-11-02 12:19:51, type: 1), CheckinData(User: 1, time: 2018-11-02 12:19:53, type: 0), CheckinData(User: 1, time: 2018-11-02 12:34:57, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-03 07:30:55.859781
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-04 07:30:59.070074
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-06 07:30:52.929926
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2018-11-07 07:30:45.881711
+==========================================
