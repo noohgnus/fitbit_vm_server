@@ -12,7 +12,6 @@ import re
 import pytz
 from dateutil import tz
 
-import pandas as pd
 
 EST_TZ = pytz.timezone("US/Eastern")
 from_zone = tz.gettz('UTC')
@@ -85,7 +84,7 @@ def insert_checkins(checkin_list):
     for checkin in checkin_list:
         # datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         insert_set.append((checkin.uid, checkin.time,  checkin.checkin_type, datetime.datetime.now()))
-        
+
 
     try:
         connection = db.Connection(host=HOST, port=PORT,
@@ -110,9 +109,16 @@ def pull_yesterday_survey():
     print(r.text)
 
     survey_json = json.loads(r.text)
+    print(r.text)
     survey_list = []
     surveys = survey_json["Surveys"]
+    # surveys = json.loads("""{"Surveys": [{"id": 1, "submit_user_id": 999888666, "submit_time": "2018-11-29T06:37:12.767Z", "answer_sequence": "Intervention: 142232132221121112152346554321332334"},{"id": 1, "submit_user_id": 7, "submit_time": "2018-11-26T22:53:19.767Z", "answer_sequence": "Intervention: 352232333333111111134346544334333543"},{"id": 1, "submit_user_id": 6, "submit_time": "2018-11-15T22:53:57.767Z", "answer_sequence": "Intervention: 341232321233211111124366545443345334"},{"id": 1, "submit_user_id": 6, "submit_time": "2018-10-23T15:38:30.767Z", "answer_sequence": "Intervention: 342221221233111122224366556553333344"}]}""")
+    # surveys = surveys["Surveys"]
+
+    # print(surveys)
+
     for survey in surveys:
+        print(survey)
         survey_time = survey["submit_time"]
         if '.' not in survey_time:
             survey_time = survey_time[:-1] + ".000Z"
@@ -120,9 +126,9 @@ def pull_yesterday_survey():
         utc = utc.replace(tzinfo=from_zone)
         # Convert time zone
         est = utc.astimezone(to_zone).strftime("%Y-%m-%d %H:%M:%S")
-        print est
-
-        survey_list.append(SurveyData(uid=survey["submit_user_id"], survey_string=survey["answer_sequence"], submitted_at=est, weighted_scores=calculate_category_scores(survey["answer_sequence"])))
+        # print est
+        survey_sequence = survey["answer_sequence"][-36:]
+        survey_list.append(SurveyData(uid=survey["submit_user_id"], survey_string=survey_sequence, submitted_at=est, weighted_scores=calculate_category_scores(survey_sequence)))
 
     # print(uid)
     print(survey_list)
@@ -220,18 +226,18 @@ def query_test_surveys():
 
         cursor = connection.cursor(db.cursors.DictCursor)
         result = cursor.execute("SELECT * FROM PC_Surveys_QoL WHERE user_id = 74477")
-        
+
         rows = cursor.fetchall()
- 
+
         for row in rows:
             # print(row["submitted_at"] < datetime.datetime.now())
             print(row)
 
         result = cursor.execute("UPDATE PC_Surveys_QoL SET physical_functioning=%s WHERE user_id=2") % datetime.datetime.now()
- 
+
     except Exception as e:
         print(e)
- 
+
     finally:
         cursor.close()
         connection.close()
@@ -244,4 +250,3 @@ print("==========================================")
 
 # pull_yesterday_checkin()
 # query_test_surveys()
-
