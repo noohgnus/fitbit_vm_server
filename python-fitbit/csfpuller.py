@@ -288,7 +288,7 @@ def data_retrieval_routine(token_dict, uid):
 
         # query_start_date = last_logged_date + datetime.timedelta(days=1)
         # force rewrite last week's data
-        query_start_date = datetime.date.today() - datetime.timedelta(days=21)
+        query_start_date = datetime.date.today() - datetime.timedelta(days=5)
         query_end_date = datetime.date.today() - datetime.timedelta(days=3)
 
         if query_start_date < datetime.date.today():
