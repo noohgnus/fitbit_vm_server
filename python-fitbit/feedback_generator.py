@@ -53,6 +53,24 @@ class FeedbackData:
                + ', avg_weight: ' + str(self.avg_weight) + ', avg_steps: ' + str(self.avg_steps) \
                + ", total_active_mins: " + str(self.total_active_mins)
 
+def get_start_date():
+    if len(sys.argv) == 3:
+        print("Starting date: " + str(datetime.strptime(sys.argv[1], '%Y-%m-%d')))
+        return str(datetime.strptime(sys.argv[1], '%Y-%m-%d'))
+    else:
+        seven_days_ago = str(datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - datetime.timedelta(days=7))
+        print("Starting date: " + seven_days_ago)
+        return seven_days_ago
+
+def get_end_date():
+    if len(sys.argv) == 3:
+        print("Starting date: " + str(datetime.strptime(sys.argv[2], '%Y-%m-%d')))
+        return str(datetime.strptime(sys.argv[2], '%Y-%m-%d'))
+    else:
+        one_day_ago = str(datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - datetime.timedelta(days=1))
+        print("Starting date: " + one_day_ago)
+        return one_day_ago
+
 
 def read_from_db():
 
@@ -83,7 +101,7 @@ def read_from_db():
             AND PC_Users.last_feedback != '%s' AND PC_Users.week <= 25"""
                             % (str(now_zero - datetime.timedelta(days=7)), str(now_zero - datetime.timedelta(days=1))))
         weight_cursor = connection.cursor(db.cursors.DictCursor)
-        weight_cursor.execute("""SELECT * FROM PC_Weight WHERE timestamp > '%s' 
+        weight_cursor.execute("""SELECT * FROM PC_Weight WHERE timestamp > '%s'
             """ % str(now_zero - datetime.timedelta(days=7)))
 
 ###############################
@@ -203,9 +221,9 @@ def read_from_db():
         insert_set = []
         for key in feedback_dict:
             fb = feedback_dict[key]
+            push_feedback_to_webapp(fb)
             insert_set.append((fb.patient_id, fb.fitbit_uid, fb.week, fb.avg_weight, fb.avg_steps,
                                fb.total_active_mins, fb.height, str(datetime.datetime.now())))
-            push_feedback_to_webapp(fb)
 
         # for user_id in update_ids:
             ################################################################
@@ -255,8 +273,8 @@ def push_feedback_to_webapp(fb):
     print("Pushing feedback to webapp...")
     url = upload_feedback_url + "%s/%s/%s/%s/%s/%s" % (fb.patient_id, fb.week, fb.avg_weight, fb.avg_steps,
                                                        fb.total_active_mins, fb.height)
-    # r = requests.get(url)
-    # print(r.text)
+    r = requests.get(url)
+    print(r.text)
     print(url)
 
 
@@ -296,4 +314,3 @@ def temp():
 
 
 read_from_db()
-
