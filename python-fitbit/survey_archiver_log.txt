@@ -3101,3 +3101,1106 @@ Retrieving surveys from yesterday...
 	...Done getting yesterday's checkins
 Data as of: 2019-02-10 07:30:18.213081
 ==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-11 07:30:20.058455
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 27, "submit_user_id": 22222, "submit_time": "2019-02-11T14:32:26.794Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 28, "submit_user_id": 22222, "submit_time": "2019-02-11T14:33:31.415Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 29, "submit_user_id": 85554, "submit_time": "2019-02-11T15:15:50.269Z", "answer_sequence": "Intervention: 442222222222222222234244444444443433"}, {"id": 30, "submit_user_id": 85554, "submit_time": "2019-02-11T15:22:09.323Z", "answer_sequence": "Intervention: 232323222222222222231444444444443333"}]}
+{"Surveys": [{"id": 27, "submit_user_id": 22222, "submit_time": "2019-02-11T14:32:26.794Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 28, "submit_user_id": 22222, "submit_time": "2019-02-11T14:33:31.415Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 29, "submit_user_id": 85554, "submit_time": "2019-02-11T15:15:50.269Z", "answer_sequence": "Intervention: 442222222222222222234244444444443433"}, {"id": 30, "submit_user_id": 85554, "submit_time": "2019-02-11T15:22:09.323Z", "answer_sequence": "Intervention: 232323222222222222231444444444443333"}]}
+{u'submit_user_id': 22222, u'id': 27, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-02-11T14:32:26.794Z'}
+{u'submit_user_id': 22222, u'id': 28, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-02-11T14:33:31.415Z'}
+{u'submit_user_id': 85554, u'id': 29, u'answer_sequence': u'Intervention: 442222222222222222234244444444443433', u'submit_time': u'2019-02-11T15:15:50.269Z'}
+{u'submit_user_id': 85554, u'id': 30, u'answer_sequence': u'Intervention: 232323222222222222231444444444443333', u'submit_time': u'2019-02-11T15:22:09.323Z'}
+[SurveyData(User: 22222, submitted_at: 2019-02-11 09:32:26, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 22222, submitted_at: 2019-02-11 09:33:31, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 85554, submitted_at: 2019-02-11 10:15:50, survey: 442222222222222222234244444444443433, {'pain': 57.5, 'social_functioning': 62.5, 'energy': 50.0, 'general_health': 40.0, 'role_limited_emotional': 100.0, 'physical_functioning': 50.0, 'emotional_wellbeing': 52.0, 'role_limited_physical': 100.0}), SurveyData(User: 85554, submitted_at: 2019-02-11 10:22:09, survey: 232323222222222222231444444444443333, {'pain': 62.5, 'social_functioning': 62.5, 'energy': 50.0, 'general_health': 55.0, 'role_limited_emotional': 100.0, 'physical_functioning': 60.0, 'emotional_wellbeing': 52.0, 'role_limited_physical': 100.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(22222, '2019-02-11 09:32:26', '2019-02-12 07:30:17.294020', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (22222, '2019-02-11 09:33:31', '2019-02-12 07:30:17.294109', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (85554, '2019-02-11 10:15:50', '2019-02-12 07:30:17.294154', 50.0, 100.0, 100.0, 50.0, 52.0, 62.5, 57.5, 40.0, u'4', u'4', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'3', u'4', u'2', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'3', u'4', u'3', u'3'), (85554, '2019-02-11 10:22:09', '2019-02-12 07:30:17.294196', 60.0, 100.0, 100.0, 50.0, 52.0, 62.5, 62.5, 55.0, u'2', u'3', u'2', u'3', u'2', u'3', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'3', u'1', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'4', u'3', u'3', u'3', u'3')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1165, "userid": 85554, "ping_type": 0, "time": "2019-02-11T15:15:14.015Z"}, {"id": 1166, "userid": 85554, "ping_type": 0, "time": "2019-02-11T15:15:14.329Z"}, {"id": 1167, "userid": 85554, "ping_type": 1, "time": "2019-02-11T15:15:26.358Z"}, {"id": 1168, "userid": 85554, "ping_type": 0, "time": "2019-02-11T15:15:30.249Z"}, {"id": 1169, "userid": 85554, "ping_type": 0, "time": "2019-02-11T15:21:07.260Z"}, {"id": 1170, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T02:35:57.669Z"}, {"id": 1171, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T02:36:02.640Z"}, {"id": 1172, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T02:37:10.413Z"}, {"id": 1173, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T02:37:12.418Z"}]}
+2019-02-11 10:15:14
+2019-02-11 10:15:14
+2019-02-11 10:15:26
+2019-02-11 10:15:30
+2019-02-11 10:21:07
+2019-02-11 21:35:57
+2019-02-11 21:36:02
+2019-02-11 21:37:10
+2019-02-11 21:37:12
+[CheckinData(User: 85554, time: 2019-02-11 10:15:14, type: 0), CheckinData(User: 85554, time: 2019-02-11 10:15:14, type: 0), CheckinData(User: 85554, time: 2019-02-11 10:15:26, type: 1), CheckinData(User: 85554, time: 2019-02-11 10:15:30, type: 0), CheckinData(User: 85554, time: 2019-02-11 10:21:07, type: 0), CheckinData(User: 9999999, time: 2019-02-11 21:35:57, type: 0), CheckinData(User: 9999999, time: 2019-02-11 21:36:02, type: 1), CheckinData(User: 9999999, time: 2019-02-11 21:37:10, type: 1), CheckinData(User: 9999999, time: 2019-02-11 21:37:12, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-12 07:30:18.230008
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1174, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:00:40.423Z"}, {"id": 1175, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:00:40.900Z"}, {"id": 1176, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:00:43.228Z"}, {"id": 1177, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:00:45.874Z"}, {"id": 1178, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:00:48.298Z"}, {"id": 1179, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:04:37.621Z"}, {"id": 1180, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:04:38.830Z"}, {"id": 1181, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:04:39.204Z"}, {"id": 1182, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:04:40.945Z"}, {"id": 1183, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:05:28.326Z"}, {"id": 1184, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:05:38.922Z"}, {"id": 1185, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:05:41.232Z"}, {"id": 1186, "userid": 9999999, "ping_type": 1, "time": "2019-02-12T18:05:46.258Z"}, {"id": 1187, "userid": 9999999, "ping_type": 0, "time": "2019-02-12T18:05:47.666Z"}]}
+2019-02-12 13:00:40
+2019-02-12 13:00:40
+2019-02-12 13:00:43
+2019-02-12 13:00:45
+2019-02-12 13:00:48
+2019-02-12 13:04:37
+2019-02-12 13:04:38
+2019-02-12 13:04:39
+2019-02-12 13:04:40
+2019-02-12 13:05:28
+2019-02-12 13:05:38
+2019-02-12 13:05:41
+2019-02-12 13:05:46
+2019-02-12 13:05:47
+[CheckinData(User: 9999999, time: 2019-02-12 13:00:40, type: 0), CheckinData(User: 9999999, time: 2019-02-12 13:00:40, type: 0), CheckinData(User: 9999999, time: 2019-02-12 13:00:43, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:00:45, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:00:48, type: 0), CheckinData(User: 9999999, time: 2019-02-12 13:04:37, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:04:38, type: 0), CheckinData(User: 9999999, time: 2019-02-12 13:04:39, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:04:40, type: 0), CheckinData(User: 9999999, time: 2019-02-12 13:05:28, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:05:38, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:05:41, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:05:46, type: 1), CheckinData(User: 9999999, time: 2019-02-12 13:05:47, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-13 07:30:16.552816
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-14 07:30:16.707635
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-15 07:30:17.603996
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 31, "submit_user_id": 8, "submit_time": "2019-02-16T00:54:01.641Z", "answer_sequence": "Control: 189lbs, 122333333333222222212126622661554142"}]}
+{"Surveys": [{"id": 31, "submit_user_id": 8, "submit_time": "2019-02-16T00:54:01.641Z", "answer_sequence": "Control: 189lbs, 122333333333222222212126622661554142"}]}
+{u'submit_user_id': 8, u'id': 31, u'answer_sequence': u'Control: 189lbs, 122333333333222222212126622661554142', u'submit_time': u'2019-02-16T00:54:01.641Z'}
+[SurveyData(User: 8, submitted_at: 2019-02-15 19:54:01, survey: 122333333333222222212126622661554142, {'pain': 90.0, 'social_functioning': 100.0, 'energy': 85.0, 'general_health': 85.0, 'role_limited_emotional': 100.0, 'physical_functioning': 95.0, 'emotional_wellbeing': 96.0, 'role_limited_physical': 100.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(8, '2019-02-15 19:54:01', '2019-02-16 07:30:15.057109', 95.0, 100.0, 100.0, 85.0, 96.0, 100.0, 90.0, 85.0, u'1', u'2', u'2', u'3', u'3', u'3', u'3', u'3', u'3', u'3', u'3', u'3', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'1', u'2', u'1', u'2', u'6', u'6', u'2', u'2', u'6', u'6', u'1', u'5', u'5', u'4', u'1', u'4', u'2')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1188, "userid": 8, "ping_type": 0, "time": "2019-02-16T00:51:13.705Z"}, {"id": 1189, "userid": 8, "ping_type": 0, "time": "2019-02-16T00:51:13.732Z"}]}
+2019-02-15 19:51:13
+2019-02-15 19:51:13
+[CheckinData(User: 8, time: 2019-02-15 19:51:13, type: 0), CheckinData(User: 8, time: 2019-02-15 19:51:13, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-16 07:30:15.685072
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-17 07:30:16.839700
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1190, "userid": 85554, "ping_type": 0, "time": "2019-02-17T19:23:47.451Z"}]}
+2019-02-17 14:23:47
+[CheckinData(User: 85554, time: 2019-02-17 14:23:47, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-18 07:30:19.414099
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-19 07:30:15.890871
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-20 07:30:21.091327
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-21 07:30:18.570078
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-22 07:31:04.794036
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-23 07:30:14.066957
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-24 07:30:15.771007
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1191, "userid": 85554, "ping_type": 0, "time": "2019-02-25T02:41:29.512Z"}, {"id": 1192, "userid": 85554, "ping_type": 0, "time": "2019-02-25T02:41:57.946Z"}, {"id": 1193, "userid": 85554, "ping_type": 0, "time": "2019-02-25T02:42:08.142Z"}, {"id": 1194, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T03:52:40.739Z"}]}
+2019-02-24 21:41:29
+2019-02-24 21:41:57
+2019-02-24 21:42:08
+2019-02-24 22:52:40
+[CheckinData(User: 85554, time: 2019-02-24 21:41:29, type: 0), CheckinData(User: 85554, time: 2019-02-24 21:41:57, type: 0), CheckinData(User: 85554, time: 2019-02-24 21:42:08, type: 0), CheckinData(User: 9999999, time: 2019-02-24 22:52:40, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-25 07:30:17.300119
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 32, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:56:10.077Z", "answer_sequence": "Control: 22222lbs, 332222222222211121152343333333453333"}, {"id": 33, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:58:44.369Z", "answer_sequence": "Control: 6655lbs, 142222222212122122236253333335353334"}, {"id": 34, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:59:54.487Z", "answer_sequence": "Intervention: 132222322223112212232254333445514334"}]}
+{"Surveys": [{"id": 32, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:56:10.077Z", "answer_sequence": "Control: 22222lbs, 332222222222211121152343333333453333"}, {"id": 33, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:58:44.369Z", "answer_sequence": "Control: 6655lbs, 142222222212122122236253333335353334"}, {"id": 34, "submit_user_id": 9999999, "submit_time": "2019-02-25T18:59:54.487Z", "answer_sequence": "Intervention: 132222322223112212232254333445514334"}]}
+{u'submit_user_id': 9999999, u'id': 32, u'answer_sequence': u'Control: 22222lbs, 332222222222211121152343333333453333', u'submit_time': u'2019-02-25T18:56:10.077Z'}
+{u'submit_user_id': 9999999, u'id': 33, u'answer_sequence': u'Control: 6655lbs, 142222222212122122236253333335353334', u'submit_time': u'2019-02-25T18:58:44.369Z'}
+{u'submit_user_id': 9999999, u'id': 34, u'answer_sequence': u'Intervention: 132222322223112212232254333445514334', u'submit_time': u'2019-02-25T18:59:54.487Z'}
+[SurveyData(User: 9999999, submitted_at: 2019-02-25 13:56:10, survey: 332222222222211121152343333333453333, {'pain': 65.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 50.0, 'role_limited_emotional': 33.333333333333336, 'physical_functioning': 50.0, 'emotional_wellbeing': 48.0, 'role_limited_physical': 25.0}), SurveyData(User: 9999999, submitted_at: 2019-02-25 13:58:44, survey: 142222222212122122236253333335353334, {'pain': 37.5, 'social_functioning': 75.0, 'energy': 40.0, 'general_health': 55.0, 'role_limited_emotional': 100.0, 'physical_functioning': 45.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 50.0}), SurveyData(User: 9999999, submitted_at: 2019-02-25 13:59:54, survey: 132222322223112212232254333445514334, {'pain': 77.5, 'social_functioning': 25.0, 'energy': 55.0, 'general_health': 60.0, 'role_limited_emotional': 66.66666666666667, 'physical_functioning': 60.0, 'emotional_wellbeing': 48.0, 'role_limited_physical': 50.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(9999999, '2019-02-25 13:56:10', '2019-02-26 07:30:25.626492', 50.0, 25.0, 33.333333333333336, 50.0, 48.0, 50.0, 65.0, 50.0, u'3', u'3', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'1', u'1', u'1', u'2', u'1', u'1', u'5', u'2', u'3', u'4', u'3', u'3', u'3', u'3', u'3', u'3', u'3', u'4', u'5', u'3', u'3', u'3', u'3'), (9999999, '2019-02-25 13:58:44', '2019-02-26 07:30:25.626579', 45.0, 50.0, 100.0, 40.0, 40.0, 75.0, 37.5, 55.0, u'1', u'4', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'1', u'2', u'1', u'2', u'2', u'1', u'2', u'2', u'2', u'3', u'6', u'2', u'5', u'3', u'3', u'3', u'3', u'3', u'3', u'5', u'3', u'5', u'3', u'3', u'3', u'4'), (9999999, '2019-02-25 13:59:54', '2019-02-26 07:30:25.626624', 60.0, 50.0, 66.66666666666667, 55.0, 48.0, 25.0, 77.5, 60.0, u'1', u'3', u'2', u'2', u'2', u'2', u'3', u'2', u'2', u'2', u'2', u'3', u'1', u'1', u'2', u'2', u'1', u'2', u'2', u'3', u'2', u'2', u'5', u'4', u'3', u'3', u'3', u'4', u'4', u'5', u'5', u'1', u'4', u'3', u'3', u'4')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1195, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:01.225Z"}, {"id": 1196, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:01.514Z"}, {"id": 1197, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:05.166Z"}, {"id": 1198, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:13.715Z"}, {"id": 1199, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:15.218Z"}, {"id": 1200, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T17:59:18.938Z"}, {"id": 1201, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:52:03.402Z"}, {"id": 1202, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:52:03.848Z"}, {"id": 1203, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:53:36.200Z"}, {"id": 1204, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:55:49.679Z"}, {"id": 1205, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:58:22.222Z"}, {"id": 1206, "userid": 9999999, "ping_type": 0, "time": "2019-02-25T18:59:28.312Z"}, {"id": 1207, "userid": 9999999, "ping_type": 0, "time": "2019-02-26T05:47:25.628Z"}, {"id": 1208, "userid": 9999, "ping_type": 0, "time": "2019-02-26T05:47:56.921Z"}, {"id": 1209, "userid": 9999, "ping_type": 1, "time": "2019-02-26T05:47:59.410Z"}, {"id": 1210, "userid": 9999, "ping_type": 1, "time": "2019-02-26T05:48:20.452Z"}, {"id": 1211, "userid": 9999, "ping_type": 1, "time": "2019-02-26T05:48:33.558Z"}, {"id": 1212, "userid": 9999, "ping_type": 1, "time": "2019-02-26T05:48:41.668Z"}, {"id": 1213, "userid": 9999, "ping_type": 0, "time": "2019-02-26T05:48:43.145Z"}, {"id": 1214, "userid": 9999, "ping_type": 0, "time": "2019-02-26T05:50:28.921Z"}, {"id": 1215, "userid": 9999, "ping_type": 1, "time": "2019-02-26T05:50:30.248Z"}]}
+2019-02-25 12:59:01
+2019-02-25 12:59:01
+2019-02-25 12:59:05
+2019-02-25 12:59:13
+2019-02-25 12:59:15
+2019-02-25 12:59:18
+2019-02-25 13:52:03
+2019-02-25 13:52:03
+2019-02-25 13:53:36
+2019-02-25 13:55:49
+2019-02-25 13:58:22
+2019-02-25 13:59:28
+2019-02-26 00:47:25
+2019-02-26 00:47:56
+2019-02-26 00:47:59
+2019-02-26 00:48:20
+2019-02-26 00:48:33
+2019-02-26 00:48:41
+2019-02-26 00:48:43
+2019-02-26 00:50:28
+2019-02-26 00:50:30
+[CheckinData(User: 9999999, time: 2019-02-25 12:59:01, type: 0), CheckinData(User: 9999999, time: 2019-02-25 12:59:01, type: 0), CheckinData(User: 9999999, time: 2019-02-25 12:59:05, type: 0), CheckinData(User: 9999999, time: 2019-02-25 12:59:13, type: 0), CheckinData(User: 9999999, time: 2019-02-25 12:59:15, type: 0), CheckinData(User: 9999999, time: 2019-02-25 12:59:18, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:52:03, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:52:03, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:53:36, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:55:49, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:58:22, type: 0), CheckinData(User: 9999999, time: 2019-02-25 13:59:28, type: 0), CheckinData(User: 9999999, time: 2019-02-26 00:47:25, type: 0), CheckinData(User: 9999, time: 2019-02-26 00:47:56, type: 0), CheckinData(User: 9999, time: 2019-02-26 00:47:59, type: 1), CheckinData(User: 9999, time: 2019-02-26 00:48:20, type: 1), CheckinData(User: 9999, time: 2019-02-26 00:48:33, type: 1), CheckinData(User: 9999, time: 2019-02-26 00:48:41, type: 1), CheckinData(User: 9999, time: 2019-02-26 00:48:43, type: 0), CheckinData(User: 9999, time: 2019-02-26 00:50:28, type: 0), CheckinData(User: 9999, time: 2019-02-26 00:50:30, type: 1)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-26 07:30:26.699151
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 35, "submit_user_id": 7, "submit_time": "2019-02-27T01:33:18.956Z", "answer_sequence": "Control: 240lbs, 351232332333111121233246434553444433"}]}
+{"Surveys": [{"id": 35, "submit_user_id": 7, "submit_time": "2019-02-27T01:33:18.956Z", "answer_sequence": "Control: 240lbs, 351232332333111121233246434553444433"}]}
+{u'submit_user_id': 7, u'id': 35, u'answer_sequence': u'Control: 240lbs, 351232332333111121233246434553444433', u'submit_time': u'2019-02-27T01:33:18.956Z'}
+[SurveyData(User: 7, submitted_at: 2019-02-26 20:33:18, survey: 351232332333111121233246434553444433, {'pain': 67.5, 'social_functioning': 62.5, 'energy': 55.0, 'general_health': 50.0, 'role_limited_emotional': 66.66666666666667, 'physical_functioning': 75.0, 'emotional_wellbeing': 72.0, 'role_limited_physical': 0.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(7, '2019-02-26 20:33:18', '2019-02-27 07:30:16.804318', 75.0, 0.0, 66.66666666666667, 55.0, 72.0, 62.5, 67.5, 50.0, u'3', u'5', u'1', u'2', u'3', u'2', u'3', u'3', u'2', u'3', u'3', u'3', u'1', u'1', u'1', u'1', u'2', u'1', u'2', u'3', u'3', u'2', u'4', u'6', u'4', u'3', u'4', u'5', u'5', u'3', u'4', u'4', u'4', u'4', u'3', u'3')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1216, "userid": 7, "ping_type": 0, "time": "2019-02-27T01:27:04.512Z"}, {"id": 1217, "userid": 7, "ping_type": 0, "time": "2019-02-27T01:31:15.893Z"}]}
+2019-02-26 20:27:04
+2019-02-26 20:31:15
+[CheckinData(User: 7, time: 2019-02-26 20:27:04, type: 0), CheckinData(User: 7, time: 2019-02-26 20:31:15, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-27 07:30:17.528147
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-02-28 07:30:17.049248
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-01 07:30:21.147650
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-02 07:30:17.547653
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-03 07:30:15.883556
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-05 07:30:17.093887
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-06 07:30:15.385178
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-07 07:30:16.002153
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-08 07:30:17.203906
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-09 07:30:17.115864
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-10 07:30:16.744341
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-11 07:30:14.631731
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-12 07:30:17.067221
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-13 07:30:16.846038
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-14 07:30:17.366678
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-15 07:30:16.915056
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-16 07:30:14.293248
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-17 07:30:14.088164
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 36, "submit_user_id": 8, "submit_time": "2019-03-17T17:25:03.972Z", "answer_sequence": "Control: 185lbs, 212333332333222222212226622662355252"}]}
+{"Surveys": [{"id": 36, "submit_user_id": 8, "submit_time": "2019-03-17T17:25:03.972Z", "answer_sequence": "Control: 185lbs, 212333332333222222212226622662355252"}]}
+{u'submit_user_id': 8, u'id': 36, u'answer_sequence': u'Control: 185lbs, 212333332333222222212226622662355252', u'submit_time': u'2019-03-17T17:25:03.972Z'}
+[SurveyData(User: 8, submitted_at: 2019-03-17 13:25:03, survey: 212333332333222222212226622662355252, {'pain': 77.5, 'social_functioning': 100.0, 'energy': 75.0, 'general_health': 85.0, 'role_limited_emotional': 100.0, 'physical_functioning': 90.0, 'emotional_wellbeing': 92.0, 'role_limited_physical': 100.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(8, '2019-03-17 13:25:03', '2019-03-18 07:30:15.042218', 90.0, 100.0, 100.0, 75.0, 92.0, 100.0, 77.5, 85.0, u'2', u'1', u'2', u'3', u'3', u'3', u'3', u'3', u'2', u'3', u'3', u'3', u'2', u'2', u'2', u'2', u'2', u'2', u'2', u'1', u'2', u'2', u'2', u'6', u'6', u'2', u'2', u'6', u'6', u'2', u'3', u'5', u'5', u'2', u'5', u'2')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1218, "userid": 8, "ping_type": 0, "time": "2019-03-17T17:21:31.329Z"}]}
+2019-03-17 13:21:31
+[CheckinData(User: 8, time: 2019-03-17 13:21:31, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-18 07:30:15.948866
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-19 07:30:15.357709
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 37, "submit_user_id": 22222, "submit_time": "2019-03-20T02:26:05.669Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 38, "submit_user_id": 22222, "submit_time": "2019-03-20T02:26:05.684Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 39, "submit_user_id": 22222, "submit_time": "2019-03-20T04:57:41.834Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}]}
+{"Surveys": [{"id": 37, "submit_user_id": 22222, "submit_time": "2019-03-20T02:26:05.669Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 38, "submit_user_id": 22222, "submit_time": "2019-03-20T02:26:05.684Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 39, "submit_user_id": 22222, "submit_time": "2019-03-20T04:57:41.834Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}]}
+{u'submit_user_id': 22222, u'id': 37, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-20T02:26:05.669Z'}
+{u'submit_user_id': 22222, u'id': 38, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-20T02:26:05.684Z'}
+{u'submit_user_id': 22222, u'id': 39, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-20T04:57:41.834Z'}
+[SurveyData(User: 22222, submitted_at: 2019-03-19 22:26:05, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 22222, submitted_at: 2019-03-19 22:26:05, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 22222, submitted_at: 2019-03-20 00:57:41, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(22222, '2019-03-19 22:26:05', '2019-03-20 07:30:16.210062', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (22222, '2019-03-19 22:26:05', '2019-03-20 07:30:16.210143', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (22222, '2019-03-20 00:57:41', '2019-03-20 07:30:16.210187', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1219, "userid": 99999999, "ping_type": 0, "time": "2019-03-20T00:16:47.668Z"}, {"id": 1220, "userid": 99999999, "ping_type": 0, "time": "2019-03-20T00:30:39.433Z"}, {"id": 1221, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:36:46.728Z"}, {"id": 1222, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:36:48.479Z"}, {"id": 1223, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:36:50.502Z"}, {"id": 1228, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:37:50.090Z"}, {"id": 1230, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:37:53.074Z"}, {"id": 1231, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:37:54.586Z"}, {"id": 1232, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:37:59.658Z"}, {"id": 1234, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:38:07.709Z"}, {"id": 1224, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:36:51.251Z"}, {"id": 1225, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:36:54.805Z"}, {"id": 1226, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:36:56.740Z"}, {"id": 1227, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:37:49.566Z"}, {"id": 1229, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:37:52.374Z"}, {"id": 1233, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T00:38:06.112Z"}, {"id": 1235, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:38:18.131Z"}, {"id": 1236, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T00:38:26.758Z"}, {"id": 1237, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T01:03:38.047Z"}, {"id": 1238, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T01:13:31.282Z"}, {"id": 1239, "userid": 999999999, "ping_type": 1, "time": "2019-03-20T02:45:22.795Z"}, {"id": 1240, "userid": 999999999, "ping_type": 0, "time": "2019-03-20T02:45:24.013Z"}]}
+2019-03-19 20:16:47
+2019-03-19 20:30:39
+2019-03-19 20:36:46
+2019-03-19 20:36:48
+2019-03-19 20:36:50
+2019-03-19 20:37:50
+2019-03-19 20:37:53
+2019-03-19 20:37:54
+2019-03-19 20:37:59
+2019-03-19 20:38:07
+2019-03-19 20:36:51
+2019-03-19 20:36:54
+2019-03-19 20:36:56
+2019-03-19 20:37:49
+2019-03-19 20:37:52
+2019-03-19 20:38:06
+2019-03-19 20:38:18
+2019-03-19 20:38:26
+2019-03-19 21:03:38
+2019-03-19 21:13:31
+2019-03-19 22:45:22
+2019-03-19 22:45:24
+[CheckinData(User: 99999999, time: 2019-03-19 20:16:47, type: 0), CheckinData(User: 99999999, time: 2019-03-19 20:30:39, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:36:46, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:36:48, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:36:50, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:37:50, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:37:53, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:37:54, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:37:59, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:38:07, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:36:51, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:36:54, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:36:56, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:37:49, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:37:52, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:38:06, type: 1), CheckinData(User: 999999999, time: 2019-03-19 20:38:18, type: 0), CheckinData(User: 999999999, time: 2019-03-19 20:38:26, type: 0), CheckinData(User: 999999999, time: 2019-03-19 21:03:38, type: 1), CheckinData(User: 999999999, time: 2019-03-19 21:13:31, type: 1), CheckinData(User: 999999999, time: 2019-03-19 22:45:22, type: 1), CheckinData(User: 999999999, time: 2019-03-19 22:45:24, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-20 07:30:17.050049
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-21 07:30:16.328833
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-22 07:30:13.440499
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-23 07:30:15.439413
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-24 07:30:13.761127
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-25 07:30:14.305434
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-26 07:30:13.610625
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-27 07:30:14.990154
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-28 07:30:15.795819
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-29 07:30:13.996593
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": [{"id": 40, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:19.701Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 41, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:26.463Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 42, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:55.948Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 43, "submit_user_id": 99999, "submit_time": "2019-03-29T19:11:39.010Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 44, "submit_user_id": 99999, "submit_time": "2019-03-29T19:12:00.164Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 45, "submit_user_id": 99999, "submit_time": "2019-03-29T19:17:58.671Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 46, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:19.389Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 47, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:23.024Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 48, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:29.420Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 49, "submit_user_id": 9999, "submit_time": "2019-03-29T19:41:10.649Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}]}
+{"Surveys": [{"id": 40, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:19.701Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 41, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:26.463Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 42, "submit_user_id": 22222, "submit_time": "2019-03-29T17:54:55.948Z", "answer_sequence": "Intervention: 123123123123123123123123123123123123"}, {"id": 43, "submit_user_id": 99999, "submit_time": "2019-03-29T19:11:39.010Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 44, "submit_user_id": 99999, "submit_time": "2019-03-29T19:12:00.164Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 45, "submit_user_id": 99999, "submit_time": "2019-03-29T19:17:58.671Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 46, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:19.389Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 47, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:23.024Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 48, "submit_user_id": 99999, "submit_time": "2019-03-29T19:18:29.420Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}, {"id": 49, "submit_user_id": 9999, "submit_time": "2019-03-29T19:41:10.649Z", "answer_sequence": "Intervention: 111111111111111111111111111111111111"}]}
+{u'submit_user_id': 22222, u'id': 40, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-29T17:54:19.701Z'}
+{u'submit_user_id': 22222, u'id': 41, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-29T17:54:26.463Z'}
+{u'submit_user_id': 22222, u'id': 42, u'answer_sequence': u'Intervention: 123123123123123123123123123123123123', u'submit_time': u'2019-03-29T17:54:55.948Z'}
+{u'submit_user_id': 99999, u'id': 43, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:11:39.010Z'}
+{u'submit_user_id': 99999, u'id': 44, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:12:00.164Z'}
+{u'submit_user_id': 99999, u'id': 45, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:17:58.671Z'}
+{u'submit_user_id': 99999, u'id': 46, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:18:19.389Z'}
+{u'submit_user_id': 99999, u'id': 47, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:18:23.024Z'}
+{u'submit_user_id': 99999, u'id': 48, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:18:29.420Z'}
+{u'submit_user_id': 9999, u'id': 49, u'answer_sequence': u'Intervention: 111111111111111111111111111111111111', u'submit_time': u'2019-03-29T19:41:10.649Z'}
+[SurveyData(User: 22222, submitted_at: 2019-03-29 13:54:19, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 22222, submitted_at: 2019-03-29 13:54:26, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 22222, submitted_at: 2019-03-29 13:54:55, survey: 123123123123123123123123123123123123, {'pain': 80.0, 'social_functioning': 50.0, 'energy': 40.0, 'general_health': 65.0, 'role_limited_emotional': 100.0, 'physical_functioning': 55.0, 'emotional_wellbeing': 36.0, 'role_limited_physical': 75.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:11:39, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:12:00, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:17:58, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:18:19, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:18:23, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 99999, submitted_at: 2019-03-29 15:18:29, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0}), SurveyData(User: 9999, submitted_at: 2019-03-29 15:41:10, survey: 111111111111111111111111111111111111, {'pain': 100.0, 'social_functioning': 50.0, 'energy': 50.0, 'general_health': 60.0, 'role_limited_emotional': 0.0, 'physical_functioning': 0.0, 'emotional_wellbeing': 40.0, 'role_limited_physical': 0.0})]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[(22222, '2019-03-29 13:54:19', '2019-03-30 07:30:17.015891', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (22222, '2019-03-29 13:54:26', '2019-03-30 07:30:17.015972', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (22222, '2019-03-29 13:54:55', '2019-03-30 07:30:17.016016', 55.0, 75.0, 100.0, 40.0, 36.0, 50.0, 80.0, 65.0, u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3', u'1', u'2', u'3'), (99999, '2019-03-29 15:11:39', '2019-03-30 07:30:17.016083', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (99999, '2019-03-29 15:12:00', '2019-03-30 07:30:17.016125', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (99999, '2019-03-29 15:17:58', '2019-03-30 07:30:17.016168', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (99999, '2019-03-29 15:18:19', '2019-03-30 07:30:17.016210', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (99999, '2019-03-29 15:18:23', '2019-03-30 07:30:17.016252', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (99999, '2019-03-29 15:18:29', '2019-03-30 07:30:17.016294', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1'), (9999, '2019-03-29 15:41:10', '2019-03-30 07:30:17.016337', 0.0, 0.0, 0.0, 50.0, 40.0, 50.0, 100.0, 60.0, u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1', u'1')]
+Retrieving surveys from yesterday...
+{"Checkins": [{"id": 1241, "userid": 999999999, "ping_type": 0, "time": "2019-03-29T19:25:58.773Z"}, {"id": 1242, "userid": 999999999, "ping_type": 1, "time": "2019-03-29T19:26:08.122Z"}, {"id": 1243, "userid": 999999999, "ping_type": 0, "time": "2019-03-29T19:26:09.339Z"}, {"id": 1244, "userid": 999999999, "ping_type": 1, "time": "2019-03-29T19:36:23.135Z"}, {"id": 1245, "userid": 999999999, "ping_type": 0, "time": "2019-03-29T19:36:30.317Z"}, {"id": 1246, "userid": 999999999, "ping_type": 1, "time": "2019-03-29T19:36:32.839Z"}, {"id": 1247, "userid": 999999999, "ping_type": 1, "time": "2019-03-29T19:36:53.282Z"}, {"id": 1248, "userid": 999999999, "ping_type": 0, "time": "2019-03-29T19:37:00.124Z"}]}
+2019-03-29 15:25:58
+2019-03-29 15:26:08
+2019-03-29 15:26:09
+2019-03-29 15:36:23
+2019-03-29 15:36:30
+2019-03-29 15:36:32
+2019-03-29 15:36:53
+2019-03-29 15:37:00
+[CheckinData(User: 999999999, time: 2019-03-29 15:25:58, type: 0), CheckinData(User: 999999999, time: 2019-03-29 15:26:08, type: 1), CheckinData(User: 999999999, time: 2019-03-29 15:26:09, type: 0), CheckinData(User: 999999999, time: 2019-03-29 15:36:23, type: 1), CheckinData(User: 999999999, time: 2019-03-29 15:36:30, type: 0), CheckinData(User: 999999999, time: 2019-03-29 15:36:32, type: 1), CheckinData(User: 999999999, time: 2019-03-29 15:36:53, type: 1), CheckinData(User: 999999999, time: 2019-03-29 15:37:00, type: 0)]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-30 07:30:17.644360
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-03-31 07:30:15.149281
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-01 07:30:14.373205
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-02 07:30:13.238411
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-03 07:30:15.066074
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-04 07:30:19.589801
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-05 07:30:14.943042
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-06 07:30:15.356112
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-07 07:30:15.136239
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-08 07:30:14.545612
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-09 07:30:15.367379
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-10 07:30:13.402520
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-11 07:30:16.003235
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-12 07:30:13.081876
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-13 07:30:14.307913
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-14 07:30:19.752375
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-15 07:30:15.333542
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-16 07:30:13.703625
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-17 07:30:13.949776
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-18 07:30:16.956586
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-19 07:30:16.928119
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-04-20 07:30:21.603413
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-06-01 07:30:13.058731
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-06-02 07:30:13.434643
+==========================================
+==========================================
+Retrieving surveys from yesterday...
+{"Surveys": []}
+{"Surveys": []}
+[]
+	...Done getting yesterday's surveys
+Inserting surveys into DB...
+[]
+Retrieving surveys from yesterday...
+{"Checkins": []}
+[]
+	...Done getting yesterday's checkins
+Data as of: 2019-06-03 07:30:14.997813
+==========================================
