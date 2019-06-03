@@ -1,15 +1,19 @@
+###################################################
+###################################################
 Authorization Jumpstart Steps
+###################################################
+###################################################
 
 1. Run command:
     python gather_keys_oauth2.py
 
-2. In the following browser, copy the "code" part of the url. ***Code is valid for only 10 minutes.
+2. In the internet browser that shortly pops up, it will display an error page (something like page doesn't exist). However, this is an expected behavior, since we're not using the https domain for our callback url. Carefully inspect the url that shows in the address bar, and copy the "code" part of the url. Only copy the string that starts after "code=" until "&state=", just before the '&' sign. ***Code is valid for only 10 minutes.
     Example)
-        * In https://jhprohealth.app/callback?code=fc749e3de9551ea853dbce84e7c706a6c6c2db7e&state=O01QZcS9XADINyf3ioRrSNbAQ9bi5n#_=_
-        * The code part is the string that comes after "code=", which is "fc749e3de9551ea853dbce84e7c706a6c6c2db7e".
+        * If the url is https://jhprohealth.app/callback?code=fc749e3de9551ea853dbce84e7c706a6c6c2db7e&state=O01QZcS9XADINyf3ioRrSNbAQ9bi5n#_=_
+        * The "code" part is the string that comes after "code=", which is "fc749e3de9551ea853dbce84e7c706a6c6c2db7e".
         * Notice the '&' character at the end of the code string, that is, right before "state" tag, shouldn't be included in the "code" part.
 
-3. Exit the browser engine script with shortcut:
+3. Exit the browser engine script with SIGINT shortcut that is:
     CTRL + C
 
 4. Run command:
@@ -18,11 +22,31 @@ Authorization Jumpstart Steps
         * So, the actual command here would be: 
             python dbtester.py fc749e3de9551ea853dbce84e7c706a6c6c2db7e
 
-5. (OPTIONAL) If no cron job is running and you wish to do one-time data-pulling, run command:
+5. Following Step 4, the script will display a unique Fitbit user ID on the terminal, something like:
+	Example)
+		===============================================================
+		Logging event at: 2019-06-03 15:04:55.804202
+		Registering a new user with given AUTH CODE.
+		Authorizing...
+			...Done authorizing new user: 4XQRQQ
+		===============================================================
+   Copy the user ID (4XQRQQ in this case)
+This saves the authentication token in the local directory, so it automatically pulls in the data every morning. However, to complete setup, you must manually input this user ID into the PC_Users table on the MySQL database.
+
+
+(OPTIONAL) If no cron job is running and you wish to do one-time data-pulling, run command:
     python token_alive.py
         * This is the python code that the cron job will be running.
         * You can check the status of cron jobs running by running command:
             crontab -l
         * To edit cronjob, run command:
             crontab -e
+
+###################################################
+###################################################
+Troubleshooting
+###################################################
+###################################################
+
+1. Whenever a token expires, you must do the initial setup step again for the expired user.
 

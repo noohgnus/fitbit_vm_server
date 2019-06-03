@@ -196,10 +196,10 @@ def register_new_auth_code():
         raise Exception("While registering new user, HTTP returned code ", str(r.status_code))
 
     response = json.loads(r.text)
-    # print(r.text)
-    read_token = open("token.json", 'r')
-    current_user_token = json.load(read_token)
-    read_token.close()
+    # # print(r.text)
+    # read_token = open("token.json", 'r')
+    # current_user_token = json.load(read_token)
+    # read_token.close()
 
     try:
         read_mult_tokens = open("tokens.json", 'r')

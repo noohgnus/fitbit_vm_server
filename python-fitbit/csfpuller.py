@@ -217,7 +217,7 @@ def is_token_fresh_introspect(token_dict, uid):
     # else:
     #     return True
 
-def refresh_multi_user_token(token_dict, query_uid=""):
+def refresh_multi_user_token(token_dict, query_uid="", q_start_date="", q_end_date=""):
     json_user_datas = token_dict
     for user in json_user_datas["users"]:
         uid = json_user_datas["users"][user]["user_id"]
@@ -227,7 +227,7 @@ def refresh_multi_user_token(token_dict, query_uid=""):
         # continue
 
         if (query_uid == "" or query_uid == uid) and is_token_fresh_introspect(token_dict, uid):
-            data_retrieval_routine(json_user_datas, user)
+            data_retrieval_routine(json_user_datas, user, q_start_date=q_start_date, q_end_date=q_end_date)
         else:
             # Refreshing user
             headers = {'Authorization':'Basic ' + base64_key_secret,
@@ -256,7 +256,7 @@ def refresh_multi_user_token(token_dict, query_uid=""):
                 json_user_datas["users"][user]["refresh_token"] = response["refresh_token"]
                 json_user_datas["users"][user]["modified_at"] = str(datetime.datetime.now())
                 if query_uid == "" or query_uid == uid:
-                    data_retrieval_routine(json_user_datas, user)
+                    data_retrieval_routine(json_user_datas, user, q_start_date=q_start_date, q_end_date=q_end_date)
                 else:
                     continue
 
@@ -269,7 +269,7 @@ def refresh_multi_user_token(token_dict, query_uid=""):
     return json_user_datas
 
 
-def data_retrieval_routine(token_dict, uid):
+def data_retrieval_routine(token_dict, uid, q_start_date="", q_end_date=""):
     yesterday = datetime.datetime.now() - datetime.timedelta(days = 1)
 
     date_string = str(yesterday.date())
@@ -288,8 +288,15 @@ def data_retrieval_routine(token_dict, uid):
 
         # query_start_date = last_logged_date + datetime.timedelta(days=1)
         # force rewrite last week's data
-        query_start_date = datetime.date.today() - datetime.timedelta(days=5)
-        query_end_date = datetime.date.today() - datetime.timedelta(days=3)
+        if q_start_date == "" and q_end_date == "":
+            print("empty" + q_start_date)
+            query_start_date = datetime.date.today() - datetime.timedelta(days=25)
+            query_end_date = datetime.date.today() - datetime.timedelta(days=15)
+        else:
+            query_start_date = datetime.datetime.strptime(q_start_date, '%Y-%m-%d').date()
+            query_end_date = datetime.datetime.strptime(q_end_date, '%Y-%m-%d').date()
+
+        print(query_start_date)
 
         if query_start_date < datetime.date.today():
             print("Retroactively fetching data for %s from %s to %s"
@@ -367,11 +374,16 @@ def multi_login_routine():
         print("Populating data by refreshing all previous token sessions.")
         token_dict = get_multi_token_dict()
         refresh_multi_user_token(token_dict=token_dict)
-    elif len(sys.argv) == 3 and sys.argv[1] == "get":
-        print("Populating data by refreshing specified token: %s" % sys.argv[2])
-
-        token_dict = get_multi_token_dict()
-        refresh_multi_user_token(token_dict=token_dict, query_uid=sys.argv[2])
+    elif sys.argv[1] == "get":
+        if len(sys.argv) == 3:
+            print("Populating data by refreshing specified token: %s" % sys.argv[2])
+            token_dict = get_multi_token_dict()
+            refresh_multi_user_token(token_dict=token_dict, query_uid=sys.argv[2])
+        elif len(sys.argv) == 5:
+            print("Populating data by refreshing specified token: %s" % sys.argv[2])
+            print("start and end date %s ~ %s" % (sys.argv[3], sys.argv[4]))
+            token_dict = get_multi_token_dict()
+            refresh_multi_user_token(token_dict=token_dict, query_uid=sys.argv[2], q_start_date=sys.argv[3], q_end_date=sys.argv[4])
     else:
         print("Invalid arguments.")
         sys.exit()
