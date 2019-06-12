@@ -1,0 +1,23 @@
+{
+    "users": {
+        "4XQRQQ": {
+            "user_id": "4XQRQQ", 
+            "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkNNV1MiLCJzdWIiOiI0WFFSUVEiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNTU5ODAwMDQyLCJpYXQiOjE1NTk3NzEyNDJ9.hEgMuyS-kX42vnmPN0UtozN0QoLak9PJW8NUcfgh3uo", 
+            "expires_in": 28800, 
+            "modified_at": "2019-06-05 17:47:22.284054", 
+            "token_type": "Bearer", 
+            "scope": "profile social activity heartrate nutrition settings sleep weight location", 
+            "refresh_token": "5dca9e3586e13c92797fcc252ddd1b8d4fa8bc00c9b05132f91cf36a012cc4f5"
+        }, 
+        "5TQ66D": {
+            "user_id": "5TQ66D", 
+            "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkNNV1MiLCJzdWIiOiI1VFE2NkQiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTU5Nzk0NjIxLCJpYXQiOjE1NTk3NjU4MjF9.m0xVdGxw_1twRGSjezoe5rInHmjmkO6FoieIysgr2hs", 
+            "modified_at": "2019-06-05 16:17:00.962888", 
+            "expires_in": 28800, 
+            "token_type": "Bearer", 
+            "scope": "profile sleep location social nutrition settings activity heartrate weight", 
+            "refresh_token": "dca3f468454d3859677cacff1af4f1067dba94ae7fa5d7c5b0268c99fe0795b6"
+        }
+    }, 
+    "global_refresh_token": "5e5e9b787d9379cab53f39ecae242343e6444901df319d06cbd0957bd62d386d"
+}
