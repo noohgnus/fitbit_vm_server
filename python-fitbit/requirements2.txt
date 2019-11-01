@@ -86,6 +86,6 @@ sphinx-rtd-theme==0.3.0
 tox==2.1.1
 urllib3==1.22
 virtualenv==15.2.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 xattr==0.6.4
 zope.interface==4.1.1
