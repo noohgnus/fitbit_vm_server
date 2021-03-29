@@ -32,7 +32,7 @@ pbr==4.0.2
 pluggy==0.3.1
 py==1.5.3
 py2app==0.7.3
-Pygments==2.2.0
+Pygments==2.7.4
 pyobjc-core==2.5.1
 pyobjc-framework-Accounts==2.5.1
 pyobjc-framework-AddressBook==2.5.1
